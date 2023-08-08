@@ -15,7 +15,7 @@ Authors@R: c(
 Mantainer: Cristian Quiroz-Moreno <cristianquirozd1997@gmail.com>
 Description: Raw MS/MS data of a set of authentic small molecules standards.
 License: MIT + file LICENSE
-URL: 
+URL: https://cooperstonelab.github.io/MS2extractDB/
 BugReports: 
 biocViews: ExperimentData, MassSpectrometryData
 Encoding: UTF-8
