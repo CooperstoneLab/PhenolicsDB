@@ -1,10 +1,10 @@
 ---
 title: "Exploring the batch MS/MS library creation option in MS2extract"
 author: 
-  - name: Your name
+  - name: Cristian Quiroz-Moreno
     affiliation:
-    - Your institution
-    email: your.email@somewhere.com
+    - Ohio State Universtiy
+    email: cristianquirozd1997@gmail.com
 output: 
   BiocStyle::html_document:
     self_contained: yes
