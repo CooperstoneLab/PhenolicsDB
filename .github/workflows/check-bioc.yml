@@ -37,7 +37,7 @@ env:
   has_testthat: 'true'
   run_covr: 'true'
   run_pkgdown: 'true'
-  has_RUnit: 'false'
+  has_RUnit: 'true'
   cache-version: 'cache-v1'
   run_docker: 'false'
 
