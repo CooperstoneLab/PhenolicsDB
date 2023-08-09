@@ -3,4 +3,4 @@
 usethis::use_data(batchRead_Neg20, overwrite = TRUE)
 batchRead_Neg20 <- read.csv("inst/extdata/batch_read_neg20.csv")
 
-usethis::use_data(batchRead_Neg20, internal = F, overwrite = T)
+
