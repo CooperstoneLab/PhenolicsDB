@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<img src="man/figures/MS2extractDB.png" alt="MS2extractDB logo" align="right" width = "20%" height="20%"/>
+<img src="man/figures/MS2extractDB.png" alt="MS2extractDB logo" align="right" style="float:right; height:250px;"/>
 
 # MS2extractDB
 
