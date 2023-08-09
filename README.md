@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<img src="man/figures/MS2extractDB.png" alt="MS2extract logo" align="right" width = "25%" height="25%"/>
+
 # MS2extractDB
 
 <!-- badges: start -->
