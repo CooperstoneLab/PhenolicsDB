@@ -26,7 +26,8 @@ carbohydrates.  Standards were collected using an Agilent QTOF 6545 and 6546,
 in negative and positive polarities, and 20 and 60 eV (CE). 
 Standards that were collected  using the 6546 QTOF also contains MS/MS at
 60 and 80 eV (CE). The raw MS/MS files  will be used jointly 
-with the MS2extract package to create in-house MS/MS libaries.
+with the [MS2extract](https://cooperstonelab.github.io/MS2extract/)
+package to create in-house MS/MS libaries.
 
 ## Installation
 
