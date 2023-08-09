@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+<img src="man/figures/MS2extractDB.png" alt="MS2extract logo" align="right" width = "25%" height="25%"/>
+
 # MS2extractDB
 
 <!-- badges: start -->
