@@ -3,7 +3,7 @@
 \docType{data}
 \name{batchRead_Neg20}
 \alias{batchRead_Neg20}
-\title{Data frame expressing the metabolite name, ROI, and file name}
+\title{Metabolite information at Negative polarity and 20 eV CE}
 \format{
 batchRead_Neg20
 
@@ -23,6 +23,10 @@ batchRead_Neg20
 \description{
 This data frame contains the basic info required to batch import multiple
 files to create in-house libraries by using the
-\href{https://github.com/CooperstoneLab/MS2extract}{MS2extract} package
+\href{https://github.com/CooperstoneLab/MS2extract}{MS2extract} package.
+}
+\details{
+Metabolites included in this list were analyzed by targeted methods using
+an Agilent 6545 QTOF.
 }
 \keyword{datasets}

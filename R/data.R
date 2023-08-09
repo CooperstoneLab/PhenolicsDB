@@ -1,8 +1,11 @@
-#' Data frame expressing the metabolite name, ROI, and file name
+#' Metabolite information at Negative polarity and 20 eV CE
 #'
 #' This data frame contains the basic info required to batch import multiple
 #' files to create in-house libraries by using the
-#' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package
+#' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package.
+#'
+#' Metabolites included in this list were analyzed by targeted methods using
+#' an Agilent 6545 QTOF.
 #'
 #' @format batchRead_Neg20
 #'
