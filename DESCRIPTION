@@ -14,12 +14,12 @@ Authors@R: c(
            )
 Mantainer: Cristian Quiroz-Moreno <cristianquirozd1997@gmail.com>
 Description: Raw MS/MS data of a set of authentic small molecules standards, 
-  including, phenolic acids, flavonoids, dihydrochalcones, carbohidrates. 
+  including, phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
   Standards were collected using an Agilent QTOF 6545 and 6546, in negative
   and positive polarities, and 20 and 60 eV (CE). Standars that were collected
-  using the 6546 QTOF also contains 60 and 80 eV (CE). The raw MS/MS files
-  will be used jointly with the MS2extract package to create in-house
-  MS/MS libaries.
+  using the 6546 QTOF also contains MS/MS datq at 60 and 80 eV (CE). 
+  The raw MS/MS files will be used jointly with the MS2extract package
+  to create in-house MS/MS libaries.
 License: MIT + file LICENSE
 URL: https://cooperstonelab.github.io/MS2extractDB/
 BugReports: https://github.com/CooperstoneLab/MS2extractDB/issues
