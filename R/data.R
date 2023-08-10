@@ -20,3 +20,25 @@
 #' }
 #'
 "batchRead_Neg20"
+
+#' Metabolite metadata to be included in the final library file
+#'
+#' This data frame contains the metabolite metadata to be included
+#' in the final library file.
+#'
+#' This specific data frame contains the metabolite information that was
+#' captured in negative polarity at 20 eV (CE) in the Agilent 6545.
+#'
+#' @format batchMetadt_neg20
+#'
+#' \describe{
+#'   \item{NAME}{character, metabolite name}
+#'   \item{FORMULA}{character, chemical formula}
+#'   \item{INCHIKEY}{character, inchikey recovered form PUBCHEM}
+#'   \item{SMILES}{character, canonical smiles recovered drom PUBCHEM}
+#'   \item{PRECURSORTYPE}{character, precursor type [M+H]+ for postive and [M-H]- for negative polarity}
+#'   \item{COLLISIONENERGY}{character, collision energy used for MS/MS}
+#'   \item{INSTRUMENTTYPE}{character, intrument type used for data collection}
+#' }
+#'
+"batchMetadt_neg20"
