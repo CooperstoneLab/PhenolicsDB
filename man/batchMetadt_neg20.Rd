@@ -12,9 +12,10 @@ batchMetadt_neg20
 \item{FORMULA}{character, chemical formula}
 \item{INCHIKEY}{character, inchikey recovered form PUBCHEM}
 \item{SMILES}{character, canonical smiles recovered drom PUBCHEM}
-\item{PRECURSORTYPE}{character, precursor type \link{M+H}+ for postive and \link{M-H}- for negative polarity}
+\item{PRECURSORTYPE}{character, precursor type \verb{[M+H]+} for postive and \verb{[M-H]-} for negative polarity}
 \item{COLLISIONENERGY}{character, collision energy used for MS/MS}
 \item{INSTRUMENTTYPE}{character, intrument type used for data collection}
+\item{IONMODE}{character, \code{Positive} or \code{Negative}, restricted characters}
 }
 }
 \usage{
