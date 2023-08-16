@@ -6,3 +6,6 @@
 ^docs$
 ^pkgdown$
 ^data-raw$
+^inst/extdata/batch_msp_metadata\.xlsx$
+^inst/extdata/batch_read_neg20\.xlsx$
+^inst/extdata/batch_read_neg40_6545\.csv$

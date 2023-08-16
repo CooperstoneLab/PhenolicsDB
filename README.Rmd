@@ -68,20 +68,23 @@ describe what you expect to find in this database.
 
 -   First Batch (Agilent QTOF 6545)
 
-| Collision Energy | Polarity  |
+| Collision Energy | Polarity*  |
 |------------------|-----------------|
 | 20 eV            | Positive `[M+H]+` |
 | 40 eV            | Negative `[M-H]-` |
 
+`*` Both polarities were used to collect 20 and 40 eV.
+
 -   Second Batch (Agilent QTOF 6546)
 
-| Collision Energy | Polarity  |
+| Collision Energy | Polarity*  |
 |------------------|-----------------|
 | 20 eV            | Positive `[M+H]+` |
 | 40 eV            | Negative `[M-H]-` |
 | 60 eV            |                 |
 | 80 eV           |                 |
 
+`*` Both polarities were used to collect 20 and 40 eV.
 
 ## List of metabolites
 
