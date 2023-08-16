@@ -1,4 +1,4 @@
-## code to prepare `batchMetadt_neg20` dataset goes here
+## code to prepare `BatchMetDT_Neg20_6545` dataset goes here
 
 
 
@@ -7,7 +7,7 @@ batchRead_Neg20 <- read.csv("inst/extdata/batch_read_neg20.csv")
 
 library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
 
-batchMetadt_neg20 <- library_info %>%
+BatchMetDT_Neg20_6545 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M-H]-",
                 COLLISIONENERGY = "20eV",
                 INSTRUMENTTYPE = "QTOF Agilent 6545",
@@ -16,4 +16,5 @@ batchMetadt_neg20 <- library_info %>%
   dplyr::rename(NAME = Name, FORMULA = Formula)
 
 
-usethis::use_data(batchMetadt_neg20, overwrite = TRUE)
+
+usethis::use_data(BatchMetDT_Neg20_6545, overwrite = TRUE)
