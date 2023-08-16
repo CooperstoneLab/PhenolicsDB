@@ -77,7 +77,7 @@
 #' This specific data frame contains the metabolite information that was
 #' captured in negative polarity at 40 eV (CE) in the Agilent QTOF 6545.
 #'
-#' @format
+#' @format BatchMetaDT_Neg40_6545
 #'
 #' \describe{
 #'   \item{NAME}{character, metabolite name}
