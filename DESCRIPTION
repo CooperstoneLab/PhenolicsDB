@@ -39,5 +39,3 @@ Config/testthat/edition: 3
 Depends: 
     R (>= 4.3)
 LazyData: true
-Imports: 
-    dplyr
