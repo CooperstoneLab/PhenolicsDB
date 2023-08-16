@@ -7,7 +7,7 @@
 #' Metabolites included in this list were analyzed by targeted methods using
 #' an Agilent 6545 QTOF.
 #'
-#' @format BatchRead_Neg20_6545
+#' @format
 #'
 #' A data frame containing 58 observations (metabolites) and 6 columns
 #' \describe{
@@ -29,7 +29,7 @@
 #' This specific data frame contains the metabolite information that was
 #' captured in negative polarity at 20 eV (CE) in the Agilent 6545.
 #'
-#' @format BatchMetaDT_Neg20_6545
+#' @format
 #'
 #' \describe{
 #'   \item{NAME}{character, metabolite name}
@@ -54,7 +54,7 @@
 #' Metabolites included in this list were analyzed by targeted methods using
 #' an Agilent 6545 QTOF.
 #'
-#' @format BatchRead_Neg20_6545
+#' @format
 #'
 #' A data frame containing 58 observations (metabolites) and 6 columns
 #' \describe{
