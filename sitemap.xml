@@ -19,15 +19,21 @@
     <loc>https://cooperstonelab.github.io/MS2extractDB/index.html</loc>
   </url>
   <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/MS2extractDB-package.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/batchMetadt_neg20.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/batchRead_Neg20.html</loc>
-  </url>
-  <url>
     <loc>https://cooperstonelab.github.io/MS2extractDB/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg20_6545.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg40_6545.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos20_6545.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6545.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos20_6545.html</loc>
   </url>
 </urlset>
