@@ -2,11 +2,11 @@
 
 
 lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-load("data/BatchRead_Neg40_6545.rda")
+load("data/read_neg40_6545.rda")
 
 library_info <- dplyr::left_join(BatchRead_Neg40_6545, lb_metadata)
 
-BatchMetDT_Neg40_6545 <- library_info %>%
+metdt_neg40_6545 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M-H]-",
                 COLLISIONENERGY = "40eV",
                 INSTRUMENTTYPE = "QTOF Agilent 6545",
@@ -15,4 +15,4 @@ BatchMetDT_Neg40_6545 <- library_info %>%
   dplyr::rename(NAME = Name, FORMULA = Formula)
 
 
-usethis::use_data(BatchMetDT_Neg40_6545, overwrite = TRUE)
+usethis::use_data(metdt_neg40_6545, overwrite = TRUE)
