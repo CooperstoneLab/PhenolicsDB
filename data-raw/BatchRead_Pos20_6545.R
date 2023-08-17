@@ -10,9 +10,9 @@ batch_read20_6545 %>%
   mutate(FileExis = file.exists(.$Filepath))
 
 # Export sheet "20 pos" from batch_readneg20.xlsx
-BatchRead_Pos20_6545 <- read.csv("inst/extdata/batch_read_pos20_6545.csv") %>%
+read_pos20_6545 <- read.csv("inst/extdata/batch_read_pos20_6545.csv") %>%
   filter(!(File %in% "") )
 
-write.csv(BatchRead_Pos20_6545, file = "inst/extdata/batch_read_neg40.csv",row.names = F)
+write.csv(read_pos20_6545, file = "inst/extdata/batch_read_neg40.csv",row.names = F)
 
-usethis::use_data(BatchRead_Pos20_6545, overwrite = TRUE)
+usethis::use_data(read_pos20_6545, overwrite = TRUE)
