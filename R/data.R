@@ -1,4 +1,4 @@
-#' Metabolite information in Negative polarity at 20 eV CE
+#' Metabolite information to batch read in Negative polarity at 20 eV CE
 #'
 #' This data frame contains the basic info required to batch import multiple
 #' files to create in-house libraries by using the
@@ -21,7 +21,7 @@
 #'
 "read_neg20_6545"
 
-#' Metabolite metadata to be included in the final library file
+#' Metabolite metadata for final library file for Negative polarity at 20 eV
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -45,7 +45,7 @@
 "metdt_neg20_6545"
 
 
-#' Metabolite information in Negative polarity at 40 eV CE
+#' Metabolite information to batch read in Negative polarity at 40 eV CE
 #'
 #' This data frame contains the basic info required to batch import multiple
 #' files to create in-house libraries by using the
@@ -69,7 +69,7 @@
 "read_neg20_6545"
 
 
-#' Metabolite metadata to be included in the final library file
+#' Metabolite metadata for final library file for Negative polarity at 40 eV
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -116,7 +116,7 @@
 "read_pos20_6545"
 
 
-#' Metabolite metadata to be included in the final library file
+#' Metabolite information to batch read in Positive polarity at 20 eV CE
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
