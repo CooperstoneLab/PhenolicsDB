@@ -1,8 +1,10 @@
-bibentry(
-  bibtype  = "Manual",
-  title    = "MS2extractDB: small molecules MS/MS (ESI-QTOF) database repository",
-  author   = "Cristian Quiroz-Moreno and Jessica Cooperstone",
-  note     = "R package version 0.01.0"
+citHeader("To cite MS2extractDB in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = " MS2extractDB: small molecules MS/MS (ESI-QTOF) database repository",
+  author   = c(person("Cristian", "Quiroz-Moreno"),
+  person("Jessica", "Cooperstone")),
   year     = "2023",
-  url      = "{https://cooperstonelab.github.io/MS2extract/}"
+  url      = "https://cooperstonelab.github.io/MS2extractDB/"
 )
