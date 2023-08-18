@@ -115,58 +115,30 @@
 <p>This package is intended to archive the raw mzml files of authentic standards, as well as structurated data frames used in <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to automate the process of creating an in-house MS/MS library</p>
 <p>This database contains majorly phenolics compounds, aimed to decipher the rosacea metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiples scenarios.</p>
 <p>We grouped the total database in two batches. The two batches are based on the instrument that was used to acquire the data. For the first batch, we used an Agilent QTOF 6545, and for the second batch, we used an Agilent QTOF 6546. In both batches, we collected targeted MS/MS, using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. In both batches, we collected data in negative and positive polarities, and we used 20 and 40 eV (CE) using CID. Furthermore, in the second batch, we also collected data at 60 and 80 eV (CE). The following table describe what you expect to find in this database.</p>
+<blockquote>
+<p>Disclaimer: Metabolites with no reported data file has not MS/MS data</p>
+</blockquote>
+<div class="section level3">
+<h3 id="first-batch-agilent-qtof-6545">First Batch (Agilent QTOF 6545)<a class="anchor" aria-label="anchor" href="#first-batch-agilent-qtof-6545"></a>
+</h3>
 <ul>
-<li>First Batch (Agilent QTOF 6545)</li>
+<li><p>Positive polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv" class="external-link">(Read file)</a></p></li>
+<li><p>Positive polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv" class="external-link">(Read file)</a></p></li>
+<li><p>Negative polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv" class="external-link">(Read file)</a></p></li>
+<li><p>Negative polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv" class="external-link">(Read file)</a></p></li>
 </ul>
-<table class="table">
-<thead><tr class="header">
-<th>Collision Energy</th>
-<th>Polarity*</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>20 eV</td>
-<td>Positive <code>[M+H]+</code>
-</td>
-</tr>
-<tr class="even">
-<td>40 eV</td>
-<td>Negative <code>[M-H]-</code>
-</td>
-</tr>
-</tbody>
-</table>
-<p><code>*</code> Both polarities were used to collect 20 and 40 eV.</p>
+</div>
+<div class="section level3">
+<h3 id="second-batch-agilent-qtof-6546">Second Batch (Agilent QTOF 6546)<a class="anchor" aria-label="anchor" href="#second-batch-agilent-qtof-6546"></a>
+</h3>
 <ul>
-<li>Second Batch (Agilent QTOF 6546)</li>
+<li>Negative polarity at 20 eV</li>
+<li>Negative polarity at 40 eV</li>
+<li>Negative polarity at 60 eV</li>
+<li>Negative polarity at 80 eV</li>
 </ul>
-<table class="table">
-<thead><tr class="header">
-<th>Collision Energy</th>
-<th>Polarity*</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>20 eV</td>
-<td>Positive <code>[M+H]+</code>
-</td>
-</tr>
-<tr class="even">
-<td>40 eV</td>
-<td>Negative <code>[M-H]-</code>
-</td>
-</tr>
-<tr class="odd">
-<td>60 eV</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>80 eV</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><code>*</code> Both polarities were used to collect 20 and 40 eV.</p>
+<p>Positive polarity data collection in progress</p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="list-of-metabolites">List of metabolites<a class="anchor" aria-label="anchor" href="#list-of-metabolites"></a>
@@ -231,7 +203,9 @@
 <span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 55                    Narcissin C28H32O16    174    186</span></span>
 <span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 56               Procyanidin C1 C45H38O18    140    152</span></span></code></pre></div>
 <p>To retrieve the entire table, please use:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"batch_read_neg20.csv"</span>, <span class="at">package =</span> <span class="st">"MS2extractDB"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MS2extractDB)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"read_neg20_6545"</span>, <span class="at">package =</span> <span class="st">"MS2extractDB"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(read_neg20_6545)</span></code></pre></div>
 </div>
 </div>
 
