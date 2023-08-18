@@ -66,25 +66,25 @@ and we used 20 and 40 eV (CE) using CID. Furthermore, in the second
 batch, we also collected data at 60 and 80 eV (CE). The following table
 describe what you expect to find in this database.
 
--   First Batch (Agilent QTOF 6545)
+> Disclaimer: Metabolites with no reported data file has not MS/MS data
 
-| Collision Energy | Polarity*  |
-|------------------|-----------------|
-| 20 eV            | Positive `[M+H]+` |
-| 40 eV            | Negative `[M-H]-` |
+###  First Batch (Agilent QTOF 6545)
 
-`*` Both polarities were used to collect 20 and 40 eV.
+* Positive polarity at 20 eV [(Read file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv) 
+* Positive polarity at 40 eV [(Read file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv) 
 
--   Second Batch (Agilent QTOF 6546)
+* Negative polarity at 20 eV [(Read file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv) 
+* Negative polarity at 40 eV [(Read file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv) 
 
-| Collision Energy | Polarity*  |
-|------------------|-----------------|
-| 20 eV            | Positive `[M+H]+` |
-| 40 eV            | Negative `[M-H]-` |
-| 60 eV            |                 |
-| 80 eV           |                 |
+###  Second Batch (Agilent QTOF 6546)
 
-`*` Both polarities were used to collect 20 and 40 eV.
+* Negative polarity at 20 eV
+* Negative polarity at 40 eV
+* Negative polarity at 60 eV
+* Negative polarity at 80 eV
+
+Positive polarity data collection in progress
+
 
 ## List of metabolites
 
@@ -106,5 +106,7 @@ batchRead_Neg20
  To retrieve the entire table, please use:
  
 ```
- system.file("extdata", "batch_read_neg20.csv", package = "MS2extractDB")
+library(MS2extractDB)
+data("read_neg20_6545", package = "MS2extractDB")
+print(read_neg20_6545)
 ```
