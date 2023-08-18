@@ -1,7 +1,8 @@
 bibentry(
-  bibtype  = "Article",
-  journal = "NA",
-  title    = "Mass spectrometry database",
-  author   = "Cristian Quiroz-Moreno",
+  bibtype  = "Manual",
+  title    = "MS2extractDB: small molecules MS/MS (ESI-QTOF) database repository",
+  author   = "Cristian Quiroz-Moreno and Jessica Cooperstone",
+  note     = "R package version 0.01.0"
   year     = "2023",
+  url      = "{https://cooperstonelab.github.io/MS2extract/}"
 )
