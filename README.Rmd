@@ -97,9 +97,9 @@ in this version of the database.
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 batchRead_Neg20 <- read.csv("inst/extdata/batch_read_neg20.csv") 
-batchRead_Neg20 <-   dplyr::mutate(batchRead_Neg20, Batch = "QTOF-6545")
+batchRead_Neg20 <-   dplyr::mutate(batchRead_Neg20, Batch = "(1) QTOF-6545")
 read_neg20_6546 <- read.csv("inst/extdata/read_neg20_6546_excel.csv")
- read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "QTOF-6545")
+ read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
 all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
 
 
