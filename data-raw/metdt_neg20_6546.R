@@ -1,13 +1,13 @@
-## code to prepare `BatchMetDT_Neg20_6545` dataset goes here
-
+## code to prepare `metdt_neg20_6546` dataset goes here
 
 
 lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-batchRead_Neg20 <- read.csv("inst/extdata/batch_read_neg20.csv")
+batchRead_Neg20 <- read.csv("inst/extdata/read_neg20_6546_excel.csv") %>%
+  filter( !(File %in% "") )
 
 library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
 
-metdt_neg20_6545 <- library_info %>%
+metdt_neg20_6546 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M-H]-",
                 COLLISIONENERGY = "20eV",
                 INSTRUMENTTYPE = "LC-ESI-QTOF",
@@ -17,4 +17,5 @@ metdt_neg20_6545 <- library_info %>%
 
 
 
-usethis::use_data(metdt_neg20_6545, overwrite = TRUE)
+
+usethis::use_data(metdt_neg20_6546, overwrite = TRUE)
