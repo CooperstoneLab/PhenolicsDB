@@ -144,6 +144,23 @@ including in this version of the database.
     #> 54                Neoeriocitrin C27H32O15    162    175 QTOF-6545
     #> 55                    Narcissin C28H32O16    174    186 QTOF-6545
     #> 56               Procyanidin C1 C45H38O18    140    152 QTOF-6545
+    #> 57        D-(-)-Citramalic Acid    C5H8O5     45     60 QTOF-6545
+    #> 58                    Esculetin    C9H6O4    139    146 QTOF-6545
+    #> 59                Isoscopoletin   C10H8O4    165    170 QTOF-6545
+    #> 60                   Scopoletin   C10H8O4    170    176 QTOF-6545
+    #> 61                     Apigenin  C15H10O5    233    240 QTOF-6545
+    #> 62                  Tamarixetin   C16H12O    240    250 QTOF-6545
+    #> 63         3-O-methyl Quercetin  C16H12O7    219    228 QTOF-6545
+    #> 64             Chlorogenic Acid  C16H18O9    131    136 QTOF-6545
+    #> 65       Cryptochlorogenic Acid  C16H18O9    133    138 QTOF-6545
+    #> 66          Neochlorogenic acid  C16H18O9    114    126 QTOF-6545
+    #> 67                  Guaijaverin C20H18O11    173    185 QTOF-6545
+    #> 68                   Avicularin C20H18O11    175    182 QTOF-6545
+    #> 69       Cyanidin 3-Galactoside C21H21O11    120    135 QTOF-6545
+    #> 70    Eriodictyol 7-O-glucoside C21H22O11    166    172 QTOF-6545
+    #> 71             Isoquercitroside C21H20O12    167    173 QTOF-6545
+    #> 72       Peonidin 3-o-glucoside C22H23O11    132    146 QTOF-6545
+    #> 73                    Saponarin C27H30O15    148    154 QTOF-6545
 
 To retrieve the entire table, please use:
 

@@ -103,8 +103,8 @@ read_neg20_6546 <- read.csv("inst/extdata/read_neg20_6546_excel.csv")
 all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
 
 
-batchRead_Neg20 <- dplyr::select(batchRead_Neg20, -File, -Ionization_mode)
-batchRead_Neg20
+all_std <- dplyr::select(all_std, -File, -Ionization_mode)
+all_std
 ```
 
 
