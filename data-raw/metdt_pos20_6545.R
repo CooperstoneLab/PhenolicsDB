@@ -8,7 +8,7 @@ library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
 metdt_pos20_6545 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M+H]+",
                 COLLISIONENERGY = "20eV",
-                INSTRUMENTTYPE = "QTOF Agilent 6545",
+                INSTRUMENTTYPE = "LC-ESI-QTOF",
                 IONMODE= "Positive") %>%
   dplyr::select(-Ionization_mode, -min_rt, -max_rt, -File) %>%
   dplyr::rename(NAME = Name, FORMULA = Formula)
