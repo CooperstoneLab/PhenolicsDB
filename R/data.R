@@ -92,7 +92,7 @@
 #'
 "metdt_neg40_6545"
 
-#' Metabolite information in positive polarity at 20 eV CE
+#' Metabolite information to batch read in Negative polarity at 20 eV CE
 #'
 #' This data frame contains the basic info required to batch import multiple
 #' files to create in-house libraries by using the

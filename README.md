@@ -54,24 +54,28 @@ describe what you expect to find in this database.
 
 ### First Batch (Agilent QTOF 6545)
 
-- Positive polarity at 20 eV [(Read
+- Positive polarity at 20 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv)
 
-- Positive polarity at 40 eV [(Read
+- Positive polarity at 40 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv)
 
-- Negative polarity at 20 eV [(Read
+- Negative polarity at 20 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv)
 
-- Negative polarity at 40 eV [(Read
+- Negative polarity at 40 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv)
 
 ### Second Batch (Agilent QTOF 6546)
 
-- Negative polarity at 20 eV
-- Negative polarity at 40 eV
-- Negative polarity at 60 eV
-- Negative polarity at 80 eV
+- Negative polarity at 20 eV [(Batch read
+  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg20_6546_excel.csv)
+- Negative polarity at 40 eV [(Batch read
+  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg40_6546_excel.csv)
+- Negative polarity at 60 eV [(Batch read
+  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg60_6546_excel.csv)
+- Negative polarity at 80 eV [(Batch read
+  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg80_6546_excel.csv)
 
 Positive polarity data collection in progress
 

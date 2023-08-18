@@ -3,7 +3,7 @@
 \docType{data}
 \name{read_pos20_6545}
 \alias{read_pos20_6545}
-\title{Metabolite information in positive polarity at 20 eV CE}
+\title{Metabolite information to batch read in Negative polarity at 20 eV CE}
 \format{
 read_pos20_6545
 
