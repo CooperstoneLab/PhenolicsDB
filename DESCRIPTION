@@ -1,7 +1,7 @@
 Package: MS2extractDB
 Title: Raw MS/MS datafiles of authentic small molecules standards 
 Version: 0.01.0
-Date: 2023-08-08
+Date: 2023-08-16
 Authors@R: c(
     person("Cristian", "Quiroz-Moreno",
            email = "cristianquirozd1997@gmail.com",
