@@ -8,15 +8,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of MS2extractDB is to stored the MS/MS data of a set of
-authentic small molecules standards, including, phenolic acids,
-flavonoids, dihydrochalcones, carbohydrates. Standards were collected
-using an Agilent QTOF 6545 and 6546, in negative and positive
-polarities, and 20 and 60 eV (CE). Standards that were collected using
-the 6546 QTOF also contains MS/MS at 60 and 80 eV (CE). The raw MS/MS
-files will be used jointly with the
-[MS2extract](https://cooperstonelab.github.io/MS2extract/) package to
-create in-house MS/MS libaries.
+`MS2extractDB` is data package that contains raw MS/MS data of authentic
+standards. `MS2extractsDB` raw data files and data sets are aimed to
+exemplify the use of
+[MS2extract](https://cooperstonelab.github.io/MS2extract/) to create
+in-house metabolite MS/MS libraries. Between the small molecules we
+include phenolic acids, flavonoids, dihydrochalcones, carbohydrates,
+between others. Tandem mass spectrometry data was collected using an
+Agilent 1290 coupled with Q-TOF mas analyzer.
 
 ## Installation
 
@@ -31,38 +30,34 @@ devtools::install_github("CooperstoneLab/MS2extractDB")
 ## Database description
 
 This package is intended to archive the raw mzml files of authentic
-standards, as well as structurated data frames used in
-[MS2extract](https://cooperstonelab.github.io/MS2extract/) to automate
-the process of creating an in-house MS/MS library
+standards, as well as structured data frame aimed to be used jointly
+with [MS2extract](https://cooperstonelab.github.io/MS2extract/) to
+automate the process of creating an in-house MS/MS library.
 
 This database contains majorly phenolics compounds, aimed to decipher
-the rosacea metabolome. However, as phenolics are expressed in a wide
-range of organisms, this database can be used in multiples scenarios.
+and annotate the *Rosacea* metabolome. However, as phenolics are
+expressed in a wide range of organisms, this database can be used in
+multiples scenarios.
 
-We grouped the total database in two batches. The two batches are based
-on the instrument that was used to acquire the data. For the first
-batch, we used an Agilent QTOF 6545, and for the second batch, we used
-an Agilent QTOF 6546. In both batches, we collected targeted MS/MS,
-using the chromatographic method reported in [Bilbrey at al.
+We grouped the total database in two batches. The batches are based on
+the instrument we used to acquire the data. For the first batch, we used
+an Agilent QTOF *6545*, and for the second batch, we used an Agilent
+QTOF *6546*. In both batches, we collected targeted MS/MS, using the
+chromatographic method reported in [Bilbrey at al.
 (2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
-In both batches, we collected data in negative and positive polarities,
-and we used 20 and 40 eV (CE) using CID. Furthermore, in the second
-batch, we also collected data at 60 and 80 eV (CE). The following table
-describe what you expect to find in this database.
-
-> Disclaimer: Metabolites with no reported data file has not MS/MS data
+We collected data in negative and positive polarities, and we used 20
+and 40 eV (CE) using CID. Furthermore, in the second batch, we also
+collected data at 60 and 80 eV (CE). The following table describe what
+you expect to find in this database.
 
 ### First Batch (Agilent QTOF 6545)
 
 - Positive polarity at 20 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv)
-
 - Positive polarity at 40 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv)
-
 - Negative polarity at 20 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv)
-
 - Negative polarity at 40 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv)
 
@@ -77,15 +72,18 @@ describe what you expect to find in this database.
 - Negative polarity at 80 eV [(Batch read
   file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg80_6546_excel.csv)
 
-Positive polarity data collection in progress
+Positive polarity data collection is in progress
 
 ## List of metabolites
 
-In the `extdata` directory, you will find all the mzml files for all
-standards.
+In the `extdata` directory, you will find all the `.mzml` files for all
+standards, as well as the structure tables to be used jointly with
+[MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 In the following table, you can see the list of metabolites we are
 including in this version of the database.
+
+> Disclaimer: Metabolites with no reported data file has not MS/MS data
 
     #>                            Name   Formula min_rt max_rt         Batch
     #> 1                Procyanidin A2 C30H24O12    163    180 (1) QTOF-6545
@@ -161,9 +159,3 @@ including in this version of the database.
     #> 71             Isoquercitroside C21H20O12    167    173 (2) QTOF-6546
     #> 72       Peonidin 3-o-glucoside C22H23O11    132    146 (2) QTOF-6546
     #> 73                    Saponarin C27H30O15    148    154 (2) QTOF-6546
-
-To retrieve the entire table, please use:
-
-    library(MS2extractDB)
-    data("read_neg20_6545", package = "MS2extractDB")
-    print(read_neg20_6545)
