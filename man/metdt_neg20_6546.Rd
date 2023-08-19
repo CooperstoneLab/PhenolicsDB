@@ -3,7 +3,7 @@
 \docType{data}
 \name{metdt_neg20_6546}
 \alias{metdt_neg20_6546}
-\title{Metabolite metadata for final library file for Negative polarity at 20 eV}
+\title{Metabolite library metadata in negative polarity at 20 eV second batch}
 \format{
 metdt_neg20_6546
 
