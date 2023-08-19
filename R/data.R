@@ -21,7 +21,7 @@
 #'
 "read_neg20_6545"
 
-#' Metabolite metadata for final library file for Negative polarity at 20 eV
+#' Metabolite library metadata in negative polarity at 20 eV first batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -69,7 +69,7 @@
 "read_neg40_6545"
 
 
-#' Metabolite metadata for final library file for Negative polarity at 40 eV
+#' Metabolite library metadata in negative polarity at 40 eV first batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -116,7 +116,7 @@
 "read_pos20_6545"
 
 
-#' Metabolite information to batch read in Positive polarity at 20 eV CE
+#' Metabolite library metadata in postive polarity at 20 eV first batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -164,7 +164,7 @@
 "read_pos40_6545"
 
 
-#' Metabolite metadata for final library file for Positive polarity at 40 eV
+#' Metabolite library metadata in positive polarity at 40 eV first batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -215,7 +215,7 @@
 "read_neg20_6546"
 
 
-#' Metabolite metadata for final library file for Negative polarity at 20 eV
+#' Metabolite library metadata in negative polarity at 20 eV second batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -264,7 +264,7 @@
 #'
 "read_neg40_6546"
 
-#' Metabolite metadata for final library file for Negative polarity at 40 eV
+#' Metabolite library metadata in negative polarity at 40 eV second batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -313,7 +313,7 @@
 #'
 "read_neg60_6546"
 
-#' Metabolite metadata for final library file for Negative polarity at 60 eV
+#' Metabolite library metadata in negative polarity at 60 eV second batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.
@@ -362,7 +362,7 @@
 #'
 "read_neg80_6546"
 
-#' Metabolite metadata for final library file for Negative polarity at 80 eV
+#' Metabolite library metadata in negative polarity at 80 eV second batch
 #'
 #' This data frame contains the metabolite metadata to be included
 #' in the final library file.

@@ -3,7 +3,7 @@
 \docType{data}
 \name{metdt_pos20_6545}
 \alias{metdt_pos20_6545}
-\title{Metabolite information to batch read in Positive polarity at 20 eV CE}
+\title{Metabolite library metadata in postive polarity at 20 eV first batch}
 \format{
 metdt_neg20_6545
 
