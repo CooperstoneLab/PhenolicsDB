@@ -159,3 +159,24 @@ including in this version of the database.
     #> 71             Isoquercitroside C21H20O12    167    173 (2) QTOF-6546
     #> 72       Peonidin 3-o-glucoside C22H23O11    132    146 (2) QTOF-6546
     #> 73                    Saponarin C27H30O15    148    154 (2) QTOF-6546
+
+# Citing `MS2extractDB`
+
+To cite `MS2extractDB` in your publications, please use:
+
+``` r
+## Citation info
+citation("MS2extractDB")
+#> To cite package 'MS2extractDB' in publications use:
+#> 
+#>   Quiroz-Moreno C (2023). "Mass spectrometry database." _NA_.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Article{,
+#>     journal = {NA},
+#>     title = {Mass spectrometry database},
+#>     author = {Cristian Quiroz-Moreno},
+#>     year = {2023},
+#>   }
+```

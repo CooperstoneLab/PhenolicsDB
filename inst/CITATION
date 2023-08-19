@@ -2,7 +2,7 @@ citHeader("To cite MS2extractDB in publications use:")
 
 citEntry(
   entry    = "Manual",
-  title    = " MS2extractDB: small molecules MS/MS (ESI-QTOF) database repository",
+  title    = "MS2extractDB: small molecules MS/MS (LC-ESI-QTOF) database repository",
   author   = c(person("Cristian", "Quiroz-Moreno"),
   person("Jessica", "Cooperstone")),
   year     = "2023",
