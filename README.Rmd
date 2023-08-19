@@ -109,3 +109,14 @@ all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)
 all_std <- dplyr::select(all_std, -File, -Ionization_mode)
 all_std
 ```
+
+# Citing `MS2extractDB`
+
+
+To cite `MS2extractDB` in your publications, please use:
+
+
+```{r "citation"}
+## Citation info
+citation("MS2extractDB")
+```
