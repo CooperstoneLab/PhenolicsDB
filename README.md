@@ -167,16 +167,18 @@ To cite `MS2extractDB` in your publications, please use:
 ``` r
 ## Citation info
 citation("MS2extractDB")
-#> To cite package 'MS2extractDB' in publications use:
+#> To cite MS2extractDB in publications use:
 #> 
-#>   Quiroz-Moreno C (2023). "Mass spectrometry database." _NA_.
+#>   Quiroz-Moreno C, Cooperstone J (2023). _MS2extractDB: small molecules
+#>   MS/MS (LC-ESI-QTOF) database repository_.
+#>   <https://cooperstonelab.github.io/MS2extractDB/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Article{,
-#>     journal = {NA},
-#>     title = {Mass spectrometry database},
-#>     author = {Cristian Quiroz-Moreno},
+#>   @Manual{,
+#>     title = {MS2extractDB: small molecules MS/MS (LC-ESI-QTOF) database repository},
+#>     author = {Cristian Quiroz-Moreno and Jessica Cooperstone},
 #>     year = {2023},
+#>     url = {https://cooperstonelab.github.io/MS2extractDB/},
 #>   }
 ```
