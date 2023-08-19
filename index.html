@@ -60,7 +60,7 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/MS2extract_Batch.html">Exploring the batch MS/MS library creation option in MS2extract</a>
+    <a class="dropdown-item" href="articles/MS2extractDB_intro.html">MS2extractDB: MS/MS database content description</a>
   </div>
 </li>
       </ul>
@@ -100,7 +100,7 @@
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The goal of MS2extractDB is to stored the MS/MS data of a set of authentic small molecules standards, including, phenolic acids, flavonoids, dihydrochalcones, carbohydrates. Standards were collected using an Agilent QTOF 6545 and 6546, in negative and positive polarities, and 20 and 60 eV (CE). Standards that were collected using the 6546 QTOF also contains MS/MS at 60 and 80 eV (CE). The raw MS/MS files will be used jointly with the <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> package to create in-house MS/MS libaries.</p>
+<p><code>MS2extractDB</code> is data package that contains raw MS/MS data of authentic standards. <code>MS2extractsDB</code> raw data files and data sets are aimed to exemplify the use of <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to create in-house metabolite MS/MS libraries. Between the small molecules we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, between others. Tandem mass spectrometry data was collected using an Agilent 1290 coupled with Q-TOF mas analyzer.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -112,20 +112,21 @@
 <div class="section level2">
 <h2 id="database-description">Database description<a class="anchor" aria-label="anchor" href="#database-description"></a>
 </h2>
-<p>This package is intended to archive the raw mzml files of authentic standards, as well as structurated data frames used in <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to automate the process of creating an in-house MS/MS library</p>
-<p>This database contains majorly phenolics compounds, aimed to decipher the rosacea metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiples scenarios.</p>
-<p>We grouped the total database in two batches. The two batches are based on the instrument that was used to acquire the data. For the first batch, we used an Agilent QTOF 6545, and for the second batch, we used an Agilent QTOF 6546. In both batches, we collected targeted MS/MS, using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. In both batches, we collected data in negative and positive polarities, and we used 20 and 40 eV (CE) using CID. Furthermore, in the second batch, we also collected data at 60 and 80 eV (CE). The following table describe what you expect to find in this database.</p>
-<blockquote>
-<p>Disclaimer: Metabolites with no reported data file has not MS/MS data</p>
-</blockquote>
+<p>This package is intended to archive the raw mzml files of authentic standards, as well as structured data frame aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to automate the process of creating an in-house MS/MS library.</p>
+<p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiples scenarios.</p>
+<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS, using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarities, and we used 20 and 40 eV (CE) using CID. Furthermore, in the second batch, we also collected data at 60 and 80 eV (CE). The following table describe what you expect to find in this database.</p>
 <div class="section level3">
 <h3 id="first-batch-agilent-qtof-6545">First Batch (Agilent QTOF 6545)<a class="anchor" aria-label="anchor" href="#first-batch-agilent-qtof-6545"></a>
 </h3>
 <ul>
-<li><p>Positive polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv" class="external-link">(Batch read file)</a></p></li>
-<li><p>Positive polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv" class="external-link">(Batch read file)</a></p></li>
-<li><p>Negative polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv" class="external-link">(Batch read file)</a></p></li>
-<li><p>Negative polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv" class="external-link">(Batch read file)</a></p></li>
+<li>Positive polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv" class="external-link">(Batch read file)</a>
+</li>
+<li>Positive polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv" class="external-link">(Batch read file)</a>
+</li>
+<li>Negative polarity at 20 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv" class="external-link">(Batch read file)</a>
+</li>
+<li>Negative polarity at 40 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv" class="external-link">(Batch read file)</a>
+</li>
 </ul>
 </div>
 <div class="section level3">
@@ -141,14 +142,17 @@
 <li>Negative polarity at 80 eV <a href="https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg80_6546_excel.csv" class="external-link">(Batch read file)</a>
 </li>
 </ul>
-<p>Positive polarity data collection in progress</p>
+<p>Positive polarity data collection is in progress</p>
 </div>
 </div>
 <div class="section level2">
 <h2 id="list-of-metabolites">List of metabolites<a class="anchor" aria-label="anchor" href="#list-of-metabolites"></a>
 </h2>
-<p>In the <code>extdata</code> directory, you will find all the mzml files for all standards.</p>
+<p>In the <code>extdata</code> directory, you will find all the <code>.mzml</code> files for all standards, as well as the structure tables to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 <p>In the following table, you can see the list of metabolites we are including in this version of the database.</p>
+<blockquote>
+<p>Disclaimer: Metabolites with no reported data file has not MS/MS data</p>
+</blockquote>
 <div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;                            Name   Formula min_rt max_rt         Batch</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1                Procyanidin A2 C30H24O12    163    180 (1) QTOF-6545</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2                         Rutin C27H30O16    162    171 (1) QTOF-6545</span></span>
@@ -223,10 +227,6 @@
 <span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 71             Isoquercitroside C21H20O12    167    173 (2) QTOF-6546</span></span>
 <span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 72       Peonidin 3-o-glucoside C22H23O11    132    146 (2) QTOF-6546</span></span>
 <span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 73                    Saponarin C27H30O15    148    154 (2) QTOF-6546</span></span></code></pre></div>
-<p>To retrieve the entire table, please use:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MS2extractDB)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"read_neg20_6545"</span>, <span class="at">package =</span> <span class="st">"MS2extractDB"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(read_neg20_6545)</span></code></pre></div>
 </div>
 </div>
 
