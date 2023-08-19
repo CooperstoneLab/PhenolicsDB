@@ -1,5 +1,5 @@
 ---
-title: "1-Package introdutcion"
+title: "1-Package introduction"
 author: 
   - name: Daniel Quiroz and Jessica Cooperstone
     affiliation:
@@ -15,7 +15,7 @@ output:
 date: "`r doc_date()`"
 package: "`r pkg_ver('MS2extractDB')`"
 vignette: >
-  %\VignetteIndexEntry{1-Package introdutcion}
+  %\VignetteIndexEntry{1-Package introduction}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
 ---
