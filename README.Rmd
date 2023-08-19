@@ -67,7 +67,6 @@ and we used 20 and 40 eV (CE) using CID. Furthermore, in the second
 batch, we also collected data at 60 and 80 eV (CE). The following table
 describe what you expect to find in this database.
 
-
 ###  First Batch (Agilent QTOF 6545)
 
 * Positive polarity at 20 eV [(Batch read file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv) 
