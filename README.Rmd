@@ -102,7 +102,7 @@ In the following table you can see the list of metabolites we are including
 in this version of the database, as well as in what batch you will find 
 them.
 
-> Disclaimer: Metabolites with no reported data file has not MS/MS data
+> Disclaimer: Metabolites with no reported data file have not MS/MS data
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 

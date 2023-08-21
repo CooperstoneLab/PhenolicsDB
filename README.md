@@ -91,7 +91,7 @@ In the following table you can see the list of metabolites we are
 including in this version of the database, as well as in what batch you
 will find them.
 
-> Disclaimer: Metabolites with no reported data file has not MS/MS data
+> Disclaimer: Metabolites with no reported data file have not MS/MS data
 
     #>                            Name   Formula min_rt max_rt         Batch
     #> 1                Procyanidin A2 C30H24O12    163    180 (1) QTOF-6545
