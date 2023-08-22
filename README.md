@@ -177,14 +177,14 @@ To cite `MS2extractDB` in your publications, please use:
 citation("MS2extractDB")
 #> To cite MS2extractDB in publications use:
 #> 
-#>   Quiroz-Moreno C, Cooperstone J (2023). _MS2extractDB: small molecules
-#>   MS/MS (LC-ESI-QTOF) database repository_.
+#>   Quiroz-Moreno C, Cooperstone J (2023). _MS2extractDB: phenolics MS/MS
+#>   (LC-ESI-QTOF) database repository_.
 #>   <https://cooperstonelab.github.io/MS2extractDB/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {MS2extractDB: small molecules MS/MS (LC-ESI-QTOF) database repository},
+#>     title = {MS2extractDB: phenolics MS/MS (LC-ESI-QTOF) database repository},
 #>     author = {Cristian Quiroz-Moreno and Jessica Cooperstone},
 #>     year = {2023},
 #>     url = {https://cooperstonelab.github.io/MS2extractDB/},
