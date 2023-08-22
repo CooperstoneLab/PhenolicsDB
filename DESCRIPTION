@@ -1,5 +1,5 @@
 Package: MS2extractDB
-Title: MS2extractDB: small molecules MS/MS (LC-ESI-QTOF) database repository
+Title: MS2extractDB: phenolics MS/MS (LC-ESI-QTOF) database repository
 Version: 0.01.0
 Date: 2023-08-16
 Authors@R: c(
@@ -13,11 +13,11 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-7920-0088") )
            )
 Mantainer: Cristian Quiroz-Moreno <cristianquirozd1997@gmail.com>
-Description: Raw MS/MS data of a set of authentic small molecules standards, 
+Description: Raw MS/MS data of a set of authentic phenolics standards, 
   including, phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
   Standards were collected using an Agilent QTOF 6545 and 6546, in negative
-  and positive polarities, and 20 and 60 eV (CE). Standars that were collected
-  using the 6546 QTOF also contains MS/MS datq at 60 and 80 eV (CE). 
+  and positive polarities, and 20 and 40 eV (CE). Standards that were collected
+  using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). 
   The raw MS/MS files will be used jointly with the MS2extract package
   to create in-house MS/MS libaries.
 License: MIT + file LICENSE
