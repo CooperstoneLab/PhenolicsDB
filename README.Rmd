@@ -95,8 +95,7 @@ Positive polarity data collection is in progress
 
 In the `extdata` directory you will find all the `.mzml`
 files for all standards, as well as the structure tables to be used
-jointly with 
-[MS2extract](https://cooperstonelab.github.io/MS2extract/).
+jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 In the following table you can see the list of metabolites we are including
 in this version of the database, as well as in what batch you will find 
