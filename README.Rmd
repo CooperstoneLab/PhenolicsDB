@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-<img src="man/figures/MS2extractDB.png" align="right" height="250" style="float:right; height:250px;"/>
+<img src="man/figures/PhenolicsDB.png" align="right" height="250" style="float:right; height:250px;"/>
 
 # MS2extractDB
 
