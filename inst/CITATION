@@ -1,10 +1,10 @@
-citHeader("To cite MS2extractDB in publications use:")
+citHeader("To cite PhenolicsDB in publications use:")
 
 citEntry(
   entry    = "Manual",
-  title    = "MS2extractDB: phenolics MS/MS (LC-ESI-QTOF) database repository",
+  title    = "PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository",
   author   = c(person("Cristian", "Quiroz-Moreno"),
   person("Jessica", "Cooperstone")),
   year     = "2023",
-  url      = "https://cooperstonelab.github.io/MS2extractDB/"
+  url      = "https://cooperstonelab.github.io/PhenolicsDB/"
 )

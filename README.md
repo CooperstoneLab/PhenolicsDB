@@ -3,13 +3,13 @@
 
 <img src="man/figures/PhenolicsDB.png" align="right" height="250" style="float:right; height:250px;"/>
 
-# MS2extractDB
+# PhenolicsDB
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-`MS2extractDB` is data package that contains raw MS/MS data of authentic
-standards. `MS2extractsDB` raw data files and datasets are aimed to
+`PhenolicsDB` is data package that contains raw MS/MS data of authentic
+standards. `PhenolicsDB` raw data files and datasets are aimed to
 exemplify the use of
 [MS2extract](https://cooperstonelab.github.io/MS2extract/) to create
 in-house metabolite MS/MS libraries. Between the list of metabolites we
@@ -19,12 +19,12 @@ with a Q-TOF mas analyzer.
 
 ## Installation
 
-You can install the development version of MS2extractDB from
-[GitHub](https://github.com/CooperstoneLab/MS2extractDB) with:
+You can install the development version of PhenolicsDB from
+[GitHub](https://github.com/CooperstoneLab/PhenolicsDB) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("CooperstoneLab/MS2extractDB")
+devtools::install_github("CooperstoneLab/PhenolicsDB")
 ```
 
 ## Database description
@@ -55,29 +55,29 @@ following table describe what you expect to find in this database.
 #### Positive polarity
 
 - Positive polarity at 20 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_pos20_6545.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_pos20_6545.csv)
 - Positive polarity at 40 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40_6545.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40_6545.csv)
 
 #### Negative polarity
 
 - Negative polarity at 20 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg20.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg20.csv)
 - Negative polarity at 40 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/batch_read_neg40.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40.csv)
 
 ### Second Batch (Agilent QTOF 6546)
 
 #### Negative polarity
 
 - Negative polarity at 20 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg20_6546_excel.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg20_6546_excel.csv)
 - Negative polarity at 40 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg40_6546_excel.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg40_6546_excel.csv)
 - Negative polarity at 60 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg60_6546_excel.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg60_6546_excel.csv)
 - Negative polarity at 80 eV [(Batch read
-  file)](https://github.com/CooperstoneLab/MS2extractDB/blob/main/inst/extdata/read_neg80_6546_excel.csv)
+  file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg80_6546_excel.csv)
 
 Positive polarity data collection is in progress
 
@@ -168,25 +168,6 @@ will find them.
     #> 72       Peonidin 3-o-glucoside C22H23O11    132    146 (2) QTOF-6546
     #> 73                    Saponarin C27H30O15    148    154 (2) QTOF-6546
 
-# Citing `MS2extractDB`
+# Citing `PhenolicsDB`
 
-To cite `MS2extractDB` in your publications, please use:
-
-``` r
-## Citation info
-citation("MS2extractDB")
-#> To cite MS2extractDB in publications use:
-#> 
-#>   Quiroz-Moreno C, Cooperstone J (2023). _MS2extractDB: phenolics MS/MS
-#>   (LC-ESI-QTOF) database repository_.
-#>   <https://cooperstonelab.github.io/MS2extractDB/>.
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Manual{,
-#>     title = {MS2extractDB: phenolics MS/MS (LC-ESI-QTOF) database repository},
-#>     author = {Cristian Quiroz-Moreno and Jessica Cooperstone},
-#>     year = {2023},
-#>     url = {https://cooperstonelab.github.io/MS2extractDB/},
-#>   }
-```
+To cite `PhenolicsDB` in your publications, please use:
