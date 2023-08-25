@@ -122,7 +122,7 @@ all_std
 To cite `PhenolicsDB` in your publications, please use:
 
 
-```{r "citation", include=FALSE, eval = FALSE}
+```{r "citation"}
 ## Citation info
 citation("PhenolicsDB")
 ```
