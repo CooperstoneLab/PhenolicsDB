@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   MS2extractDB_intro: MS2extractDB_intro.html
-last_built: 2023-08-25T00:32Z
+last_built: 2023-08-25T00:41Z
 urls:
   reference: https://cooperstonelab.github.io/MS2extractDB/reference
   article: https://cooperstonelab.github.io/MS2extractDB/articles
