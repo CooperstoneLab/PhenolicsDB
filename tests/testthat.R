@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(MS2extractDB)
+library(PhenolicsDB)
 
-test_check("MS2extractDB")
+test_check("PhenolicsDB")
