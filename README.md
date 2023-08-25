@@ -171,3 +171,22 @@ will find them.
 # Citing `PhenolicsDB`
 
 To cite `PhenolicsDB` in your publications, please use:
+
+``` r
+## Citation info
+citation("PhenolicsDB")
+#> To cite PhenolicsDB in publications use:
+#> 
+#>   Quiroz-Moreno C, Cooperstone J (2023). _PhenolicsDB: phenolics MS/MS
+#>   (LC-ESI-QTOF) database repository_.
+#>   <https://cooperstonelab.github.io/PhenolicsDB/>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository},
+#>     author = {Cristian Quiroz-Moreno and Jessica Cooperstone},
+#>     year = {2023},
+#>     url = {https://cooperstonelab.github.io/PhenolicsDB/},
+#>   }
+```
