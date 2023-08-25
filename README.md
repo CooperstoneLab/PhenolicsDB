@@ -115,7 +115,7 @@ will find them.
     #> 19                      Glucose   C6H12O6     15     27 (1) QTOF-6545
     #> 20                   D-Sorbitol   C6H14O6     15     27 (1) QTOF-6545
     #> 21                  Quinic acid   C7H12O6     16     27 (1) QTOF-6545
-    #> 22            (E)-Ferrulic acid  C10H10O4    167    177 (1) QTOF-6545
+    #> 22                Ferrulic acid  C10H10O4    167    177 (1) QTOF-6545
     #> 23                   Naringenin  C15H12O5    175    191 (1) QTOF-6545
     #> 24                    Phloretin  C15H14O5    226    246 (1) QTOF-6545
     #> 25                  Kaempferol   C15H10O6    235    250 (1) QTOF-6545
