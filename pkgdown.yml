@@ -3,7 +3,8 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   APhenolicsDB_intro: APhenolicsDB_intro.html
-last_built: 2023-08-26T19:02Z
+  Content: Content.html
+last_built: 2023-08-27T18:02Z
 urls:
   reference: https://cooperstonelab.github.io/MS2extractDB/reference
   article: https://cooperstonelab.github.io/MS2extractDB/articles
