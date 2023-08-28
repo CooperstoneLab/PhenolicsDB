@@ -34,6 +34,7 @@ knitr::opts_chunk$set(
 startTime <- Sys.time()
 library(dplyr)
 library(Rdisop)
+library(ggplot2)
 ## Bib setup
 library("RefManageR")
 
@@ -134,8 +135,6 @@ Therefore, we can display where each phytochemical elutes in terms of
 retention time and *m/z*.
 
 ```{r }
-
-
 data("smiles2classyfire", package = "PhenolicsDB")
 
 all_std <- dplyr::mutate(all_std, 
@@ -154,7 +153,8 @@ ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, color = Superclass_CF)) +
   ggplot2::theme(legend.position = c(0.82, 0.77), 
                  legend.background = element_rect(fill = "white",
                                                   color = "black")) +
-  ggplot2::labs(x = "Retention time (min)", y = "Neutral monoisotopic mass",
+  ggplot2::labs(x = "Retention time (min)",
+                y = "Neutral monoisotopic mass (Da)",
                 title = "Distribution of the metabolites included in PhenolicsDB",
                 subtitle = "Metabolites are colored based on Superclass information from Classifire")
 ```

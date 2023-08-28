@@ -10,3 +10,5 @@
 ^inst/extdata/batch_read_neg20\.xlsx$
 ^inst/extdata/batch_read_neg40_6545\.csv$
 ^inst/extdata/*\.csv$
+^doc$
+^Meta$
