@@ -19,7 +19,7 @@
 "Glucose","C6H12O6","Positive",15,27,"20eV_181_glucose_pos_26.mzML"
 "D-Sorbitol","C6H14O6","Positive",15,27,"20eV_183_sorbitol_pos_28.mzML"
 "Quinic acid","C7H12O6","Positive",16,27,"20eV_191_quinicacid_pos_29.mzML"
-"(E)-Ferrulic acid","C10H10O4","Positive",167,177,"20eV_193_transferulicacid_pos_30.mzML"
+"Ferrulic acid","C10H10O4","Positive",167,177,"20eV_193_transferulicacid_pos_30.mzML"
 "Sinapic acid","C11H12O5","Positive",169,180,"20eV_233_sinapicacid_pos_31.mzML"
 "Naringenin","C1512O5","Positive",175,191,"20eV_271_naringenin_pos_32.mzML"
 "Phloretin","C15H14O5","Positive",226,246,"20eV_273_phloretin_pos_33.mzML"

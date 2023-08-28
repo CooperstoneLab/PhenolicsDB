@@ -1,1 +1,58 @@
-Name,Formula,Ionization_mode,min_rt,max_rt,FileProcyanidin A2,C30H24O12,Positive,163,180,40eV_577_proyanidinA2_pos_56.mzMLRutin,C27H30O16,Positive,162,171,40eV_609_rutin_pos_66.mzML3-Hydroxybenzaldehyde,C7H6O2,Positive,152,166,40eV_121_3OHbenzaldehyde_pos_4.mzML4-Hydroxybenzaldehyde,C7H6O2,Positive,137,170,40eV_121_4OHbenzaldehyde_pos_5.mzMLSalycilic acid,C7H6O3,Positive,180,200,40eV_137_salicylicacid_pos_8.mzMLMalic acid,C4H6O5,Positive,16,42,(E)-Cinamic acid,C9H8O2,Positive,214,228,40eV_147_transcinnamicacid_pos_9.mzML2-3-Dihydroxybenzoic acid,C7H6O4,Positive,135,146,40eV_153_2-3-dihydroxybenzoicacid_pos_10.mzML2-5-Dihydroxybenzoic acid,C7H6O4,Positive,120,140,40eV_153_2-5-dihydroxybenzoicacid_pos_10.mzML2-6-Dihydroxybenzoic acid,C7H6O4,Positive,120,150,40eV_153_2-6--dihydroxybenzoicacid_pos_10.mzML3-4-Dihydroxybenzoic acid,C7H6O4,Positive,95,115,40eV_153_3-4-dihydroxybenzoicacid_pos_10.mzML"2,4,6-Trihydroxybenzaldehyde",C7H6O4,Positive,150,165,40eV_153_2-4-6-trihydroxybenzaldehyde_pos_16.mzMLVanillyl alcohol,C8H11O3,Positive,110,130,40eV_153_vanillylalcohol_pos_17.mzML(E)-p-Coumaric acid,C9H8O3,Positive,170,185,p-Coumaric acid,C9H8O3,Positive,156,170,40eV_163_courmaric_acid_pos_19.mzMLVanillyl acid,C8H8O4,Positive,136,145,40eV_167_vanillicacid_pos_21.mzMLGallic acid,C7H6O5,Positive,60,80,40eV_169_gallicacid_pos_22.mzMLCaffeic acid,C9H8O4,Positive,136,146,40eV_179_caffeicacid_pos_25.mzMLAscorbic acid,C6H8O6,Positive,14,26,40eV_175_ascorbicacid_pos_24.mzMLGlucose,C6H12O6,Positive,15,27,40eV_181_glucose_pos_26.mzMLD-Sorbitol,C6H14O6,Positive,15,27,40eV_183_sorbitol_pos_28.mzMLQuinic acid,C7H12O6,Positive,16,27,40eV_191_quinicacid_pos_29.mzML(E)-Ferrulic acid,C10H10O4,Positive,167,177,40eV_193_transferulicacid_pos_30.mzMLSinapic acid,C11H12O5,Positive,169,180,40eV_233_sinapicacid_pos_31.mzMLNaringenin,C1512O5,Positive,175,191,40eV_271_naringenin_pos_32.mzMLPhloretin,C15H14O5,Positive,226,246,40eV_273_phloretin_pos_33.mzMLKaempferol ,C15H10O6,Positive,235,250,40eV_285_kaempferol_pos_34.mzMLFisetin,C15H10O6,Positive,192,202,40eV_285_fisetin_pos_34.mzML(-)-Epicatechin,C15H14O6,Positive,135,150,40eV_289_epicatechin_pos_36.mzMLCatechin,C15H14O6,Positive,125,140,40eV_289_catechin_pos_35.mzMLKaempferide,C16H12O6,Positive,286,300,40eV_299_4Omethylkaempferol_pos_37.mzMLEllagic acid,C14H6O8,Positive,165,180,40eV_300_ellagicacid_pos_38.mzMLHerbacetin,C15H10O7,Positive,203,220,40eV_301_8OHkaempferol_pos_39.mzMLIsorhamnetin,C16H12O7,Positive,237,255,40eV_315_isorhamnetin_pos_41.mzMLSucrose,C12H22O11,Positive,15,35,40eV_343_sucrose_pos_42.mzMLChlorogenic acid,C16H18O9,Positive,125,145,40eV_355_chlorogenicacid_pos_43.mzMLTrilobatin,C21H24O10,Positive,195,207,40eV_435_trilobatin_pos_45.mzMLPhloridzin,C21H24O10,Positive,185,197,40eV_435_phloridzin_pos_44.mzMLAstragalin,C21H20O11,Positive,173,190,40eV_447_kaempferol3glucoside_pos_48.mzMLQuercitrin,C21H20O11,Positive,175,190,40eV_447_quercetin3rhamnoside_pos_47.mzMLQuercetin,C15H10O7,Positive,209,230,40eV_301_quercetin_pos_40.mzMLCyanidin 3 Glucoside,C21H20O12,Positive,125,145,Ursolic acid,C30H48O3,Positive,428,440,40eV_455_ursolicacid_pos_49.mzMLQuercetin-3-glucoside,C21H21O11,Positive,167,180,40eV_463_quercetin3Bglucoside_pos_50.mzMLIsoquercitrin,C21H20O12,Positive,167,180,40eV_463_quercetin3glucofuranoside_pos_53.mzMLQuercetin-3-galactoside,C21H20O12,Positive,167,180,40eV_463_quercetin3galactoside_pos_51.mzMLCorsolic acid,C30H48O4,Positive,367,375,40eV_471_2alphaOHursolicacid_pos_54.mzMLQuercetin-3-O-glucoronide,C21H18O13,Positive,165,180,40eV_477_quercetinglucoronide_pos_54.mzMLMelezitose,C18H32O16,Positive,15,33,40eV_505_melezitose_pos_55.mzMLProcyanidin B1,C30H26O12,Positive,105,130,40eV_579_proyanidinB1_pos_57.mzMLProcyanidin B2,C30H26O12,Positive,133,145,40eV_579_proyanidinB2_pos_58.mzMLProcyanidin B3,C30H26O12,Positive,114,135,40eV_579_proyanidinB3_pos_59.mzMLProcyanidin,C30H26O13,Positive,150,170,40eV_595_proyanidin_pos_61.mzMLNaringin,C27H23O14,Positive,175,190,40eV_579_naringin_pos_60.mzMLNictoflorin,C27H30O15,Positive,170,185,40eV_kaempferol3rutinoside_pos_62.mzMLKeracyanin,C27H31O15,Positive,145,160,Eriocitrin,C27H32O15,Positive,157,175,40eV_595_eriodictyol7rutinoside_pos_64.mzMLNeoeriocitrin,C27H32O15,Positive,162,175,40eV_595_eriodictyil7neohesperidoside_pos_65.mzMLNarcissin,C28H32O16,Positive,174,186,40eV_623_isorhamnetin3rutinoside_pos_67.mzMLQuercetin 3-O-sophoroside,C27H30O17,Positive,149,160,40eV_625_quercetin3sophoroside_pos_68.mzMLProcyanidin C1,C45H38O18,Positive,140,152,40eV_867_proyanidinC1_pos_69.mzML
+"Name","Formula","Ionization_mode","min_rt","max_rt","File"
+"Procyanidin A2","C30H24O12","Positive",163,180,"20eV_577_proyanidinA2_pos_56.mzML"
+"Rutin","C27H30O16","Positive",162,171,"20eV_609_rutin_pos_66.mzML"
+"3-Hydroxybenzaldehyde","C7H6O2","Positive",152,166,"20eV_121_3OHbenzaldehyde_pos_4.mzML"
+"4-Hydroxybenzaldehyde","C7H6O2","Positive",137,170,"20eV_121_4OHbenzaldehyde_pos_5.mzML"
+"Salycilic acid","C7H6O3","Positive",180,200,"20eV_137_salicylicacid_pos_8.mzML"
+"(E)-Cinamic acid","C9H8O2","Positive",214,228,"20eV_147_transcinnamicacid_pos_9.mzML"
+"2-3-Dihydroxybenzoic acid","C7H6O4","Positive",135,146,"20eV_153_2-3-dihydroxybenzoicacid_pos_10.mzML"
+"2-5-Dihydroxybenzoic acid","C7H6O4","Positive",120,140,"20eV_153_2-5-dihydroxybenzoicacid_pos_10.mzML"
+"2-6-Dihydroxybenzoic acid","C7H6O4","Positive",120,150,"20eV_153_2-6--dihydroxybenzoicacid_pos_10.mzML"
+"3-4-Dihydroxybenzoic acid","C7H6O4","Positive",95,115,"20eV_153_3-4-dihydroxybenzoicacid_pos_10.mzML"
+"2,4,6-Trihydroxybenzaldehyde","C7H6O4","Positive",150,165,"20eV_153_2-4-6-trihydroxybenzaldehyde_pos_16.mzML"
+"Vanillyl alcohol","C8H11O3","Positive",110,130,"20eV_153_vanillylalcohol_pos_17.mzML"
+"p-Coumaric acid","C9H8O3","Positive",156,170,"20eV_163_courmaric_acid_pos_19.mzML"
+"Vanillyl acid","C8H8O4","Positive",136,145,"20eV_167_vanillicacid_pos_21.mzML"
+"Gallic acid","C7H6O5","Positive",60,80,"20eV_169_gallicacid_pos_22.mzML"
+"Caffeic acid","C9H8O4","Positive",136,146,"20eV_179_caffeicacid_pos_25.mzML"
+"Ascorbic acid","C6H8O6","Positive",14,26,"20eV_175_ascorbicacid_pos_24.mzML"
+"Glucose","C6H12O6","Positive",15,27,"20eV_181_glucose_pos_26.mzML"
+"D-Sorbitol","C6H14O6","Positive",15,27,"20eV_183_sorbitol_pos_28.mzML"
+"Quinic acid","C7H12O6","Positive",16,27,"20eV_191_quinicacid_pos_29.mzML"
+"Ferrulic acid","C10H10O4","Positive",167,177,"20eV_193_transferulicacid_pos_30.mzML"
+"Sinapic acid","C11H12O5","Positive",169,180,"20eV_233_sinapicacid_pos_31.mzML"
+"Naringenin","C1512O5","Positive",175,191,"20eV_271_naringenin_pos_32.mzML"
+"Phloretin","C15H14O5","Positive",226,246,"20eV_273_phloretin_pos_33.mzML"
+"Kaempferol ","C15H10O6","Positive",235,250,"20eV_285_kaempferol_pos_34.mzML"
+"Fisetin","C15H10O6","Positive",192,202,"20eV_285_fisetin_pos_34.mzML"
+"(-)-Epicatechin","C15H14O6","Positive",135,150,"20eV_289_epicatechin_pos_36.mzML"
+"Catechin","C15H14O6","Positive",125,140,"20eV_289_catechin_pos_35.mzML"
+"Kaempferide","C16H12O6","Positive",286,300,"20eV_299_4Omethylkaempferol_pos_37.mzML"
+"Ellagic acid","C14H6O8","Positive",165,180,"20eV_300_ellagicacid_pos_38.mzML"
+"Herbacetin","C15H10O7","Positive",203,220,"20eV_301_8OHkaempferol_pos_39.mzML"
+"Isorhamnetin","C16H12O7","Positive",237,255,"20eV_315_isorhamnetin_pos_41.mzML"
+"Sucrose","C12H22O11","Positive",15,35,"20eV_343_sucrose_pos_42.mzML"
+"Chlorogenic acid","C16H18O9","Positive",125,145,"20eV_355_chlorogenicacid_pos_43.mzML"
+"Trilobatin","C21H24O10","Positive",195,207,"20eV_435_trilobatin_pos_45.mzML"
+"Phloridzin","C21H24O10","Positive",185,197,"20eV_435_phloridzin_pos_44.mzML"
+"Astragalin","C21H20O11","Positive",173,190,"20eV_447_kaempferol3glucoside_pos_48.mzML"
+"Quercitrin","C21H20O11","Positive",175,190,"20eV_447_quercetin3rhamnoside_pos_47.mzML"
+"Quercetin","C15H10O7","Positive",209,230,"20eV_301_quercetin_pos_40.mzML"
+"Ursolic acid","C30H48O3","Positive",428,440,"20eV_455_ursolicacid_pos_49.mzML"
+"Quercetin-3-glucoside","C21H21O11","Positive",167,180,"20eV_463_quercetin3Bglucoside_pos_50.mzML"
+"Isoquercitrin","C21H20O12","Positive",167,180,"20eV_463_quercetin3glucofuranoside_pos_53.mzML"
+"Quercetin-3-galactoside","C21H20O12","Positive",167,180,"20eV_463_quercetin3galactoside_pos_51.mzML"
+"Corsolic acid","C30H48O4","Positive",367,375,"20eV_471_2alphaOHursolicacid_pos_54.mzML"
+"Quercetin-3-O-glucoronide","C21H18O13","Positive",165,180,"20eV_477_quercetinglucoronide_pos_54.mzML"
+"Melezitose","C18H32O16","Positive",15,33,"20eV_505_melezitose_pos_55.mzML"
+"Procyanidin B1","C30H26O12","Positive",105,130,"20eV_579_proyanidinB1_pos_57.mzML"
+"Procyanidin B2","C30H26O12","Positive",133,145,"20eV_579_proyanidinB2_pos_58.mzML"
+"Procyanidin B3","C30H26O12","Positive",114,135,"20eV_579_proyanidinB3_pos_59.mzML"
+"Procyanidin","C30H26O13","Positive",150,170,"20eV_595_proyanidin_pos_61.mzML"
+"Naringin","C27H23O14","Positive",175,190,"20eV_579_naringin_pos_60.mzML"
+"Nictoflorin","C27H30O15","Positive",170,185,"20eV_kaempferol3rutinoside_pos_62.mzML"
+"Eriocitrin","C27H32O15","Positive",157,175,"20eV_595_eriodictyol7rutinoside_pos_64.mzML"
+"Neoeriocitrin","C27H32O15","Positive",162,175,"20eV_595_eriodictyil7neohesperidoside_pos_65.mzML"
+"Narcissin","C28H32O16","Positive",174,186,"20eV_623_isorhamnetin3rutinoside_pos_67.mzML"
+"Quercetin 3-O-sophoroside","C27H30O17","Positive",149,160,"20eV_625_quercetin3sophoroside_pos_68.mzML"
+"Procyanidin C1","C45H38O18","Positive",140,152,"20eV_867_proyanidinC1_pos_69.mzML"
