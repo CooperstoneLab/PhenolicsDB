@@ -134,8 +134,12 @@ LC separation is described in [Bilbrey at al.
 Therefore, we can display where each phytochemical elutes in terms of
 retention time and *m/z*.
 
-```{r }
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 data("smiles2classyfire", package = "PhenolicsDB")
+
+title_text <- "Distribution of the metabolites included in PhenolicsDB"
+subtitle_text <- paste("Metabolites are colored based on", 
+                        "Superclass information from Classyfire")
 
 all_std <- dplyr::mutate(all_std, 
               Monoisotopic = sapply(Formula,
@@ -155,8 +159,8 @@ ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, color = Superclass_CF)) +
                                                   color = "black")) +
   ggplot2::labs(x = "Retention time (min)",
                 y = "Neutral monoisotopic mass (Da)",
-                title = "Distribution of the metabolites included in PhenolicsDB",
-                subtitle = "Metabolites are colored based on Superclass information from Classifire")
+                title = title_text,
+                subtitle = subtitle_text)
 ```
 
 
