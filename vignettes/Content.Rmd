@@ -1,5 +1,5 @@
 ---
-title: "Content description of the Phenolics MS/MS repository"
+title: "2 - Content description of the Phenolics MS/MS repository"
 author: 
   - name: Cristian Quiroz-Moreno, Jessica Coopestone
     affiliation:
@@ -15,7 +15,7 @@ output:
 date: "`r doc_date()`"
 package: "`r pkg_ver('PhenolicsDB')`"
 vignette: >
-  %\VignetteIndexEntry{Content description of the Phenolics MS/MS repository}
+  %\VignetteIndexEntry{2 - Content description of the Phenolics MS/MS repository}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
 ---
@@ -123,6 +123,41 @@ all_std <- dplyr::select(all_std, -File, -Ionization_mode)
 all_std
 ```
  
+# Phytochemials in two dimensions
+
+As it was explained above, the chromatographic method employed for the 
+LC separation is described in [Bilbrey at al.
+(2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
+
+Therefore, we can display where each phytochemical elutes in terms of
+retention time and *m/z*.
+
+```{r }
+library(dplyr)
+
+data("smiles2classyfire", package = "PhenolicsDB")
+
+all_std <- dplyr::mutate(all_std, 
+              Monoisotopic = sapply(Formula,
+                                    FUN = function(x){
+                                      getMolecule(x)$exactmass
+                                    } ) )  %>%  dplyr::rowwise() %>% 
+  dplyr::mutate(rt = mean(c(min_rt, max_rt) )/60) %>% 
+  left_join(smiles2classyfire)
+
+all_std %>%# filter(!(Name %in% "Naringenin")) %>% 
+ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, color = Superclass_CF)) +
+  ggplot2::geom_point(alpha = 0.8) + 
+  ggplot2::theme_light() + 
+  ggsci::scale_color_aaas()  +
+  ggplot2::theme(legend.position = c(0.82, 0.77), 
+                 legend.background = element_rect(fill = "white",
+                                                  color = "black")) +
+  ggplot2::labs(x = "Retention time (min)", y = "Neutral monoisotopic mass",
+                title = "Distribution of the metabolites included in PhenolicsDB",
+                subtitle = "Metabolites are colored based on Superclass information from Classifire")
+```
+
 
 # Information about this vignette
 
