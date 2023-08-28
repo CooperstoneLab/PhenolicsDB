@@ -384,3 +384,32 @@
 #' }
 #'
 "metdt_neg80_6546"
+
+#' Classyfire results of the metabolite list
+#'
+#' This data frame contains the results of submitting the smiles chemical
+#' structure to classyfire webpage *(classyfire.wishartlab.com)*.
+#'
+#' You can replicate this query submitted on August 27th 2023 by
+#' exploring the `inst/extdata/classyfire` folder contained in this package.
+#'
+#' In this folder, you will find the following:
+#' * `smiles2classyfire.tsv`: the table submitted to classyfire webpage
+#' * `query_11202230.json`: the json file retrieved from this query
+#' * `classydire_results.csv`: a tidy version of the classyfire results.
+#'
+#' @format smiles2classyfire
+#'
+#' \describe{
+#'   \item{Name}{metabolite name present in this package}
+#'   \item{INCHIKEY}{manually retrieved INCHIKEY}
+#'   \item{SMILES}{manually retrieved smiles}
+#'   \item{SMILES_CF}{smiles reported by classyfire}
+#'   \item{inchikey_CF}{inchikey reported by classyfire}
+#'   \item{Kingdom_CF}{Chemical classification reported by classyfire}
+#'   \item{Superclass_CF}{Chemical classification reported by classyfire}
+#'   \item{Class_CF}{Chemical classification reported by classyfire}
+#'   \item{Subclass_CF}{Chemical classification reported by classyfire}
+#' }
+
+"smiles2classyfire"
