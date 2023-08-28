@@ -22,6 +22,9 @@
     <loc>https://cooperstonelab.github.io/MS2extractDB/index.html</loc>
   </url>
   <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/PhenolicsDB-package.html</loc>
+  </url>
+  <url>
     <loc>https://cooperstonelab.github.io/MS2extractDB/reference/index.html</loc>
   </url>
   <url>
@@ -71,5 +74,8 @@
   </url>
   <url>
     <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos40_6545.html</loc>
+  </url>
+  <url>
+    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/smiles2classyfire.html</loc>
   </url>
 </urlset>
