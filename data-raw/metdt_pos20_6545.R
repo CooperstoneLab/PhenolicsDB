@@ -1,9 +1,11 @@
 ## code to prepare `metdt_pos20_6545` dataset goes here
 
-lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-batchRead_Pos20 <- read.csv("inst/extdata/batch_read_pos20_6545.csv")
+lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv")  %>%
+  filter(!(SMILES %in% ""))
+batchRead_Pos20 <- read.csv("inst/extdata/csv/batch_read_pos20_6545.csv") %>%
+  filter(!(File %in% ""))
 
-library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
+library_info <- dplyr::left_join(batchRead_Pos20, lb_metadata)
 
 metdt_pos20_6545 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M+H]+",

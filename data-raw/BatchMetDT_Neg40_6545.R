@@ -1,7 +1,8 @@
 ## code to prepare `BatchMetDT_Neg40_6545` dataset goes here
 
 
-lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
+lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
+  filter(!(SMILES %in% ""))
 load("data/read_neg40_6545.rda")
 
 library_info <- dplyr::left_join(read_neg40_6545, lb_metadata)

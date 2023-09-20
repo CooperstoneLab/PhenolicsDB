@@ -1,8 +1,10 @@
 ## code to prepare `metdt_neg20_6546` dataset goes here
 
 
-lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-batchRead_Neg20 <- read.csv("inst/extdata/read_neg20_6546_excel.csv") %>%
+lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
+  filter( !(SMILES %in% "") )
+
+batchRead_Neg20 <- read.csv("inst/extdata/csv/read_neg20_6546_excel.csv") %>%
   filter( !(File %in% "") )
 
 library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
