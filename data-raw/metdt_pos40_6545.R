@@ -1,7 +1,10 @@
 ## code to prepare `metdt_pos40_6545` dataset goes here
 
-lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-batchRead_Pos40 <- read.csv("inst/extdata/batch_read_pos40.csv")
+lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
+  filter(!(SMILES %in% ""))
+
+batchRead_Pos40 <- read.csv("inst/extdata/csv/batch_read_pos40.csv") %>%
+  filter(!(File %in% ""))
 
 library_info <- dplyr::left_join(batchRead_Pos40, lb_metadata)
 

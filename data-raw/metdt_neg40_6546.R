@@ -1,7 +1,7 @@
 ## code to prepare `metdt_neg40_6546` dataset goes here
 
-lb_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv")
-batchRead_Neg40 <- read.csv("inst/extdata/read_neg40_6546_excel.csv") %>%
+lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv")
+batchRead_Neg40 <- read.csv("inst/extdata/csv/read_neg40_6546_excel.csv") %>%
   filter( !(File %in% "") )
 
 library_info <- dplyr::left_join(batchRead_Neg40, lb_metadata)
