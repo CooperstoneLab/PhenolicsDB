@@ -113,8 +113,8 @@ them.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-data("metdt_neg20_6545", package = "PhenolicsDB")
-batchRead_Neg20 <-   dplyr::mutate(metdt_neg20_6545, Batch = "(1) QTOF-6545")
+data("read_neg20_6545", package = "PhenolicsDB")
+batchRead_Neg20 <-   dplyr::mutate(read_neg20_6545, Batch = "(1) QTOF-6545")
 
 data("read_neg20_6546", package = "PhenolicsDB")
 read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
@@ -125,7 +125,7 @@ all_std <- dplyr::select(all_std, -File, -Ionization_mode)
 all_std
 ```
  
-# Phytochemials in two dimensions
+# Phytochemicals in two dimensions
 
 As it was explained above, the chromatographic method employed for the 
 LC separation is described in [Bilbrey at al.
@@ -142,22 +142,24 @@ subtitle_text <- paste("Metabolites are colored based on",
                         "Superclass information from Classyfire")
 
 all_std <- dplyr::mutate(all_std, 
-              Monoisotopic = sapply(Formula,
+              Monoisotopic = sapply(all_std$Formula,
                                     FUN = function(x){
-                                      getMolecule(x)$exactmass
+                                      Rdisop::getMolecule(x)$exactmass
                                     } ) )  %>%  dplyr::rowwise() %>% 
   dplyr::mutate(rt = mean(c(min_rt, max_rt) )/60) %>% 
   left_join(smiles2classyfire)
 
 
 std_distribution <- all_std %>%
-  ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, color = Superclass_CF)) +
-  ggplot2::geom_point(alpha = 0.8) + 
+  ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, 
+                                color = Superclass_CF,
+                                shape = Superclass_CF)) +
+  ggplot2::geom_point(alpha = 0.8, size = 2.5) + 
   ggplot2::theme_light() + 
-  ggsci::scale_color_aaas()  +
-#  ggplot2::theme(legend.position = c(0.82, 0.77), 
- #                legend.background = element_rect(fill = "white",
-  #                                                color = "black")) +
+  ggsci::scale_color_frontiers()  +
+  ggplot2::theme(legend.position = c(0.82, 0.77), 
+                legend.background = element_rect(fill = "white",
+                                                  color = "black")) +
   ggplot2::labs(x = "Retention time (min)",
                 y = "Neutral monoisotopic mass (Da)",
                 title = title_text,
