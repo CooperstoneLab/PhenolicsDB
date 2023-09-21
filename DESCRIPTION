@@ -40,6 +40,7 @@ Depends:
     R (>= 4.3)
 LazyData: true
 Imports: 
+    dplyr,
     ggplot2,
     ggsci,
     Rdisop
