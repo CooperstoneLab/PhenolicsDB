@@ -32,9 +32,9 @@ knitr::opts_chunk$set(
 ```{r vignetteSetup, echo=FALSE, message=FALSE, warning = FALSE}
 ## Track time spent on making the vignette
 startTime <- Sys.time()
-library(dplyr)
-library(Rdisop)
-library(ggplot2)
+library('dplyr')
+library('Rdisop')
+library('ggplot2')
 ## Bib setup
 library("RefManageR")
 
