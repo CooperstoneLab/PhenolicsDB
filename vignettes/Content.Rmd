@@ -55,15 +55,16 @@ bib <- c(
 # Package content description
 
 
-This package is intended to archive the raw mzml files of authentic
-standards, as well as structured data frame aimed to be used jointly
+This package is intended to archive the raw `.mzml` files of authentic
+standards, as well as structured data frames aimed to be used jointly
 with [MS2extract](https://cooperstonelab.github.io/MS2extract/), to
 automate the process of creating in-house MS/MS libraries.
 
 This database contains majorly phenolics compounds, aimed to decipher
 and annotate the *Rosacea* metabolome. However, as phenolics are
-expressed in a wide range of organisms, this database can be used in
-multiples scenarios.
+expressed almost ubiquitously found in plants, this database can be used in
+multiples scenarios where researchers think there are potential matching
+with the metabolites present in this database.
 
 We grouped the total database in two batches. The batches are based on
 the instrument we used to acquire the MS/MS data. For the first batch,
@@ -71,32 +72,38 @@ we used an Agilent QTOF *6545*, and for the second batch, we used an
 Agilent QTOF *6546*. In both batches, we collected targeted MS/MS using
 the chromatographic method reported in [Bilbrey at al.
 (2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
-We collected data in negative and positive polarity, and we used 20 and
+We collected the data in negative and positive polarity, and we used 20 and
 40 eV (CE) using collision induced dissociation (CID). Additionally, in
 the second batch, we also collected data at 60 and 80 eV (CE). The
-following table describe what you expect to find in this database.
+following table describe how you can retrieve the tables for importing
+the data, and the metadata attached to each metabolite.
+
+Again, this data package is intended to work with 
+[MS2extract](https://cooperstonelab.github.io/MS2extract/), as its structure
+meets the requirements in 
+[MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 ### First Batch (Agilent QTOF 6545)
 
 | Polarity | Collision Energy (eV) | read_dt table               | metadata table           |
 |--------------|-------------|---------------------|----------------------|
-| Positive | 20                    | \`data("read_pos20_6545")\` | data("metdt_pos20_6545") |
-| Positive | 40                    | \`data("read_pos40_6545")\` | data("metdt_pos40_6545") |
-| Negative | 20                    | \`data("read_neg20_6545")\` | data("metdt_neg20_6545") |
-| Negative | 40                    | \`data("read_neg40_6545")\` | data("metdt_neg40_6545") |
+| Positive | 20                    | `data("read_pos20_6545")` | `data("metdt_pos20_6545")` |
+| Positive | 40                    | `data("read_pos40_6545")` | `data("metdt_pos40_6545")` |
+| Negative | 20                    | `data("read_neg20_6545")` | `data("metdt_neg20_6545")` |
+| Negative | 40                    | `data("read_neg40_6545")` |` data("metdt_neg40_6545")` |
 
 ### Second Batch (Agilent QTOF 6546)
 
 | Polarity | Collision Energy (eV) | read_dt table                 | metadata table           |
 |--------------|-------------|----------------------|----------------------|
-| Positive | 20                    | \`data("read_pos20_6546")\`   | data("metdt_pos20_6546") |
-| Positive | 40                    | \`data("read_pos40_6546")\`   | data("metdt_pos40_6546") |
-| Positive | 60                    | \`data("read_pos6080_6546")\` | data("metdt_pos60_6546") |
-| Positive | 80                    | \`data("read_pos6080_6546")\` | data("metdt_pos80_6546") |
-| Negative | 20                    | \`data("read_neg20_6546")\`   | data("metdt_neg20_6546") |
-| Negative | 40                    | \`data("read_neg40_6546")\`   | data("metdt_neg40_6546") |
-| Negative | 60                    | \`data("read_neg60_6546")\`   | data("metdt_neg60_6546") |
-| Negative | 80                    | \`data("read_neg80_6546")\`   | data("metdt_neg80_6546") |
+| Positive | 20                    | `data("read_pos20_6546")`   | `data("metdt_pos20_6546")` |
+| Positive | 40                    | `data("read_pos40_6546")`   | `data("metdt_pos40_6546")` |
+| Positive | 60                    | `data("read_pos6080_6546")` | `data("metdt_pos60_6546")` |
+| Positive | 80                    | `data("read_pos6080_6546")` | `data("metdt_pos80_6546")` |
+| Negative | 20                    | `data("read_neg20_6546")`   | `data("metdt_neg20_6546")` |
+| Negative | 40                    | `data("read_neg40_6546")`   | `data("metdt_neg40_6546")` |
+| Negative | 60                    | `data("read_neg60_6546")`   | `data("metdt_neg60_6546")` |
+| Negative | 80                    | `data("read_neg80_6546")`   | `data("metdt_neg80_6546")` |
 
 ## List of metabolites
 
