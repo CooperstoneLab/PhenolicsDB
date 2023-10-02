@@ -1,7 +1,10 @@
 ## code to prepare `read_neg20_6546` dataset goes here
 
-read_neg20_6546 <- read.csv("inst/extdata/csv/read_neg20_6546_excel.csv")
+library(tidyverse)
+library(readxl)
 
-read_neg20_6546 <- read_neg20_6546 %>% filter(!(File %in% "") )
+read_neg20_6546 <- read_excel("inst/extdata/batch_read_neg20.xlsx",
+                              sheet = "20 neg") %>%
+  drop_na()
 
 usethis::use_data(read_neg20_6546, overwrite = TRUE)
