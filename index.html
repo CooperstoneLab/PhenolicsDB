@@ -108,7 +108,8 @@
 <p>You can install the development version of PhenolicsDB from <a href="https://github.com/CooperstoneLab/PhenolicsDB" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"CooperstoneLab/PhenolicsDB"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"CooperstoneLab/PhenolicsDB"</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://cooperstonelab.github.io/PhenolicsDB/" class="external-link">"PhenolicsDB"</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="database-description">Database description<a class="anchor" aria-label="anchor" href="#database-description"></a>
@@ -119,45 +120,114 @@
 <div class="section level3">
 <h3 id="first-batch-agilent-qtof-6545">First Batch (Agilent QTOF 6545)<a class="anchor" aria-label="anchor" href="#first-batch-agilent-qtof-6545"></a>
 </h3>
-<div class="section level4">
-<h4 id="positive-polarity">Positive polarity<a class="anchor" aria-label="anchor" href="#positive-polarity"></a>
-</h4>
-<ul>
-<li>Positive polarity at 20 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_pos20_6545.csv" class="external-link">(Batch read file)</a>
-</li>
-<li>Positive polarity at 40 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40_6545.csv" class="external-link">(Batch read file)</a>
-</li>
-</ul>
-</div>
-<div class="section level4">
-<h4 id="negative-polarity">Negative polarity<a class="anchor" aria-label="anchor" href="#negative-polarity"></a>
-</h4>
-<ul>
-<li>Negative polarity at 20 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg20.csv" class="external-link">(Batch read file)</a>
-</li>
-<li>Negative polarity at 40 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40.csv" class="external-link">(Batch read file)</a>
-</li>
-</ul>
-</div>
+<table class="table">
+<colgroup>
+<col width="11%">
+<col width="26%">
+<col width="32%">
+<col width="29%">
+</colgroup>
+<thead><tr class="header">
+<th>Polarity</th>
+<th>Collision Energy (eV)</th>
+<th>read_dt table</th>
+<th>metadata table</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Positive</td>
+<td>20</td>
+<td>`data(“read_pos20_6545”)`</td>
+<td>data(“metdt_pos20_6545”)</td>
+</tr>
+<tr class="even">
+<td>Positive</td>
+<td>40</td>
+<td>`data(“read_pos40_6545”)`</td>
+<td>data(“metdt_pos40_6545”)</td>
+</tr>
+<tr class="odd">
+<td>Negative</td>
+<td>20</td>
+<td>`data(“read_neg20_6545”)`</td>
+<td>data(“metdt_neg20_6545”)</td>
+</tr>
+<tr class="even">
+<td>Negative</td>
+<td>40</td>
+<td>`data(“read_neg40_6545”)`</td>
+<td>data(“metdt_neg40_6545”)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section level3">
 <h3 id="second-batch-agilent-qtof-6546">Second Batch (Agilent QTOF 6546)<a class="anchor" aria-label="anchor" href="#second-batch-agilent-qtof-6546"></a>
 </h3>
-<div class="section level4">
-<h4 id="negative-polarity-1">Negative polarity<a class="anchor" aria-label="anchor" href="#negative-polarity-1"></a>
-</h4>
-<ul>
-<li>Negative polarity at 20 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg20_6546_excel.csv" class="external-link">(Batch read file)</a>
-</li>
-<li>Negative polarity at 40 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg40_6546_excel.csv" class="external-link">(Batch read file)</a>
-</li>
-<li>Negative polarity at 60 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg60_6546_excel.csv" class="external-link">(Batch read file)</a>
-</li>
-<li>Negative polarity at 80 eV <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg80_6546_excel.csv" class="external-link">(Batch read file)</a>
-</li>
-</ul>
-<p>Positive polarity data collection is in progress</p>
-</div>
+<table style="width:100%;" class="table">
+<colgroup>
+<col width="11%">
+<col width="25%">
+<col width="34%">
+<col width="28%">
+</colgroup>
+<thead><tr class="header">
+<th>Polarity</th>
+<th>Collision Energy (eV)</th>
+<th>read_dt table</th>
+<th>metadata table</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Positive</td>
+<td>20</td>
+<td>`data(“read_pos20_6546”)`</td>
+<td>data(“metdt_pos20_6546”)</td>
+</tr>
+<tr class="even">
+<td>Positive</td>
+<td>40</td>
+<td>`data(“read_pos40_6546”)`</td>
+<td>data(“metdt_pos40_6546”)</td>
+</tr>
+<tr class="odd">
+<td>Positive</td>
+<td>60</td>
+<td>`data(“read_pos6080_6546”)`</td>
+<td>data(“metdt_pos60_6546”)</td>
+</tr>
+<tr class="even">
+<td>Positive</td>
+<td>80</td>
+<td>`data(“read_pos6080_6546”)`</td>
+<td>data(“metdt_pos80_6546”)</td>
+</tr>
+<tr class="odd">
+<td>Negative</td>
+<td>20</td>
+<td>`data(“read_neg20_6546”)`</td>
+<td>data(“metdt_neg20_6546”)</td>
+</tr>
+<tr class="even">
+<td>Negative</td>
+<td>40</td>
+<td>`data(“read_neg40_6546”)`</td>
+<td>data(“metdt_neg40_6546”)</td>
+</tr>
+<tr class="odd">
+<td>Negative</td>
+<td>60</td>
+<td>`data(“read_neg60_6546”)`</td>
+<td>data(“metdt_neg60_6546”)</td>
+</tr>
+<tr class="even">
+<td>Negative</td>
+<td>80</td>
+<td>`data(“read_neg80_6546”)`</td>
+<td>data(“metdt_neg80_6546”)</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section level2">
@@ -174,23 +244,23 @@
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3         3-Hydroxybenzaldehyde    C7H6O2    152    166 (1) QTOF-6545</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 4         4-Hydroxybenzaldehyde    C7H6O2    137    170 (1) QTOF-6545</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 5                Salycilic acid    C7H6O3    180    200 (1) QTOF-6545</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6                    Malic acid    C4H6O5     16     42 (1) QTOF-6545</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7              (E)-Cinamic acid    C9H8O2    214    228 (1) QTOF-6545</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8     2-3-Dihydroxybenzoic acid    C7H6O4    135    146 (1) QTOF-6545</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9     2-5-Dihydroxybenzoic acid    C7H6O4    120    140 (1) QTOF-6545</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10    2-6-Dihydroxybenzoic acid    C7H6O4    120    150 (1) QTOF-6545</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11    3-4-Dihydroxybenzoic acid    C7H6O4     95    115 (1) QTOF-6545</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 2,4,6-Trihydroxybenzaldehyde    C7H6O4    150    165 (1) QTOF-6545</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13             Vanillyl alcohol   C8H10O3    110    130 (1) QTOF-6545</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14              p-Coumaric acid    C9H8O3    156    170 (1) QTOF-6545</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15                Vanillyl acid    C8H8O4    136    145 (1) QTOF-6545</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 16                  Gallic acid    C7H6O5     60     80 (1) QTOF-6545</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 17                 Caffeic acid    C9H8O4    136    146 (1) QTOF-6545</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 18                Ascorbic acid    C6H8O6     14     26 (1) QTOF-6545</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 19                      Glucose   C6H12O6     15     27 (1) QTOF-6545</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 20                   D-Sorbitol   C6H14O6     15     27 (1) QTOF-6545</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 21                  Quinic acid   C7H12O6     16     27 (1) QTOF-6545</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 22                Ferrulic acid  C10H10O4    167    177 (1) QTOF-6545</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 6              (E)-Cinamic acid    C9H8O2    214    228 (1) QTOF-6545</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 7     2-3-Dihydroxybenzoic acid    C7H6O4    135    146 (1) QTOF-6545</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 8     2-5-Dihydroxybenzoic acid    C7H6O4    120    140 (1) QTOF-6545</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 9     2-6-Dihydroxybenzoic acid    C7H6O4    120    150 (1) QTOF-6545</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10    3-4-Dihydroxybenzoic acid    C7H6O4     95    115 (1) QTOF-6545</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 2,4,6-Trihydroxybenzaldehyde    C7H6O4    150    165 (1) QTOF-6545</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12             Vanillyl alcohol   C8H11O3    110    130 (1) QTOF-6545</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13              p-Coumaric acid    C9H8O3    156    170 (1) QTOF-6545</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14                Vanillyl acid    C8H8O4    136    145 (1) QTOF-6545</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15                  Gallic acid    C7H6O5     60     80 (1) QTOF-6545</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 16                 Caffeic acid    C9H8O4    136    146 (1) QTOF-6545</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 17                Ascorbic acid    C6H8O6     14     26 (1) QTOF-6545</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 18                      Glucose   C6H12O6     15     27 (1) QTOF-6545</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 19                   D-Sorbitol   C6H14O6     15     27 (1) QTOF-6545</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 20                  Quinic acid   C7H12O6     16     27 (1) QTOF-6545</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 21                Ferrulic acid  C10H10O4    167    177 (1) QTOF-6545</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 22                 Sinapic acid  C11H12O5    169    180 (1) QTOF-6545</span></span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 23                   Naringenin  C15H12O5    175    191 (1) QTOF-6545</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 24                    Phloretin  C15H14O5    226    246 (1) QTOF-6545</span></span>
 <span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 25                  Kaempferol   C15H10O6    235    250 (1) QTOF-6545</span></span>
@@ -209,7 +279,7 @@
 <span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 38                   Quercitrin C21H20O11    175    190 (1) QTOF-6545</span></span>
 <span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 39                    Quercetin  C15H10O7    209    230 (1) QTOF-6545</span></span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 40                 Ursolic acid  C30H48O3    428    440 (1) QTOF-6545</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 41        Quercetin-3-glucoside C21H20O12    167    180 (1) QTOF-6545</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 41        Quercetin-3-glucoside C21H21O11    167    180 (1) QTOF-6545</span></span>
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 42                Isoquercitrin C21H20O12    167    180 (1) QTOF-6545</span></span>
 <span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 43      Quercetin-3-galactoside C21H20O12    167    180 (1) QTOF-6545</span></span>
 <span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 44                Corsolic acid  C30H48O4    367    375 (1) QTOF-6545</span></span>
@@ -219,28 +289,28 @@
 <span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 48               Procyanidin B2 C30H26O12    133    145 (1) QTOF-6545</span></span>
 <span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 49               Procyanidin B3 C30H26O12    114    135 (1) QTOF-6545</span></span>
 <span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 50                  Procyanidin C30H26O13    150    170 (1) QTOF-6545</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 51                     Naringin C27H32O14    175    190 (1) QTOF-6545</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 51                     Naringin C27H23O14    175    190 (1) QTOF-6545</span></span>
 <span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 52                  Nictoflorin C27H30O15    170    185 (1) QTOF-6545</span></span>
 <span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 53                   Eriocitrin C27H32O15    157    175 (1) QTOF-6545</span></span>
 <span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 54                Neoeriocitrin C27H32O15    162    175 (1) QTOF-6545</span></span>
 <span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 55                    Narcissin C28H32O16    174    186 (1) QTOF-6545</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 56               Procyanidin C1 C45H38O18    140    152 (1) QTOF-6545</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 57        D-(-)-Citramalic Acid    C5H8O5     45     60 (2) QTOF-6546</span></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 58                    Esculetin    C9H6O4    139    146 (2) QTOF-6546</span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 59                Isoscopoletin   C10H8O4    165    170 (2) QTOF-6546</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 60                   Scopoletin   C10H8O4    170    176 (2) QTOF-6546</span></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 61                     Apigenin  C15H10O5    233    240 (2) QTOF-6546</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 62                  Tamarixetin   C16H12O    240    250 (2) QTOF-6546</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 63         3-O-methyl Quercetin  C16H12O7    219    228 (2) QTOF-6546</span></span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 64             Chlorogenic Acid  C16H18O9    131    136 (2) QTOF-6546</span></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 65       Cryptochlorogenic Acid  C16H18O9    133    138 (2) QTOF-6546</span></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 66          Neochlorogenic acid  C16H18O9    114    126 (2) QTOF-6546</span></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 67                  Guaijaverin C20H18O11    173    185 (2) QTOF-6546</span></span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 68                   Avicularin C20H18O11    175    182 (2) QTOF-6546</span></span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 69       Cyanidin 3-Galactoside C21H21O11    120    135 (2) QTOF-6546</span></span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 70    Eriodictyol 7-O-glucoside C21H22O11    166    172 (2) QTOF-6546</span></span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 71             Isoquercitroside C21H20O12    167    173 (2) QTOF-6546</span></span>
-<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 72       Peonidin 3-o-glucoside C22H23O11    132    146 (2) QTOF-6546</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 56    Quercetin 3-O-sophoroside C27H30O17    149    160 (1) QTOF-6545</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 57               Procyanidin C1 C45H38O18    140    152 (1) QTOF-6545</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 58        D-(-)-Citramalic Acid    C5H8O5     45     60 (2) QTOF-6546</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 59                    Esculetin    C9H6O4    139    146 (2) QTOF-6546</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 60                Isoscopoletin   C10H8O4    165    170 (2) QTOF-6546</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 61                   Scopoletin   C10H8O4    170    176 (2) QTOF-6546</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 62                     Apigenin  C15H10O5    233    240 (2) QTOF-6546</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 63                  Tamarixetin   C16H12O    240    250 (2) QTOF-6546</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 64         3-O-methyl Quercetin  C16H12O7    219    228 (2) QTOF-6546</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 65             Chlorogenic Acid  C16H18O9    131    136 (2) QTOF-6546</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 66       Cryptochlorogenic Acid  C16H18O9    133    138 (2) QTOF-6546</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 67          Neochlorogenic acid  C16H18O9    114    126 (2) QTOF-6546</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 68                  Guaijaverin C20H18O11    173    185 (2) QTOF-6546</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 69                   Avicularin C20H18O11    175    182 (2) QTOF-6546</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 70       Cyanidin 3-Galactoside C21H21O11    120    135 (2) QTOF-6546</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 71    Eriodictyol 7-O-glucoside C21H22O11    166    172 (2) QTOF-6546</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 72             Isoquercitroside C21H20O12    167    173 (2) QTOF-6546</span></span>
 <span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 73                    Saponarin C27H30O15    148    154 (2) QTOF-6546</span></span></code></pre></div>
 </div>
 </div>
