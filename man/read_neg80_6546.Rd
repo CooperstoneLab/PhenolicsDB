@@ -7,7 +7,7 @@
 \format{
 read_neg80_6546
 
-A data frame containing 58 observations (metabolites) and 6 columns
+A data frame containing 16 observations (metabolites) and 6 columns
 \describe{
 \item{Name}{character, metabolite name}
 \item{Formula}{character, chemical formula of the metabolite}

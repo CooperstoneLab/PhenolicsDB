@@ -12,3 +12,5 @@
 ^inst/extdata/*\.csv$
 ^doc$
 ^Meta$
+^inst/extdata/~$batch_msp_metadata\.xlsx$
+^inst/extdata/~$batch_read_neg20\.xlsx$
