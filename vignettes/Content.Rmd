@@ -55,76 +55,75 @@ bib <- c(
 
 
 This package is intended to archive the raw mzml files of authentic
-standards, as well as structured data frame aimed to be used jointly with
-[MS2extract](https://cooperstonelab.github.io/MS2extract/), to automate
-the process of creating in-house MS/MS libraries.
+standards, as well as structured data frame aimed to be used jointly
+with [MS2extract](https://cooperstonelab.github.io/MS2extract/), to
+automate the process of creating in-house MS/MS libraries.
 
 This database contains majorly phenolics compounds, aimed to decipher
 and annotate the *Rosacea* metabolome. However, as phenolics are
 expressed in a wide range of organisms, this database can be used in
 multiples scenarios.
 
-We grouped the total database in two batches. The batches are based
-on the instrument we used to acquire the MS/MS data. For the first
-batch, we used an Agilent QTOF *6545*, and for the second batch, we used
-an Agilent QTOF *6546*. In both batches, we collected targeted MS/MS
-using the chromatographic method reported in [Bilbrey at al.
+We grouped the total database in two batches. The batches are based on
+the instrument we used to acquire the MS/MS data. For the first batch,
+we used an Agilent QTOF *6545*, and for the second batch, we used an
+Agilent QTOF *6546*. In both batches, we collected targeted MS/MS using
+the chromatographic method reported in [Bilbrey at al.
 (2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
-We collected data in negative and positive polarity,
-and we used 20 and 40 eV (CE) using collision induced dissociation (CID).
-Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following table
-describe what you expect to find in this database.
+We collected data in negative and positive polarity, and we used 20 and
+40 eV (CE) using collision induced dissociation (CID). Additionally, in
+the second batch, we also collected data at 60 and 80 eV (CE). The
+following table describe what you expect to find in this database.
 
-##  First Batch (Agilent QTOF 6545)
+### First Batch (Agilent QTOF 6545)
 
-### Positive polarity
+| Polarity | Collision Energy (eV) | read_dt table               | metadata table           |
+|--------------|-------------|---------------------|----------------------|
+| Positive | 20                    | \`data("read_pos20_6545")\` | data("metdt_pos20_6545") |
+| Positive | 40                    | \`data("read_pos40_6545")\` | data("metdt_pos40_6545") |
+| Negative | 20                    | \`data("read_neg20_6545")\` | data("metdt_neg20_6545") |
+| Negative | 40                    | \`data("read_neg40_6545")\` | data("metdt_neg40_6545") |
 
-* Positive polarity at 20 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_pos20_6545.csv) 
-* Positive polarity at 40 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40_6545.csv) 
+### Second Batch (Agilent QTOF 6546)
 
-### Negative polarity
+| Polarity | Collision Energy (eV) | read_dt table                 | metadata table           |
+|--------------|-------------|----------------------|----------------------|
+| Positive | 20                    | \`data("read_pos20_6546")\`   | data("metdt_pos20_6546") |
+| Positive | 40                    | \`data("read_pos40_6546")\`   | data("metdt_pos40_6546") |
+| Positive | 60                    | \`data("read_pos6080_6546")\` | data("metdt_pos60_6546") |
+| Positive | 80                    | \`data("read_pos6080_6546")\` | data("metdt_pos80_6546") |
+| Negative | 20                    | \`data("read_neg20_6546")\`   | data("metdt_neg20_6546") |
+| Negative | 40                    | \`data("read_neg40_6546")\`   | data("metdt_neg40_6546") |
+| Negative | 60                    | \`data("read_neg60_6546")\`   | data("metdt_neg60_6546") |
+| Negative | 80                    | \`data("read_neg80_6546")\`   | data("metdt_neg80_6546") |
 
-* Negative polarity at 20 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg20.csv) 
-* Negative polarity at 40 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/batch_read_neg40.csv) 
+## List of metabolites
 
-##  Second Batch (Agilent QTOF 6546)
+In the `extdata` directory you will find all the `.mzml` files for all
+standards, as well as the structure tables to be used jointly with
+[MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
-### Negative polarity
-
-* Negative polarity at 20 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg20_6546_excel.csv)
-* Negative polarity at 40 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg40_6546_excel.csv)
-* Negative polarity at 60 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg60_6546_excel.csv)
-* Negative polarity at 80 eV [(Batch read file)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/read_neg80_6546_excel.csv)
-
-Positive polarity data collection is in progress
-
-
-# List of metabolites
-
-In the `extdata` directory you will find all the `.mzml`
-files for all standards, as well as the structure tables to be used
-jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
-
-In the following table you can see the list of metabolites we are including
-in this version of the database, as well as in what batch you will find 
-them.
+In the following table you can see the list of metabolites we are
+including in this version of the database, as well as in what batch you
+will find them.
 
 > Disclaimer: Metabolites with no reported data file have not MS/MS data
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-data("read_neg20_6545", package = "PhenolicsDB")
+data("read_neg20_6545")
 batchRead_Neg20 <-   dplyr::mutate(read_neg20_6545, Batch = "(1) QTOF-6545")
 
-data("read_neg20_6546", package = "PhenolicsDB")
+data("read_neg20_6546")
 read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
+
 all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
 
 
 all_std <- dplyr::select(all_std, -File, -Ionization_mode)
 all_std
 ```
- 
+
 # Phytochemicals in two dimensions
 
 As it was explained above, the chromatographic method employed for the 
