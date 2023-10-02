@@ -254,19 +254,19 @@ will find them.</p>
 <p>Disclaimer: Metabolites with no reported data file have not MS/MS
 data</p>
 </blockquote>
-<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 74 × 5</span></span></span>
-<span><span class="co">#&gt;    Name                      Formula   min_rt max_rt Batch        </span></span>
-<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Procyanidin A2            C30H24O12    163    180 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Rutin                     C27H30O16    162    171 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 3-Hydroxybenzaldehyde     C7H6O2       152    166 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 4-Hydroxybenzaldehyde     C7H6O2       137    170 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Salycilic acid            C7H6O3       180    200 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Malic acid                C4H6O5        16     42 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> (E)-Cinamic acid          C9H8O2       214    228 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 2-3-Dihydroxybenzoic acid C7H6O4       135    146 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 2-5-Dihydroxybenzoic acid C7H6O4       120    140 (1) QTOF-6545</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 2-6-Dihydroxybenzoic acid C7H6O4       120    150 (1) QTOF-6545</span></span>
+<pre><code><span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 74 × 6</span></span></span>
+<span><span class="co">#&gt;    Name                      Formula   min_rt max_rt COLLISIONENERGY Batch      </span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Procyanidin A2            C30H24O12    163    180 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Rutin                     C27H30O16    162    171 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 3-Hydroxybenzaldehyde     C7H6O2       152    166 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 4-Hydroxybenzaldehyde     C7H6O2       137    170 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Salycilic acid            C7H6O3       180    200 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Malic acid                C4H6O5        16     42 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> (E)-Cinamic acid          C9H8O2       214    228 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 2-3-Dihydroxybenzoic acid C7H6O4       135    146 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 2-5-Dihydroxybenzoic acid C7H6O4       120    140 20 eV           (1) QTOF-6…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 2-6-Dihydroxybenzoic acid C7H6O4       120    150 20 eV           (1) QTOF-6…</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 64 more rows</span></span></span></code></pre>
 </div>
 </div>
@@ -293,9 +293,9 @@ retention time and <em>m/z</em>.</p>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://yihui.org/knitr/" class="external-link">"knitr"</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/knit.html" class="external-link">knit</a></span><span class="op">(</span><span class="st">"Content.Rmd"</span>, tangle <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>Date the vignette was generated.</p>
-<pre><code><span><span class="co">#&gt; [1] "2023-10-02 20:01:58 UTC"</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; [1] "2023-10-02 20:34:59 UTC"</span></span></code></pre>
 <p>Wallclock time spent generating the vignette.</p>
-<pre><code><span><span class="co">#&gt; Time difference of 1.905 secs</span></span></code></pre>
+<pre><code><span><span class="co">#&gt; Time difference of 1.712 secs</span></span></code></pre>
 <p><code>R</code> session information.</p>
 <pre><code><span><span class="co">#&gt; <span style="color: #00BBBB; font-weight: bold;">─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────</span></span></span>
 <span><span class="co">#&gt;  <span style="color: #555555; font-style: italic;">setting </span> <span style="color: #555555; font-style: italic;">value</span></span></span>
