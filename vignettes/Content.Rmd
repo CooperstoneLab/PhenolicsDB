@@ -49,6 +49,7 @@ bib <- c(
     testthat = citation("testthat")[1],
     PhenolicsDB = citation("PhenolicsDB")[1]
 )
+
 ```
 
 # Package content description
@@ -111,10 +112,10 @@ will find them.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-data("read_neg20_6545")
+data("read_neg20_6545", package = "PhenolicsDB")
 batchRead_Neg20 <-   dplyr::mutate(read_neg20_6545, Batch = "(1) QTOF-6545")
 
-data("read_neg20_6546")
+data("read_neg20_6546", package = "PhenolicsDB")
 read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
 
 all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
