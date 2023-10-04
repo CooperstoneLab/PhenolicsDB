@@ -1,15 +1,16 @@
 ## code to prepare `read_pos40_6545` dataset goes here
 
+library(tidyverse)
+library(readxl)
 
+read_pos40_6545 <-  read_excel("inst/extdata/batch_read_neg20.xlsx",
+                               sheet = "40 pos") %>%
+  drop_na()  %>%
+  mutate(COLLISIONENERGY = "40 eV")
 
-# Export sheet "20 pos" from batch_readneg20.xlsx
-read_pos40_6545 <- read.csv("inst/extdata/csv/batch_read_pos40.csv") %>%
-  filter(!(File %in% "") )
-
-read_pos40_6545 %>%
-  mutate(Filepath = paste0("inst/extdata/QTOF_6545/Pos/40/", File) ) %>%
-  mutate(FileExis = file.exists(.$Filepath))
-
+check <- read_pos40_6545 %>%
+  mutate(File = paste0("inst/extdata/QTOF_6545/Pos/40/",File)) %>%
+  mutate(FileExist = file.exists(File))
 
 #write.csv(read_pos20_6545, file = "inst/extdata/batch_read_pos40.csv",row.names = F)
 
