@@ -1,17 +1,15 @@
 ## code to prepare `metdt_pos40_6545` dataset goes here
 
-lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
-  filter(!(SMILES %in% ""))
+lb_metadata <- read_xlsx("inst/extdata/batch_msp_metadata.xlsx", sheet = 1)
 
-batchRead_Pos40 <- read.csv("inst/extdata/csv/batch_read_pos40.csv") %>%
-  filter(!(File %in% ""))
+load("data/read_pos40_6545.rda")
 
-library_info <- dplyr::left_join(batchRead_Pos40, lb_metadata)
+library_info <- dplyr::left_join(read_pos40_6545, lb_metadata)
 
 metdt_pos40_6545 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M+H]+",
                 COLLISIONENERGY = "40eV",
-                INSTRUMENTTYPE = "LC-ESI-QTOF",
+                INSTRUMENTTYPE = "ESI-QTOF",
                 IONMODE= "Positive") %>%
   dplyr::select(-Ionization_mode, -min_rt, -max_rt, -File) %>%
   dplyr::rename(NAME = Name, FORMULA = Formula)
