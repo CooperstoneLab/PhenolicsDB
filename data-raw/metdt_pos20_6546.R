@@ -1,11 +1,11 @@
 ## code to prepare `metdt_pos20_6546` dataset goes here
 
-# Reading data
-data("read_pos20_6546")
 
+lb_metadata <- read_xlsx("inst/extdata/batch_msp_metadata.xlsx", sheet = 1)
+
+load("data/read_pos20_6546.rda")
 #reading metadata
-lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv")  %>%
-  filter(!(SMILES %in% ""))
+
 
 
 library_info <- dplyr::left_join(read_pos20_6546, lb_metadata)
