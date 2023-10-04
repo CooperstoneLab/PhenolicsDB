@@ -1,18 +1,16 @@
 ## code to prepare `metdt_neg20_6546` dataset goes here
 
 
-lb_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
-  filter( !(SMILES %in% "") )
+lb_metadata <- read_xlsx("inst/extdata/batch_msp_metadata.xlsx", sheet = 1)
 
-batchRead_Neg20 <- read.csv("inst/extdata/csv/read_neg20_6546_excel.csv") %>%
-  filter( !(File %in% "") )
+load("data/read_neg20_6546.rda")
 
-library_info <- dplyr::left_join(batchRead_Neg20, lb_metadata)
+library_info <- dplyr::left_join(read_neg20_6546, lb_metadata)
 
 metdt_neg20_6546 <- library_info %>%
   dplyr::mutate(PRECURSORTYPE = "[M-H]-",
                 COLLISIONENERGY = "20eV",
-                INSTRUMENTTYPE = "LC-ESI-QTOF",
+                INSTRUMENTTYPE = "ESI-QTOF",
                 IONMODE= "Negative") %>%
   dplyr::select(-Ionization_mode, -min_rt, -max_rt, -File) %>%
   dplyr::rename(NAME = Name, FORMULA = Formula)
