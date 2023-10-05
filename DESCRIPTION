@@ -14,12 +14,12 @@ Authors@R: c(
            )
 Mantainer: Cristian Quiroz-Moreno <cristianquirozd1997@gmail.com>
 Description: Raw MS/MS data of a set of authentic phenolics standards, 
-  including, phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
-  Standards were collected using an Agilent QTOF 6545 and 6546, in negative
+  including phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
+  Standards were collected using an Agilent QTOF 6545 and a 6546, in negative
   and positive polarities, and 20 and 40 eV (CE). Standards that were collected
   using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). 
   The raw MS/MS files will be used jointly with the MS2extract package
-  to create in-house MS/MS libaries.
+  to create in-house MS/MS libraries.
 License: MIT + file LICENSE
 URL: https://cooperstonelab.github.io/PhenolicsDB/
 BugReports: https://github.com/CooperstoneLab/PhenolicsDB/issues
