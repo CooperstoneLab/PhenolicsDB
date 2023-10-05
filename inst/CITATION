@@ -6,5 +6,6 @@ citEntry(
   author   = c(person("Cristian", "Quiroz-Moreno"),
   person("Jessica", "Cooperstone")),
   year     = "2023",
+  doi      = "10.5281/zenodo.8475",
   url      = "https://cooperstonelab.github.io/PhenolicsDB/"
 )
