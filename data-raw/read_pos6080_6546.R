@@ -6,7 +6,7 @@ library(readxl)
 
 read_pos6080_6546 <- read_xlsx("inst/extdata/batch_read_neg20.xlsx",
                              sheet = "6080 pos 6546") %>%
-  drop_na()
+  drop_na() %>% mutate(COLLISIONENERGY = "60 eV")
 
 
 read_pos6080_6546 %>%
