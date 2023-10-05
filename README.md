@@ -6,6 +6,10 @@
 # PhenolicsDB
 
 <!-- badges: start -->
+<!-- Zenodo badge -->
+
+[![DOI](https://zenodo.org/badge/676239711.svg)](https://zenodo.org/badge/latestdoi/676239711)
+
 <!-- badges: end -->
 
 `PhenolicsDB` is data package that contains raw MS/MS data of authentic
@@ -110,7 +114,8 @@ citation("PhenolicsDB")
 #> To cite PhenolicsDB in publications use:
 #> 
 #>   Quiroz-Moreno C, Cooperstone J (2023). _PhenolicsDB: phenolics MS/MS
-#>   (LC-ESI-QTOF) database repository_.
+#>   (LC-ESI-QTOF) database repository_. doi:10.5281/zenodo.8475
+#>   <https://doi.org/10.5281/zenodo.8475>,
 #>   <https://cooperstonelab.github.io/PhenolicsDB/>.
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -119,6 +124,7 @@ citation("PhenolicsDB")
 #>     title = {PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository},
 #>     author = {Cristian Quiroz-Moreno and Jessica Cooperstone},
 #>     year = {2023},
+#>     doi = {10.5281/zenodo.8475},
 #>     url = {https://cooperstonelab.github.io/PhenolicsDB/},
 #>   }
 ```
