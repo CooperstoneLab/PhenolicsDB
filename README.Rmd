@@ -116,7 +116,6 @@ all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)
 all_std <- dplyr::select(all_std, -File, -Ionization_mode)
 all_std
 ```
-
 # Citing `PhenolicsDB`
 
 To cite `PhenolicsDB` in your publications, please use:
