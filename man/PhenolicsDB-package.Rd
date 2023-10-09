@@ -6,7 +6,7 @@
 \alias{PhenolicsDB-package}
 \title{PhenolicsDB: PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository}
 \description{
-Raw MS/MS data of a set of authentic phenolics standards, including, phenolic acids, flavonoids, dihydrochalcones, carbohydrates. Standards were collected using an Agilent QTOF 6545 and 6546, in negative and positive polarities, and 20 and 40 eV (CE). Standards that were collected using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). The raw MS/MS files will be used jointly with the MS2extract package to create in-house MS/MS libaries.
+Raw MS/MS data of a set of authentic phenolics standards, including phenolic acids, flavonoids, dihydrochalcones, carbohydrates. Standards were collected using an Agilent QTOF 6545 and a 6546, in negative and positive polarities, and 20 and 40 eV (CE). Standards that were collected using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). The raw MS/MS files will be used jointly with the MS2extract package to create in-house MS/MS libraries.
 }
 \seealso{
 Useful links:
