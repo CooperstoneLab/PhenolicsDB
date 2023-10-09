@@ -511,6 +511,56 @@
 #'
 "read_pos6080_6546"
 
+
+
+#' Metabolite information to batch read in positive polarity at 60 eV CE
+#'
+#' This data frame contains the basic info required to batch import multiple
+#' files to create in-house libraries by using the
+#' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package.
+#'
+#' Metabolites included in this list were analyzed by targeted methods using
+#' an Agilent 6546 QTOF.
+#'
+#' @format read_pos60_6546
+#'
+#' A data frame containing 10 observations (metabolites) and 6 columns
+#' \describe{
+#'   \item{Name}{character, metabolite name}
+#'   \item{Formula}{character, chemical formula of the metabolite}
+#'   \item{Ionizatioin_move}{character, the polarity (Positive or Negative)}
+#'   \item{min_rt}{integer, minimum retention time of metabolite elution (seconds)}
+#'   \item{max_rt}{integer, maximum retention time of metabolite elution (seconds)}
+#'   \item{File}{character, filename not including the path}
+#' }
+#'
+"read_pos60_6546"
+
+
+#' Metabolite information to batch read in positive polarity at 80 eV CE
+#'
+#' This data frame contains the basic info required to batch import multiple
+#' files to create in-house libraries by using the
+#' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package.
+#'
+#' Metabolites included in this list were analyzed by targeted methods using
+#' an Agilent 6546 QTOF.
+#'
+#' @format read_pos80_6546
+#'
+#' A data frame containing 10 observations (metabolites) and 6 columns
+#' \describe{
+#'   \item{Name}{character, metabolite name}
+#'   \item{Formula}{character, chemical formula of the metabolite}
+#'   \item{Ionizatioin_move}{character, the polarity (Positive or Negative)}
+#'   \item{min_rt}{integer, minimum retention time of metabolite elution (seconds)}
+#'   \item{max_rt}{integer, maximum retention time of metabolite elution (seconds)}
+#'   \item{File}{character, filename not including the path}
+#' }
+#'
+"read_pos80_6546"
+
+
 #' Metabolite library metadata in negative polarity at 60 eV second batch
 #'
 #' This data frame contains the metabolite metadata to be included
