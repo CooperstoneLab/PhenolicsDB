@@ -26,7 +26,7 @@ A data frame containing 152 observations (metabolites) and eight columns
 \item{GENUS}{character, genus}
 \item{SPECIES}{character, species}
 \item{STRAIN}{character, strain}
-\item{CASNUMBER}{numeric, casnumber }
+\item{CASNUMBER}{numeric, CAS number }
 \item{PI}{character, principa investigator}
 }
 }

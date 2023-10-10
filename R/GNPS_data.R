@@ -28,7 +28,7 @@
 #'   \item{GENUS}{character, genus}
 #'   \item{SPECIES}{character, species}
 #'   \item{STRAIN}{character, strain}
-#'   \item{CASNUMBER}{numeric, casnumber }
+#'   \item{CASNUMBER}{numeric, CAS number }
 #'   \item{PI}{character, principa investigator}
 #' }
 "metdt_GNPS_pos"
@@ -63,7 +63,7 @@
 #'   \item{GENUS}{character, genus}
 #'   \item{SPECIES}{character, species}
 #'   \item{STRAIN}{character, strain}
-#'   \item{CASNUMBER}{numeric, casnumber }
+#'   \item{CASNUMBER}{numeric, CAS number }
 #'   \item{PI}{character, principa investigator}
 #' }
 "metdt_GNPS_neg"
