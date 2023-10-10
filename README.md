@@ -66,16 +66,16 @@ following table describe what you expect to find in this database.
 
 ### Second Batch (Agilent QTOF 6546)
 
-| Polarity | Collision Energy (eV) | read_dt table               | metadata table             |
-|----------|-----------------------|-----------------------------|----------------------------|
-| Positive | 20                    | `data("read_pos20_6546")`   | `data("metdt_pos20_6546")` |
-| Positive | 40                    | `data("read_pos40_6546")`   | `data("metdt_pos40_6546")` |
-| Positive | 60                    | `data("read_pos6080_6546")` | `data("metdt_pos60_6546")` |
-| Positive | 80                    | `data("read_pos6080_6546")` | `data("metdt_pos80_6546")` |
-| Negative | 20                    | `data("read_neg20_6546")`   | `data("metdt_neg20_6546")` |
-| Negative | 40                    | `data("read_neg40_6546")`   | `data("metdt_neg40_6546")` |
-| Negative | 60                    | `data("read_neg60_6546")`   | `data("metdt_neg60_6546")` |
-| Negative | 80                    | `data("read_neg80_6546")`   | `data("metdt_neg80_6546")` |
+| Polarity | Collision Energy (eV) | read_dt table             | metadata table             |
+|----------|-----------------------|---------------------------|----------------------------|
+| Positive | 20                    | `data("read_pos20_6546")` | `data("metdt_pos20_6546")` |
+| Positive | 40                    | `data("read_pos40_6546")` | `data("metdt_pos40_6546")` |
+| Positive | 60                    | `data("read_pos60_6546")` | `data("metdt_pos60_6546")` |
+| Positive | 80                    | `data("read_pos80_6546")` | `data("metdt_pos80_6546")` |
+| Negative | 20                    | `data("read_neg20_6546")` | `data("metdt_neg20_6546")` |
+| Negative | 40                    | `data("read_neg40_6546")` | `data("metdt_neg40_6546")` |
+| Negative | 60                    | `data("read_neg60_6546")` | `data("metdt_neg60_6546")` |
+| Negative | 80                    | `data("read_neg80_6546")` | `data("metdt_neg80_6546")` |
 
 ## List of metabolites
 
