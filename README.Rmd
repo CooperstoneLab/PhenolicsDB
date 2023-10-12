@@ -33,7 +33,7 @@ exemplify the use of
 in-house metabolite MS/MS libraries. Between the list of metabolites we
 include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and
 others. Tandem mass spectrometry data was collected using a LC coupled
-with a Q-TOF mas analyzer.
+with a Q-TOF mass analyzer.
 
 ## Installation
 
@@ -56,7 +56,7 @@ automate the process of creating in-house MS/MS libraries.
 This database contains majorly phenolics compounds, aimed to decipher
 and annotate the *Rosacea* metabolome. However, as phenolics are
 expressed in a wide range of organisms, this database can be used in
-multiples scenarios.
+multiple scenarios.
 
 We grouped the total database in two batches. The batches are based on
 the instrument we used to acquire the MS/MS data. For the first batch,
@@ -67,12 +67,13 @@ the chromatographic method reported in [Bilbrey at al.
 We collected data in negative and positive polarity, and we used 20 and
 40 eV (CE) using collision induced dissociation (CID). Additionally, in
 the second batch, we also collected data at 60 and 80 eV (CE). The
-following table describe what you expect to find in this database.
+following tables describe the set of data frames that you can load and use
+with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 
 ### First Batch (Agilent QTOF 6545)
 
-| Polarity | Collision Energy (eV) | read_dt table               | metadata table           |
+| Polarity | Collision Energy (eV) | `read_dt` table               | metadata table           |
 |--------------|-------------|---------------------|----------------------|
 | Positive | 20                    | `data("read_pos20_6545")` | `data("metdt_pos20_6545")` |
 | Positive | 40                    | `data("read_pos40_6545")` | `data("metdt_pos40_6545")` |
@@ -104,19 +105,23 @@ will find them.
 
 > Disclaimer: Metabolites with no reported data file have not MS/MS data
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+library(PhenolicsDB)
 
-data("read_neg20_6545")
-batchRead_Neg20 <-   dplyr::mutate(read_neg20_6545, Batch = "(1) QTOF-6545")
+read_met_neg <- dplyr::bind_rows(read_neg20_6545, read_neg40_6545, 
+                                 read_neg20_6546, read_neg40_6546, 
+                                 read_neg60_6546, read_neg80_6546)
 
-data("read_neg20_6546")
-read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
+all_std <- read_met_neg |> 
+  dplyr::mutate(`rt (s)` = round((min_rt+max_rt)/2, 0) ) |> 
+  dplyr::distinct(Name, .keep_all = T) |> 
+  dplyr::mutate(Monoisotopic_mass = 
+                  purrr::map_dbl(Formula,
+                                 \(x) Rdisop::getMolecule(x)$exactmass  ) ) |> 
+  dplyr::select(Name, Formula, Monoisotopic_mass, `rt (s)`) |> 
+  dplyr::arrange( Monoisotopic_mass, Name, -`rt (s)`)
 
-all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
-
-
-all_std <- dplyr::select(all_std, -File, -Ionization_mode)
-all_std
+knitr::kable(all_std)
 ```
 # Citing `PhenolicsDB`
 

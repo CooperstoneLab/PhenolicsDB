@@ -5,6 +5,7 @@
 #' @importFrom dplyr mutate
 #' @importFrom ggplot2 ggplot
 #' @importFrom ggsci scale_color_aaas
+#' @importFrom purrr map_dbl
 #' @importFrom Rdisop getMolecule
 ## usethis namespace: end
 NULL
