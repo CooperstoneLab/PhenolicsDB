@@ -1,7 +1,7 @@
 Package: PhenolicsDB
 Title: PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository
-Version: 0.03.0
-Date: 2023-10-09
+Version: 0.04.0
+Date: 2023-10-11
 Authors@R: c(
     person("Cristian", "Quiroz-Moreno",
            email = "cristianquirozd1997@gmail.com",
@@ -14,10 +14,9 @@ Authors@R: c(
            )
 Mantainer: Cristian Quiroz-Moreno <cristianquirozd1997@gmail.com>
 Description: Raw MS/MS data of a set of authentic phenolics standards, 
-  including phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
-  Standards were collected using an Agilent QTOF 6545 and a 6546, in negative
-  and positive polarities, and 20 and 40 eV (CE). Standards that were collected
-  using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). 
+  including phenolic acids, flavonoids, dihydrochalcones, and carbohydrates. 
+  MS/MS data was collected using an Agilent QTOF 6545 and a 6546, in negative
+  and positive polarities, and 20 and 40 eV (CE).  
   The raw MS/MS files will be used jointly with the MS2extract package
   to create in-house MS/MS libraries.
 License: MIT + file LICENSE
@@ -43,4 +42,5 @@ Imports:
     dplyr,
     ggplot2,
     ggsci,
+    purrr,
     Rdisop

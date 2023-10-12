@@ -3,7 +3,7 @@
 library(rjson)
 
 classification <- rjson::fromJSON(file = "inst/extdata/classyfire/query_11202230.json")
-met_metadata <- read.csv("inst/extdata/batch_msp_metadata.csv") %>%
+met_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
   filter(!(INCHIKEY %in% ""))
 
 
@@ -28,7 +28,8 @@ classyfire_table <- function(json) {
 
 classyfire_results <- classyfire_table(classification) %>% bind_rows()
 
-smiles2classyfire <- bind_cols(met_metadata, classyfire_results)
+smiles2classyfire <- bind_cols(met_metadata, classyfire_results) |>
+  mutate(Name = stringr::str_trim(Name))
 
 write.csv(smiles2classyfire,
       file = "inst/extdata/classyfire/classyfire_results.csv", row.names = F)

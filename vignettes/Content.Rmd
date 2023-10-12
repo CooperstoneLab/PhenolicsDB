@@ -62,9 +62,9 @@ automate the process of creating in-house MS/MS libraries.
 
 This database contains majorly phenolics compounds, aimed to decipher
 and annotate the *Rosacea* metabolome. However, as phenolics are
-expressed almost ubiquitously found in plants, this database can be used in
-multiples scenarios where researchers think there are potential matching
-with the metabolites present in this database.
+expressed almost ubiquitously in plants, this database can be used in
+multiples scenarios where researchers rationalize `PhenolicsDB` could
+help to annotate metabolites present in their dataset.
 
 We grouped the total database in two batches. The batches are based on
 the instrument we used to acquire the MS/MS data. For the first batch,
@@ -73,19 +73,19 @@ Agilent QTOF *6546*. In both batches, we collected targeted MS/MS using
 the chromatographic method reported in [Bilbrey at al.
 (2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
 We collected the data in negative and positive polarity, and we used 20 and
-40 eV (CE) using collision induced dissociation (CID). Additionally, in
-the second batch, we also collected data at 60 and 80 eV (CE). The
-following table describe how you can retrieve the tables for importing
-the data, and the metadata attached to each metabolite.
+40 eV (CE), using collision induced dissociation (CID). Additionally, in
+the second batch, we also collected data at 60 and 80 eV (CE). 
 
 Again, this data package is intended to work with 
 [MS2extract](https://cooperstonelab.github.io/MS2extract/), as its structure
 meets the requirements in 
-[MS2extract](https://cooperstonelab.github.io/MS2extract/).
+[MS2extract](https://cooperstonelab.github.io/MS2extract/), where the
+`read_dt` tables enable importing the `.mzML` files, while the `met_metadata`
+has crucial information that is included in the final MS/MS library.
 
 ### First Batch (Agilent QTOF 6545)
 
-| Polarity | Collision Energy (eV) | read_dt table               | metadata table           |
+| Polarity | Collision Energy (eV) | read_dt table               | met_metadata table           |
 |--------------|-------------|---------------------|----------------------|
 | Positive | 20                    | `data("read_pos20_6545")` | `data("metdt_pos20_6545")` |
 | Positive | 40                    | `data("read_pos40_6545")` | `data("metdt_pos40_6545")` |
@@ -107,7 +107,7 @@ meets the requirements in
 
 ## List of metabolites
 
-In the `extdata` directory you will find all the `.mzml` files for all
+In the `extdata` directory you will find all the `.mzML` files for all the
 standards, as well as the structure tables to be used jointly with
 [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
@@ -118,18 +118,22 @@ will find them.
 > Disclaimer: Metabolites with no reported data file have not MS/MS data
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(PhenolicsDB)
 
-data("read_neg20_6545", package = "PhenolicsDB")
-batchRead_Neg20 <-   dplyr::mutate(read_neg20_6545, Batch = "(1) QTOF-6545")
+read_met_neg <- dplyr::bind_rows(read_neg20_6545, read_neg40_6545, 
+                                 read_neg20_6546, read_neg40_6546, 
+                                 read_neg60_6546, read_neg80_6546)
 
-data("read_neg20_6546", package = "PhenolicsDB")
-read_neg20_6546 <-  dplyr::mutate(read_neg20_6546, Batch = "(2) QTOF-6546")
+all_std <- read_met_neg |> 
+  dplyr::mutate(`rt (s)` = round((min_rt+max_rt)/2, 0) ) |> 
+  dplyr::distinct(Name, .keep_all = T) |> 
+  dplyr::mutate(Monoisotopic_mass = 
+                  purrr::map_dbl(Formula,
+                                 \(x) Rdisop::getMolecule(x)$exactmass  ) ) |> 
+  dplyr::select(Name, Formula, Monoisotopic_mass, `rt (s)`) |> 
+  dplyr::arrange( Monoisotopic_mass, Name, -`rt (s)`)
 
-all_std <- dplyr::bind_rows(batchRead_Neg20, read_neg20_6546)  
-
-
-all_std <- dplyr::select(all_std, -File, -Ionization_mode)
-all_std
+knitr::kable(all_std)
 ```
 
 # Phytochemicals in two dimensions
@@ -148,29 +152,28 @@ title_text <- "Distribution of the metabolites included in PhenolicsDB"
 subtitle_text <- paste("Metabolites are colored based on", 
                         "Superclass information from Classyfire")
 
-all_std <- dplyr::mutate(all_std, 
-              Monoisotopic = sapply(all_std$Formula,
-                                    FUN = function(x){
-                                      Rdisop::getMolecule(x)$exactmass
-                                    } ) )  %>%  dplyr::rowwise() %>% 
-  dplyr::mutate(rt = mean(c(min_rt, max_rt) )/60) %>% 
-  left_join(smiles2classyfire)
+all_std_fig <- dplyr::mutate(all_std, 
+                         rt = `rt (s)`/60) |> 
+  dplyr::left_join(smiles2classyfire)  |> 
+  dplyr::distinct(Name, .keep_all = TRUE) |> 
+  tidyr::drop_na()
 
 
-std_distribution <- all_std %>%
-  ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic, 
+std_distribution <- all_std_fig %>%
+  ggplot2::ggplot( ggplot2::aes(rt, Monoisotopic_mass, 
                                 color = Superclass_CF,
                                 shape = Superclass_CF)) +
   ggplot2::geom_point(alpha = 0.8, size = 2.5) + 
   ggplot2::theme_light() + 
   ggsci::scale_color_frontiers()  +
-  ggplot2::theme(legend.position = c(0.82, 0.77), 
-                legend.background = element_rect(fill = "white",
-                                                  color = "black")) +
+  ggplot2::theme( legend.position="bottom",
+                  legend.background = ggplot2::element_rect(fill = "white",
+                                                            color = "black")) +
   ggplot2::labs(x = "Retention time (min)",
                 y = "Neutral monoisotopic mass (Da)",
                 title = title_text,
-                subtitle = subtitle_text)
+                subtitle = subtitle_text) +
+  ggplot2::ylim(c(0, 1200))
 
 std_distribution
 ```
