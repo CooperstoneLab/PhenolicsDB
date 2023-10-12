@@ -9,7 +9,7 @@
 \item{NAME}{character, metabolite name}
 \item{FORMULA}{character, chemical formula}
 \item{INCHIKEY}{character, inchikey recovered form PUBCHEM}
-\item{SMILES}{character, canonical smiles recovered drom PUBCHEM}
+\item{SMILES}{character, canonical smiles recovered from PUBCHEM}
 \item{PRECURSORTYPE}{character, precursor type \verb{[M+H]+} for postive and \verb{[M-H]-} for negative polarity}
 \item{COLLISIONENERGY}{character, collision energy used for MS/MS}
 \item{INSTRUMENTTYPE}{character, intrument type used for data collection}

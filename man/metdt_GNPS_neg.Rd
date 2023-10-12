@@ -3,16 +3,16 @@
 \docType{data}
 \name{metdt_GNPS_neg}
 \alias{metdt_GNPS_neg}
-\title{Metabolite metadata for GNPS for negative polarity}
+\title{Metabolite metadata in negative polarity for GNPS mgf export}
 \format{
-metdt_GNPS_pos
+metdt_GNPS_neg
 
 A data frame containing 168 observations (metabolites) and eight columns
 
 \describe{
 \item{COMPOUND_NAME}{character, compound name}
 \item{INSTRUMENT}{character, instrument type QTOF as qTof}
-\item{COLLISIONENERGY}{character, collisoin energy applied in MS/MS}
+\item{COLLISIONENERGY}{character, collision energy applied in MS/MS}
 \item{IONSOURCE}{character, ion source LC-ESI in our case}
 \item{SMILES}{character, smiles of the metabolite}
 \item{INCHI}{character, INCHIKEY}
@@ -27,18 +27,20 @@ A data frame containing 168 observations (metabolites) and eight columns
 \item{SPECIES}{character, species}
 \item{STRAIN}{character, strain}
 \item{CASNUMBER}{numeric, CAS number }
-\item{PI}{character, principa investigator}
+\item{PI}{character, principal investigator}
 }
 }
 \usage{
 metdt_GNPS_neg
 }
 \description{
-This data frame contains all the metadata required in
+This data frame contains all the metadata required in the
 \href{https://github.com/CooperstoneLab/MS2extract}{MS2extract} package to
 export the library in a GNPS \code{.mgf} friendly format.
 }
 \details{
-This table differs from the GNPS upload template.
+Be aware this table differs from the GNPS upload template, and the final
+table in a \code{.tsv} format is created while using MS2extract \code{write_mgf_gnps()}
+function.
 }
 \keyword{datasets}
