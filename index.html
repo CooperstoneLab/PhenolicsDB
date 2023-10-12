@@ -6,10 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Raw MS/MS data of a set of authentic phenolics standards, 
-  including phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
-  Standards were collected using an Agilent QTOF 6545 and a 6546, in negative
-  and positive polarities, and 20 and 40 eV (CE). Standards that were collected
-  using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). 
+  including phenolic acids, flavonoids, dihydrochalcones, and carbohydrates. 
+  MS/MS data was collected using an Agilent QTOF 6545 and a 6546, in negative
+  and positive polarities, and 20 and 40 eV (CE).  
   The raw MS/MS files will be used jointly with the MS2extract package
   to create in-house MS/MS libraries.">
 <title>PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository • PhenolicsDB</title>
@@ -20,10 +19,9 @@
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository">
 <meta property="og:description" content="Raw MS/MS data of a set of authentic phenolics standards, 
-  including phenolic acids, flavonoids, dihydrochalcones, carbohydrates. 
-  Standards were collected using an Agilent QTOF 6545 and a 6546, in negative
-  and positive polarities, and 20 and 40 eV (CE). Standards that were collected
-  using the 6546 QTOF also contains MS/MS data at 60 and 80 eV (CE). 
+  including phenolic acids, flavonoids, dihydrochalcones, and carbohydrates. 
+  MS/MS data was collected using an Agilent QTOF 6545 and a 6546, in negative
+  and positive polarities, and 20 and 40 eV (CE).  
   The raw MS/MS files will be used jointly with the MS2extract package
   to create in-house MS/MS libraries.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -45,7 +43,7 @@
     
     <a class="navbar-brand me-2" href="index.html">PhenolicsDB</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.03.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.04.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +101,7 @@
 <!-- Zenodo badge -->
 
 <!-- badges: end -->
-<p><code>PhenolicsDB</code> is data package that contains raw MS/MS data of authentic standards. <code>PhenolicsDB</code> raw data files and datasets are aimed to exemplify the use of <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to create in-house metabolite MS/MS libraries. Between the list of metabolites we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and others. Tandem mass spectrometry data was collected using a LC coupled with a Q-TOF mas analyzer.</p>
+<p><code>PhenolicsDB</code> is data package that contains raw MS/MS data of authentic standards. <code>PhenolicsDB</code> raw data files and datasets are aimed to exemplify the use of <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to create in-house metabolite MS/MS libraries. Between the list of metabolites we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and others. Tandem mass spectrometry data was collected using a LC coupled with a Q-TOF mass analyzer.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -117,8 +115,8 @@
 <h2 id="database-description">Database description<a class="anchor" aria-label="anchor" href="#database-description"></a>
 </h2>
 <p>This package is intended to archive the raw mzml files of authentic standards, as well as structured data frame aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>, to automate the process of creating in-house MS/MS libraries.</p>
-<p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiples scenarios.</p>
-<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following table describe what you expect to find in this database.</p>
+<p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiple scenarios.</p>
+<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 <div class="section level3">
 <h3 id="first-batch-agilent-qtof-6545">First Batch (Agilent QTOF 6545)<a class="anchor" aria-label="anchor" href="#first-batch-agilent-qtof-6545"></a>
 </h3>
@@ -132,7 +130,8 @@
 <thead><tr class="header">
 <th>Polarity</th>
 <th>Collision Energy (eV)</th>
-<th>read_dt table</th>
+<th>
+<code>read_dt</code> table</th>
 <th>metadata table</th>
 </tr></thead>
 <tbody>
@@ -240,20 +239,460 @@
 <blockquote>
 <p>Disclaimer: Metabolites with no reported data file have not MS/MS data</p>
 </blockquote>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 70 × 6</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    Name                      Formula   min_rt max_rt COLLISIONENERGY Batch      </span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                     &lt;chr&gt;      &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;      </span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 Procyanidin A2            C30H24O12    163    180 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 Rutin                     C27H30O16    162    171 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 3-Hydroxybenzaldehyde     C7H6O2       152    166 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 4-Hydroxybenzaldehyde     C7H6O2       137    170 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 Salycilic acid            C7H6O3       180    200 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 Malic acid                C4H6O5        16     42 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 (E)-Cinamic acid          C9H8O2       214    228 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 2-3-Dihydroxybenzoic acid C7H6O4       135    146 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 2-5-Dihydroxybenzoic acid C7H6O4       120    140 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 2-6-Dihydroxybenzoic acid C7H6O4       120    150 20 eV           (1) QTOF-6…</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # ℹ 60 more rows</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="44%">
+<col width="16%">
+<col width="27%">
+<col width="11%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Name</th>
+<th align="left">Formula</th>
+<th align="right">Monoisotopic_mass</th>
+<th align="right">rt (s)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">3-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="right">122.0368</td>
+<td align="right">159</td>
+</tr>
+<tr class="even">
+<td align="left">4-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="right">122.0368</td>
+<td align="right">154</td>
+</tr>
+<tr class="odd">
+<td align="left">Malic acid</td>
+<td align="left">C4H6O5</td>
+<td align="right">134.0215</td>
+<td align="right">29</td>
+</tr>
+<tr class="even">
+<td align="left">Salycilic acid</td>
+<td align="left">C7H6O3</td>
+<td align="right">138.0317</td>
+<td align="right">190</td>
+</tr>
+<tr class="odd">
+<td align="left">D-(-)-Citramalic Acid</td>
+<td align="left">C5H8O5</td>
+<td align="right">148.0372</td>
+<td align="right">52</td>
+</tr>
+<tr class="even">
+<td align="left">(E)-Cinamic acid</td>
+<td align="left">C9H8O2</td>
+<td align="right">148.0524</td>
+<td align="right">221</td>
+</tr>
+<tr class="odd">
+<td align="left">2,4,6-Trihydroxybenzaldehyde</td>
+<td align="left">C7H6O4</td>
+<td align="right">154.0266</td>
+<td align="right">158</td>
+</tr>
+<tr class="even">
+<td align="left">2-3-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="right">154.0266</td>
+<td align="right">140</td>
+</tr>
+<tr class="odd">
+<td align="left">2-5-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="right">154.0266</td>
+<td align="right">130</td>
+</tr>
+<tr class="even">
+<td align="left">2-6-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="right">154.0266</td>
+<td align="right">135</td>
+</tr>
+<tr class="odd">
+<td align="left">3-4-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="right">154.0266</td>
+<td align="right">105</td>
+</tr>
+<tr class="even">
+<td align="left">Vanillyl alcohol</td>
+<td align="left">C8H10O3</td>
+<td align="right">154.0630</td>
+<td align="right">120</td>
+</tr>
+<tr class="odd">
+<td align="left">p-Coumaric acid</td>
+<td align="left">C9H8O3</td>
+<td align="right">164.0473</td>
+<td align="right">163</td>
+</tr>
+<tr class="even">
+<td align="left">Vanillyl acid</td>
+<td align="left">C8H8O4</td>
+<td align="right">168.0423</td>
+<td align="right">140</td>
+</tr>
+<tr class="odd">
+<td align="left">Gallic acid</td>
+<td align="left">C7H6O5</td>
+<td align="right">170.0215</td>
+<td align="right">70</td>
+</tr>
+<tr class="even">
+<td align="left">Ascorbic acid</td>
+<td align="left">C6H8O6</td>
+<td align="right">176.0321</td>
+<td align="right">20</td>
+</tr>
+<tr class="odd">
+<td align="left">Esculetin</td>
+<td align="left">C9H6O4</td>
+<td align="right">178.0266</td>
+<td align="right">142</td>
+</tr>
+<tr class="even">
+<td align="left">Caffeic acid</td>
+<td align="left">C9H8O4</td>
+<td align="right">180.0423</td>
+<td align="right">141</td>
+</tr>
+<tr class="odd">
+<td align="left">Glucose</td>
+<td align="left">C6H12O6</td>
+<td align="right">180.0634</td>
+<td align="right">21</td>
+</tr>
+<tr class="even">
+<td align="left">D-Sorbitol</td>
+<td align="left">C6H14O6</td>
+<td align="right">182.0790</td>
+<td align="right">21</td>
+</tr>
+<tr class="odd">
+<td align="left">Isoscopoletin</td>
+<td align="left">C10H8O4</td>
+<td align="right">192.0423</td>
+<td align="right">168</td>
+</tr>
+<tr class="even">
+<td align="left">Scopoletin</td>
+<td align="left">C10H8O4</td>
+<td align="right">192.0423</td>
+<td align="right">173</td>
+</tr>
+<tr class="odd">
+<td align="left">Quinic acid</td>
+<td align="left">C7H12O6</td>
+<td align="right">192.0634</td>
+<td align="right">22</td>
+</tr>
+<tr class="even">
+<td align="left">Ferrulic acid</td>
+<td align="left">C10H10O4</td>
+<td align="right">194.0579</td>
+<td align="right">172</td>
+</tr>
+<tr class="odd">
+<td align="left">Sinapic acid</td>
+<td align="left">C11H12O5</td>
+<td align="right">224.0685</td>
+<td align="right">174</td>
+</tr>
+<tr class="even">
+<td align="left">Apigenin</td>
+<td align="left">C15H10O5</td>
+<td align="right">270.0528</td>
+<td align="right">236</td>
+</tr>
+<tr class="odd">
+<td align="left">Naringenin</td>
+<td align="left">C15H12O5</td>
+<td align="right">272.0685</td>
+<td align="right">183</td>
+</tr>
+<tr class="even">
+<td align="left">Phloretin</td>
+<td align="left">C15H14O5</td>
+<td align="right">274.0841</td>
+<td align="right">236</td>
+</tr>
+<tr class="odd">
+<td align="left">Fisetin</td>
+<td align="left">C15H10O6</td>
+<td align="right">286.0477</td>
+<td align="right">197</td>
+</tr>
+<tr class="even">
+<td align="left">Kaempferol</td>
+<td align="left">C15H10O6</td>
+<td align="right">286.0477</td>
+<td align="right">242</td>
+</tr>
+<tr class="odd">
+<td align="left">(-)-Epicatechin</td>
+<td align="left">C15H14O6</td>
+<td align="right">290.0790</td>
+<td align="right">142</td>
+</tr>
+<tr class="even">
+<td align="left">Catechin</td>
+<td align="left">C15H14O6</td>
+<td align="right">290.0790</td>
+<td align="right">132</td>
+</tr>
+<tr class="odd">
+<td align="left">Kaempferide</td>
+<td align="left">C16H12O6</td>
+<td align="right">300.0634</td>
+<td align="right">293</td>
+</tr>
+<tr class="even">
+<td align="left">Ellagic acid</td>
+<td align="left">C14H6O8</td>
+<td align="right">302.0063</td>
+<td align="right">172</td>
+</tr>
+<tr class="odd">
+<td align="left">Herbacetin</td>
+<td align="left">C15H10O7</td>
+<td align="right">302.0427</td>
+<td align="right">212</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin</td>
+<td align="left">C15H10O7</td>
+<td align="right">302.0427</td>
+<td align="right">220</td>
+</tr>
+<tr class="odd">
+<td align="left">3-O-methyl Quercetin</td>
+<td align="left">C16H12O7</td>
+<td align="right">316.0583</td>
+<td align="right">224</td>
+</tr>
+<tr class="even">
+<td align="left">Isorhamnetin</td>
+<td align="left">C16H12O7</td>
+<td align="right">316.0583</td>
+<td align="right">246</td>
+</tr>
+<tr class="odd">
+<td align="left">Tamarixetin</td>
+<td align="left">C16H12O7</td>
+<td align="right">316.0583</td>
+<td align="right">245</td>
+</tr>
+<tr class="even">
+<td align="left">Sucrose</td>
+<td align="left">C12H22O11</td>
+<td align="right">342.1162</td>
+<td align="right">25</td>
+</tr>
+<tr class="odd">
+<td align="left">Chlorogenic acid</td>
+<td align="left">C16H18O9</td>
+<td align="right">354.0951</td>
+<td align="right">135</td>
+</tr>
+<tr class="even">
+<td align="left">Cryptochlorogenic acid</td>
+<td align="left">C16H18O9</td>
+<td align="right">354.0951</td>
+<td align="right">136</td>
+</tr>
+<tr class="odd">
+<td align="left">Neochlorogenic acid</td>
+<td align="left">C16H18O9</td>
+<td align="right">354.0951</td>
+<td align="right">120</td>
+</tr>
+<tr class="even">
+<td align="left">Avicularin</td>
+<td align="left">C20H18O11</td>
+<td align="right">434.0849</td>
+<td align="right">178</td>
+</tr>
+<tr class="odd">
+<td align="left">Guaijaverin</td>
+<td align="left">C20H18O11</td>
+<td align="right">434.0849</td>
+<td align="right">179</td>
+</tr>
+<tr class="even">
+<td align="left">Phloridzin</td>
+<td align="left">C21H24O10</td>
+<td align="right">436.1369</td>
+<td align="right">191</td>
+</tr>
+<tr class="odd">
+<td align="left">Trilobatin</td>
+<td align="left">C21H24O10</td>
+<td align="right">436.1369</td>
+<td align="right">201</td>
+</tr>
+<tr class="even">
+<td align="left">Astragalin</td>
+<td align="left">C21H20O11</td>
+<td align="right">448.1006</td>
+<td align="right">182</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercitrin</td>
+<td align="left">C21H20O11</td>
+<td align="right">448.1006</td>
+<td align="right">182</td>
+</tr>
+<tr class="even">
+<td align="left">Cyanidin 3-Galactoside</td>
+<td align="left">C21H21O11</td>
+<td align="right">449.1084</td>
+<td align="right">128</td>
+</tr>
+<tr class="odd">
+<td align="left">Eriodictyol 7-O-glucoside</td>
+<td align="left">C21H22O11</td>
+<td align="right">450.1162</td>
+<td align="right">169</td>
+</tr>
+<tr class="even">
+<td align="left">Ursolic acid</td>
+<td align="left">C30H48O3</td>
+<td align="right">456.3603</td>
+<td align="right">434</td>
+</tr>
+<tr class="odd">
+<td align="left">Isoquercitrin</td>
+<td align="left">C21H20O12</td>
+<td align="right">464.0955</td>
+<td align="right">174</td>
+</tr>
+<tr class="even">
+<td align="left">Isoquercitroside</td>
+<td align="left">C21H20O12</td>
+<td align="right">464.0955</td>
+<td align="right">170</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin-3-galactoside</td>
+<td align="left">C21H20O12</td>
+<td align="right">464.0955</td>
+<td align="right">174</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin-3-glucoside</td>
+<td align="left">C21H20O12</td>
+<td align="right">464.0955</td>
+<td align="right">174</td>
+</tr>
+<tr class="odd">
+<td align="left">Corsolic acid</td>
+<td align="left">C30H48O4</td>
+<td align="right">472.3553</td>
+<td align="right">371</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin-3-O-glucoronide</td>
+<td align="left">C21H18O13</td>
+<td align="right">478.0747</td>
+<td align="right">172</td>
+</tr>
+<tr class="odd">
+<td align="left">Melezitose</td>
+<td align="left">C18H32O16</td>
+<td align="right">504.1690</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="left">Procyanidin A2</td>
+<td align="left">C30H24O12</td>
+<td align="right">576.1268</td>
+<td align="right">172</td>
+</tr>
+<tr class="odd">
+<td align="left">Procyanidin B1</td>
+<td align="left">C30H26O12</td>
+<td align="right">578.1424</td>
+<td align="right">118</td>
+</tr>
+<tr class="even">
+<td align="left">Procyanidin B2</td>
+<td align="left">C30H26O12</td>
+<td align="right">578.1424</td>
+<td align="right">139</td>
+</tr>
+<tr class="odd">
+<td align="left">Procyanidin B3</td>
+<td align="left">C30H26O12</td>
+<td align="right">578.1424</td>
+<td align="right">124</td>
+</tr>
+<tr class="even">
+<td align="left">Naringin</td>
+<td align="left">C27H32O14</td>
+<td align="right">580.1792</td>
+<td align="right">182</td>
+</tr>
+<tr class="odd">
+<td align="left">Procyanidin</td>
+<td align="left">C30H26O13</td>
+<td align="right">594.1373</td>
+<td align="right">160</td>
+</tr>
+<tr class="even">
+<td align="left">Nictoflorin</td>
+<td align="left">C27H30O15</td>
+<td align="right">594.1585</td>
+<td align="right">178</td>
+</tr>
+<tr class="odd">
+<td align="left">Saponarin</td>
+<td align="left">C27H30O15</td>
+<td align="right">594.1585</td>
+<td align="right">151</td>
+</tr>
+<tr class="even">
+<td align="left">Eriocitrin</td>
+<td align="left">C27H32O15</td>
+<td align="right">596.1741</td>
+<td align="right">166</td>
+</tr>
+<tr class="odd">
+<td align="left">Neoeriocitrin</td>
+<td align="left">C27H32O15</td>
+<td align="right">596.1741</td>
+<td align="right">168</td>
+</tr>
+<tr class="even">
+<td align="left">Rutin</td>
+<td align="left">C27H30O16</td>
+<td align="right">610.1534</td>
+<td align="right">166</td>
+</tr>
+<tr class="odd">
+<td align="left">Narcissin</td>
+<td align="left">C28H32O16</td>
+<td align="right">624.1690</td>
+<td align="right">180</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-sophoroside</td>
+<td align="left">C27H30O17</td>
+<td align="right">626.1483</td>
+<td align="right">154</td>
+</tr>
+<tr class="odd">
+<td align="left">Procyanidin C1</td>
+<td align="left">C45H38O18</td>
+<td align="right">866.2058</td>
+<td align="right">146</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section level1">
@@ -261,7 +700,7 @@
 <a class="anchor" aria-label="anchor" href="#citing-phenolicsdb"></a>
 </h1>
 <p>To cite <code>PhenolicsDB</code> in your publications, please use:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Citation info</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"PhenolicsDB"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite PhenolicsDB in publications use:</span></span>
