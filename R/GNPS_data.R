@@ -1,10 +1,12 @@
-#' Metabolite metadata for GNPS for positive polarity
+#' Metabolite metadata in positive polarity for GNPS mgf export
 #'
-#' This data frame contains all the metadata required in
+#' This data frame contains all the metadata required in the
 #' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package to
 #' export the library in a GNPS `.mgf` friendly format.
 #'
-#' This table differs from the GNPS upload template.
+#' Be aware this table differs from the GNPS upload template, and the final
+#' table in a `.tsv` format is created while using MS2extract `write_mgf_gnps()`
+#' function.
 #'
 #'
 #' @format metdt_GNPS_pos
@@ -14,7 +16,7 @@
 #' \describe{
 #'   \item{COMPOUND_NAME}{character, compound name}
 #'   \item{INSTRUMENT}{character, instrument type QTOF as qTof}
-#'   \item{COLLISIONENERGY}{character, collisoin energy applied in MS/MS}
+#'   \item{COLLISIONENERGY}{character, collision energy applied in MS/MS}
 #'   \item{IONSOURCE}{character, ion source LC-ESI in our case}
 #'   \item{SMILES}{character, smiles of the metabolite}
 #'   \item{INCHI}{character, INCHIKEY}
@@ -29,27 +31,28 @@
 #'   \item{SPECIES}{character, species}
 #'   \item{STRAIN}{character, strain}
 #'   \item{CASNUMBER}{numeric, CAS number }
-#'   \item{PI}{character, principa investigator}
+#'   \item{PI}{character, principal investigator}
 #' }
 "metdt_GNPS_pos"
 
-#' Metabolite metadata for GNPS for negative polarity
+#' Metabolite metadata in negative polarity for GNPS mgf export
 #'
-#' This data frame contains all the metadata required in
+#' This data frame contains all the metadata required in the
 #' [MS2extract](https://github.com/CooperstoneLab/MS2extract) package to
 #' export the library in a GNPS `.mgf` friendly format.
 #'
-#' This table differs from the GNPS upload template.
+#' Be aware this table differs from the GNPS upload template, and the final
+#' table in a `.tsv` format is created while using MS2extract `write_mgf_gnps()`
+#' function.
 #'
-#'
-#' @format metdt_GNPS_pos
+#' @format metdt_GNPS_neg
 #'
 #' A data frame containing 168 observations (metabolites) and eight columns
 #'
 #' \describe{
 #'   \item{COMPOUND_NAME}{character, compound name}
 #'   \item{INSTRUMENT}{character, instrument type QTOF as qTof}
-#'   \item{COLLISIONENERGY}{character, collisoin energy applied in MS/MS}
+#'   \item{COLLISIONENERGY}{character, collision energy applied in MS/MS}
 #'   \item{IONSOURCE}{character, ion source LC-ESI in our case}
 #'   \item{SMILES}{character, smiles of the metabolite}
 #'   \item{INCHI}{character, INCHIKEY}
@@ -64,7 +67,7 @@
 #'   \item{SPECIES}{character, species}
 #'   \item{STRAIN}{character, strain}
 #'   \item{CASNUMBER}{numeric, CAS number }
-#'   \item{PI}{character, principa investigator}
+#'   \item{PI}{character, principal investigator}
 #' }
 "metdt_GNPS_neg"
 
