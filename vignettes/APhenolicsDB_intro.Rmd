@@ -68,7 +68,7 @@ BiocManager::valid()
 
 ## Required knowledge
 
-`PhenolicsDB` is a data package that contains MS/MS data of authentic
+`PhenolicsDB` is a data package that contains MS/MS data of authentic analytical
 standads. Therefore, in order to be familiar with what data you will find in
 this package, you will need to be familiar with mass spectrometry.
 

@@ -12,14 +12,14 @@
 
 <!-- badges: end -->
 
-`PhenolicsDB` is data package that contains raw MS/MS data of authentic
-standards. `PhenolicsDB` raw data files and datasets are aimed to
-exemplify the use of
+`PhenolicsDB` is a data package that contains raw MS/MS data of
+authentic analytical standards. `PhenolicsDB` raw data files and
+datasets are aimed to exemplify the use of
 [MS2extract](https://cooperstonelab.github.io/MS2extract/) to create
 in-house metabolite MS/MS libraries. Between the list of metabolites we
 include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and
 others. Tandem mass spectrometry data was collected using a LC coupled
-with a Q-TOF mass analyzer.
+to a Q-TOF mass analyzer.
 
 ## Installation
 
@@ -34,10 +34,10 @@ library("PhenolicsDB")
 
 ## Database description
 
-This package is intended to archive the raw mzml files of authentic
-standards, as well as structured data frame aimed to be used jointly
-with [MS2extract](https://cooperstonelab.github.io/MS2extract/), to
-automate the process of creating in-house MS/MS libraries.
+This package is intended to archive the raw `.mzML` files of authentic
+analytical standards, as well as structured data frames aimed to be used
+jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/),
+to automate the process of creating in-house MS/MS libraries.
 
 This database contains majorly phenolics compounds, aimed to decipher
 and annotate the *Rosacea* metabolome. However, as phenolics are
@@ -67,7 +67,7 @@ use with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 ### Second Batch (Agilent QTOF 6546)
 
-| Polarity | Collision Energy (eV) | read_dt table             | metadata table             |
+| Polarity | Collision Energy (eV) | `read_dt` table           | metadata table             |
 |----------|-----------------------|---------------------------|----------------------------|
 | Positive | 20                    | `data("read_pos20_6546")` | `data("metdt_pos20_6546")` |
 | Positive | 40                    | `data("read_pos40_6546")` | `data("metdt_pos40_6546")` |
@@ -80,7 +80,7 @@ use with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 ## List of metabolites
 
-In the `extdata` directory you will find all the `.mzml` files for all
+In the `extdata` directory you will find all the `.mzML` files for all
 standards, as well as the structure tables to be used jointly with
 [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
