@@ -22,7 +22,7 @@ Description: Raw MS/MS data of a set of authentic phenolics standards,
 License: MIT + file LICENSE
 URL: https://cooperstonelab.github.io/PhenolicsDB/
 BugReports: https://github.com/CooperstoneLab/PhenolicsDB/issues
-biocViews: ExperimentData, MassSpectrometryData
+biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
