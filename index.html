@@ -101,7 +101,7 @@
 <!-- Zenodo badge -->
 
 <!-- badges: end -->
-<p><code>PhenolicsDB</code> is data package that contains raw MS/MS data of authentic standards. <code>PhenolicsDB</code> raw data files and datasets are aimed to exemplify the use of <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to create in-house metabolite MS/MS libraries. Between the list of metabolites we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and others. Tandem mass spectrometry data was collected using a LC coupled with a Q-TOF mass analyzer.</p>
+<p><code>PhenolicsDB</code> is a data package that contains raw MS/MS data of authentic analytical standards. <code>PhenolicsDB</code> raw data files and datasets are aimed to exemplify the use of <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a> to create in-house metabolite MS/MS libraries. Between the list of metabolites we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and others. Tandem mass spectrometry data was collected using a LC coupled to a Q-TOF mass analyzer.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -114,7 +114,7 @@
 <div class="section level2">
 <h2 id="database-description">Database description<a class="anchor" aria-label="anchor" href="#database-description"></a>
 </h2>
-<p>This package is intended to archive the raw mzml files of authentic standards, as well as structured data frame aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>, to automate the process of creating in-house MS/MS libraries.</p>
+<p>This package is intended to archive the raw <code>.mzML</code> files of authentic analytical standards, as well as structured data frames aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>, to automate the process of creating in-house MS/MS libraries.</p>
 <p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiple scenarios.</p>
 <p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 <div class="section level3">
@@ -175,7 +175,8 @@
 <thead><tr class="header">
 <th>Polarity</th>
 <th>Collision Energy (eV)</th>
-<th>read_dt table</th>
+<th>
+<code>read_dt</code> table</th>
 <th>metadata table</th>
 </tr></thead>
 <tbody>
@@ -234,7 +235,7 @@
 <div class="section level2">
 <h2 id="list-of-metabolites">List of metabolites<a class="anchor" aria-label="anchor" href="#list-of-metabolites"></a>
 </h2>
-<p>In the <code>extdata</code> directory you will find all the <code>.mzml</code> files for all standards, as well as the structure tables to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
+<p>In the <code>extdata</code> directory you will find all the <code>.mzML</code> files for all standards, as well as the structure tables to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 <p>In the following table you can see the list of metabolites we are including in this version of the database, as well as in what batch you will find them.</p>
 <blockquote>
 <p>Disclaimer: Metabolites with no reported data file have not MS/MS data</p>
