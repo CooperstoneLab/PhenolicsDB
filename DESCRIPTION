@@ -19,7 +19,7 @@ Description: Raw MS/MS data of a set of authentic phenolics standards,
   and positive polarities, and 20 and 40 eV (CE).  
   The raw MS/MS files will be used jointly with the MS2extract package
   to create in-house MS/MS libraries.
-License: MIT + file LICENSE
+License:  CC BY-NC-SA 4.0 
 URL: https://cooperstonelab.github.io/PhenolicsDB/
 BugReports: https://github.com/CooperstoneLab/PhenolicsDB/issues
 biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
