@@ -26,6 +26,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
+
 `PhenolicsDB` is a data package that contains raw MS/MS data of authentic
 analytical standards. `PhenolicsDB` raw data files and datasets are aimed to
 exemplify the use of

@@ -95,9 +95,9 @@ will find them.
 | 3-Hydroxybenzaldehyde        | C7H6O2    |          122.0368 |    159 |
 | 4-Hydroxybenzaldehyde        | C7H6O2    |          122.0368 |    154 |
 | Malic acid                   | C4H6O5    |          134.0215 |     29 |
-| Salycilic acid               | C7H6O3    |          138.0317 |    190 |
-| D-(-)-Citramalic Acid        | C5H8O5    |          148.0372 |     52 |
-| (E)-Cinamic acid             | C9H8O2    |          148.0524 |    221 |
+| Salicylic acid               | C7H6O3    |          138.0317 |    190 |
+| D-(-)-Citramalic acid        | C5H8O5    |          148.0372 |     52 |
+| (E)-Cinnamic acid            | C9H8O2    |          148.0524 |    221 |
 | 2,4,6-Trihydroxybenzaldehyde | C7H6O4    |          154.0266 |    158 |
 | 2-3-Dihydroxybenzoic acid    | C7H6O4    |          154.0266 |    140 |
 | 2-5-Dihydroxybenzoic acid    | C7H6O4    |          154.0266 |    130 |
@@ -105,7 +105,7 @@ will find them.
 | 3-4-Dihydroxybenzoic acid    | C7H6O4    |          154.0266 |    105 |
 | Vanillyl alcohol             | C8H10O3   |          154.0630 |    120 |
 | p-Coumaric acid              | C9H8O3    |          164.0473 |    163 |
-| Vanillyl acid                | C8H8O4    |          168.0423 |    140 |
+| Vanillic acid                | C8H8O4    |          168.0423 |    140 |
 | Gallic acid                  | C7H6O5    |          170.0215 |     70 |
 | Ascorbic acid                | C6H8O6    |          176.0321 |     20 |
 | Esculetin                    | C9H6O4    |          178.0266 |    142 |
@@ -148,8 +148,8 @@ will find them.
 | Isoquercitroside             | C21H20O12 |          464.0955 |    170 |
 | Quercetin-3-galactoside      | C21H20O12 |          464.0955 |    174 |
 | Quercetin-3-glucoside        | C21H20O12 |          464.0955 |    174 |
-| Corsolic acid                | C30H48O4  |          472.3553 |    371 |
-| Quercetin-3-O-glucoronide    | C21H18O13 |          478.0747 |    172 |
+| Corosolic acid               | C30H48O4  |          472.3553 |    371 |
+| Quercetin-3-O-glucuronide    | C21H18O13 |          478.0747 |    172 |
 | Melezitose                   | C18H32O16 |          504.1690 |     24 |
 | Procyanidin A2               | C30H24O12 |          576.1268 |    172 |
 | Procyanidin B1               | C30H26O12 |          578.1424 |    118 |
