@@ -3,7 +3,7 @@
 library(rjson)
 
 classification <- rjson::fromJSON(file = "inst/extdata/classyfire/query_11202230.json")
-met_metadata <- read.csv("inst/extdata/csv/batch_msp_metadata.csv") %>%
+met_metadata <- read_xlsx("inst/extdata/batch_msp_metadata.xlsx", sheet = 1) %>%
   filter(!(INCHIKEY %in% ""))
 
 
