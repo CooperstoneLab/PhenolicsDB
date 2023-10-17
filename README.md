@@ -13,13 +13,24 @@
 <!-- badges: end -->
 
 `PhenolicsDB` is a data package that contains raw MS/MS data of
-authentic analytical standards. `PhenolicsDB` raw data files and
-datasets are aimed to exemplify the use of
+authentic analytical standards. `PhenolicsDB` raw data files and data
+frames are aimed to exemplify the use of
 [MS2extract](https://cooperstonelab.github.io/MS2extract/) to create
 in-house metabolite MS/MS libraries. Between the list of metabolites we
 include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and
 others. Tandem mass spectrometry data was collected using a LC coupled
 to a Q-TOF mass analyzer.
+
+## Download PhenolicsDB
+
+You can download PhenolicsDB in `.msp` and `.mgf` format in these links:
+
+| Format      | Positive polarity                                                                                                     | Negative polarity                                                                                                     |
+|-------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| NIST `.msp` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_pos.msp)        | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_neg.msp)        |
+| GNPS `.mgf` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Positive.mgf) | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Negative.mgf) |
+
+MS/MS library options
 
 ## Installation
 
