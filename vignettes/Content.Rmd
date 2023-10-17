@@ -105,6 +105,12 @@ has crucial information that is included in the final MS/MS library.
 | Negative | 60                    | `data("read_neg60_6546")`   | `data("metdt_neg60_6546")` |
 | Negative | 80                    | `data("read_neg80_6546")`   | `data("metdt_neg80_6546")` |
 
+## PhenolicsDB metadata for GNPS `.mgf` format
+
+You can also use the `metdt_GNPS_pos` and `metdt_GNPS_pos` data frames to export
+this library in a `.mgf` format. 
+
+
 ## List of metabolites
 
 In the `extdata` directory you will find all the `.mzML` files for all the
@@ -150,7 +156,7 @@ data("smiles2classyfire", package = "PhenolicsDB")
 
 title_text <- "Distribution of the metabolites included in PhenolicsDB"
 subtitle_text <- paste("Metabolites are colored based on", 
-                        "Superclass information from Classyfire")
+                        "Superclass information from ClassyFire")
 
 all_std_fig <- dplyr::mutate(all_std, 
                          rt = `rt (s)`/60) |> 
