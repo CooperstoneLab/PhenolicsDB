@@ -30,8 +30,6 @@ You can download PhenolicsDB in `.msp` and `.mgf` format in these links:
 | NIST `.msp` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_pos.msp)        | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_neg.msp)        |
 | GNPS `.mgf` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Positive.mgf) | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Negative.mgf) |
 
-MS/MS library options
-
 ## Installation
 
 You can install the development version of PhenolicsDB from
