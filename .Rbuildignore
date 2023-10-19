@@ -17,3 +17,5 @@
 ^LICENSE\.md$
 ^\./inst/extdata/PhenolicsDB$
 ^inst/extdata/PhenolicsDB$
+^inst/extdata/classyfire$
+^inst/extdata/csv$
