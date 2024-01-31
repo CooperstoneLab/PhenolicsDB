@@ -19,3 +19,4 @@
 ^inst/extdata/PhenolicsDB$
 ^inst/extdata/classyfire$
 ^inst/extdata/csv$
+^CITATION\.cff$
