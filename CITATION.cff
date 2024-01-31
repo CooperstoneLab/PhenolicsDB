@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Quiroz-Moreno"
+  given-names: "Cristian Daniel"
+  orcid: "https://orcid.org/0000-0002-9069-9147"
+- family-names: "Cooperstone"
+  given-names: "Jessica"
+  orcid: "https://orcid.org/0000-0001-7920-0088"
+title: "PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository"
+version: 0.04.2
+doi: 10.5281/zenodo.8409038
+url: "https://cooperstonelab.github.io/PhenolicsDB/"
