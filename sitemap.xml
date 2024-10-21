@@ -1,114 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/404.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/articles/APhenolicsDB_intro.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/articles/Content.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/index.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/PhenolicsDB-package.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_neg.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_pos.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg20_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg20_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg40_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg40_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg60_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg80_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos20_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos20_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos40_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos40_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos60_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos80_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg40_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg40_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg60_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg80_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos20_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos20_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos40_6545.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos40_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos6080_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos60_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos80_6546.html</loc>
-  </url>
-  <url>
-    <loc>https://cooperstonelab.github.io/MS2extractDB/reference/smiles2classyfire.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/404.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/LICENSE.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/articles/APhenolicsDB_intro.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/articles/Content.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/articles/index.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/authors.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/index.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/PhenolicsDB-package.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/index.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_neg.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_pos.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg20_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg20_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg40_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg40_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg60_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_neg80_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos20_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos20_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos40_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos40_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos60_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos80_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg40_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg40_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg60_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg80_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos20_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos20_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos40_6545.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos40_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos6080_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos60_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_pos80_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/smiles2classyfire.html</loc></url>
 </urlset>
+
