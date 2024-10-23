@@ -26,6 +26,8 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 options(tikzDefaultEngine = "xetex")
+# install.packages("devtools")
+devtools::install_github("CooperstoneLab/MS2extract")
 ```
 
 ```{r setup, include=FALSE, eval=TRUE}
