@@ -1,7 +1,7 @@
 Package: PhenolicsDB
 Title: PhenolicsDB: phenolics MS/MS (LC-ESI-QTOF) database repository
-Version: 0.04.2
-Date: 2023-10-11
+Version: 0.04.3
+Date: 2024-10-23
 Authors@R: c(
     person("Cristian", "Quiroz-Moreno",
            email = "cristianquirozd1997@gmail.com",
