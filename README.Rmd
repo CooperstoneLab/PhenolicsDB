@@ -39,23 +39,12 @@ to a Q-TOF mass analyzer.
 
 ## Download PhenolicsDB
 
-You can download PhenolicsDB in `.msp` and `.mgf` format in these links:
+You can download PhenolicsDB in these links:
 
-| Format      | Positive polarity                                                                                                     | Negative polarity                                                                                                     |
-|------------------|---------------------------|---------------------------|
-| NIST `.msp` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_pos.msp)        | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_neg.msp)        |
-| GNPS `.mgf` | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Positive.mgf) | [Link](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Negative.mgf) |
+* Negative polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp)
 
-## Installation
+* Positive polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp)
 
-You can install the development version of PhenolicsDB from
-[GitHub](https://github.com/CooperstoneLab/PhenolicsDB) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("CooperstoneLab/PhenolicsDB")
-library("PhenolicsDB")
-```
 
 ## Database description
 
@@ -81,28 +70,6 @@ the second batch, we also collected data at 60 and 80 eV (CE). The
 following tables describe the set of data frames that you can load and
 use with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
-### First Batch (Agilent QTOF 6545)
-
-| Polarity | Collision Energy (eV) | `read_dt` table           | metadata table             |
-|------------------|------------------|------------------|-------------------|
-| Positive | 20                    | `data("read_pos20_6545")` | `data("metdt_pos20_6545")` |
-| Positive | 40                    | `data("read_pos40_6545")` | `data("metdt_pos40_6545")` |
-| Negative | 20                    | `data("read_neg20_6545")` | `data("metdt_neg20_6545")` |
-| Negative | 40                    | `data("read_neg40_6545")` | `data("metdt_neg40_6545")` |
-
-### Second Batch (Agilent QTOF 6546)
-
-| Polarity | Collision Energy (eV) | `read_dt` table           | metadata table             |
-|------------------|------------------|------------------|------------------|
-| Positive | 20                    | `data("read_pos20_6546")` | `data("metdt_pos20_6546")` |
-| Positive | 40                    | `data("read_pos40_6546")` | `data("metdt_pos40_6546")` |
-| Positive | 60                    | `data("read_pos60_6546")` | `data("metdt_pos60_6546")` |
-| Positive | 80                    | `data("read_pos80_6546")` | `data("metdt_pos80_6546")` |
-| Negative | 20                    | `data("read_neg20_6546")` | `data("metdt_neg20_6546")` |
-| Negative | 40                    | `data("read_neg40_6546")` | `data("metdt_neg40_6546")` |
-| Negative | 60                    | `data("read_neg60_6546")` | `data("metdt_neg60_6546")` |
-| Negative | 80                    | `data("read_neg80_6546")` | `data("metdt_neg80_6546")` |
-
 ## List of metabolites
 
 In the `extdata` directory you will find all the `.mzML` files for all
@@ -113,26 +80,28 @@ In the following table you can see the list of metabolites we are
 including in this version of the database, as well as in what batch you
 will find them.
 
-> Disclaimer: Metabolites with no reported data file have not MS/MS data
+> MS/MS spectra included in this library can be viewed [here](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md)
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 library(PhenolicsDB)
 
-read_met_neg <- dplyr::bind_rows(read_neg20_6545, read_neg40_6545, 
-                                 read_neg20_6546, read_neg40_6546, 
-                                 read_neg60_6546, read_neg80_6546)
-
-all_std <- read_met_neg |> 
-  dplyr::mutate(`rt (s)` = round((min_rt+max_rt)/2, 0) ) |> 
-  dplyr::distinct(Name, .keep_all = T) |> 
-  dplyr::mutate(Monoisotopic_mass = 
-                  purrr::map_dbl(Formula,
-                                 \(x) Rdisop::getMolecule(x)$exactmass  ) ) |> 
-  dplyr::select(Name, Formula, Monoisotopic_mass, `rt (s)`) |> 
-  dplyr::arrange( Monoisotopic_mass, Name, -`rt (s)`)
-
-knitr::kable(all_std)
 ```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+devtools::load_all()
+compound_summary <- binded_dt |> 
+  dplyr::select(-File) |>
+  mutate(`rt (min)` = round((min_rt+max_rt)/(2*60), 3)  ) |> 
+  dplyr::group_by(Name, Ionization_mode) |> 
+  dplyr::summarise(`Collision Energy` = paste0(COLLISIONENERGY, collapse = ", "),
+                   Formula = Formula,`rt (min)`= `rt (min)`) |> 
+  dplyr::select(Name, Formula, Ionization_mode, `rt (min)`, `Collision Energy`) |> 
+  dplyr::ungroup() |> 
+  dplyr::distinct(Name, Ionization_mode, .keep_all = TRUE)
+
+knitr::kable(compound_summary)
+```
+
 
 # Citing `PhenolicsDB`
 

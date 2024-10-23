@@ -636,3 +636,28 @@
 #' }
 
 "smiles2classyfire"
+
+#' Combined read metadata
+#'
+#' Combined read metadata in multiple polarities.
+#'
+#' @format binded_dt
+
+"binded_dt"
+
+#' PhenolicsDB MSMS spectra in negative polarity
+#'
+#' Combined read metadata in multiple polarities.
+#'
+#' @format neg_batch_mass_detected
+
+"neg_batch_mass_detected"
+
+
+#' PhenolicsDB MSMS spectra in positive polarity
+#'
+#' Combined read metadata in multiple polarities.
+#'
+#' @format pos_batch_mass_detected
+
+"pos_batch_mass_detected"
