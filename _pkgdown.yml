@@ -16,12 +16,9 @@ template:
 
 navbar:
   structure:
-    left: [intro, reference, articles, news, MSMS]
+    left: [intro, reference, articles, news]
     right:  [search, github, twitter, linkedin]
   components:
-    MSMS:
-      href: https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extra_doc/spectra_visualizer.html
-      aria-label: MSMS spectra
     github:
       icon: fa-github
       href: https://github.com/CooperstoneLab/MS2extractDB
