@@ -42,7 +42,6 @@ Imports:
     dplyr,
     ggplot2,
     ggsci,
-    MS2extract,
     purrr,
     Rdisop,
     tidyr
