@@ -7,6 +7,7 @@
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/authors.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/index.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/PhenolicsDB-package.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/binded_dt.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/index.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_neg.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_GNPS_pos.html</loc></url>
@@ -22,6 +23,8 @@
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos40_6546.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos60_6546.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/metdt_pos80_6546.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/neg_batch_mass_detected.html</loc></url>
+<url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/pos_batch_mass_detected.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6545.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg20_6546.html</loc></url>
 <url><loc>https://cooperstonelab.github.io/MS2extractDB/reference/read_neg40_6545.html</loc></url>

@@ -74,163 +74,18 @@
 <div class="section level2">
 <h2 id="download-phenolicsdb">Download PhenolicsDB<a class="anchor" aria-label="anchor" href="#download-phenolicsdb"></a>
 </h2>
-<p>You can download PhenolicsDB in <code>.msp</code> and <code>.mgf</code> format in these links:</p>
-<table class="table">
-<colgroup>
-<col width="5%">
-<col width="47%">
-<col width="47%">
-</colgroup>
-<thead><tr class="header">
-<th>Format</th>
-<th>Positive polarity</th>
-<th>Negative polarity</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>NIST <code>.msp</code>
-</td>
-<td><a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_pos.msp" class="external-link">Link</a></td>
-<td><a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/phenolics_neg.msp" class="external-link">Link</a></td>
-</tr>
-<tr class="even">
-<td>GNPS <code>.mgf</code>
-</td>
-<td><a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Positive.mgf" class="external-link">Link</a></td>
-<td><a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/mgf/PhenolicsDB_Negative.mgf" class="external-link">Link</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
-</h2>
-<p>You can install the development version of PhenolicsDB from <a href="https://github.com/CooperstoneLab/PhenolicsDB" class="external-link">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"CooperstoneLab/PhenolicsDB"</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://cooperstonelab.github.io/PhenolicsDB/" class="external-link">"PhenolicsDB"</a></span><span class="op">)</span></span></code></pre></div>
+<p>You can download PhenolicsDB in these links:</p>
+<ul>
+<li><p>Negative polarity <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp" class="external-link">(link)</a></p></li>
+<li><p>Positive polarity <a href="https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp" class="external-link">(link)</a></p></li>
+</ul>
 </div>
 <div class="section level2">
 <h2 id="database-description">Database description<a class="anchor" aria-label="anchor" href="#database-description"></a>
 </h2>
 <p>This package is intended to archive the raw <code>.mzML</code> files of authentic analytical standards, as well as structured data frames aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>, to automate the process of creating in-house MS/MS libraries.</p>
 <p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiple scenarios.</p>
-<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
-<div class="section level3">
-<h3 id="first-batch-agilent-qtof-6545">First Batch (Agilent QTOF 6545)<a class="anchor" aria-label="anchor" href="#first-batch-agilent-qtof-6545"></a>
-</h3>
-<table class="table">
-<colgroup>
-<col width="11%">
-<col width="26%">
-<col width="30%">
-<col width="31%">
-</colgroup>
-<thead><tr class="header">
-<th>Polarity</th>
-<th>Collision Energy (eV)</th>
-<th>
-<code>read_dt</code> table</th>
-<th>metadata table</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>Positive</td>
-<td>20</td>
-<td><code>data("read_pos20_6545")</code></td>
-<td><code>data("metdt_pos20_6545")</code></td>
-</tr>
-<tr class="even">
-<td>Positive</td>
-<td>40</td>
-<td><code>data("read_pos40_6545")</code></td>
-<td><code>data("metdt_pos40_6545")</code></td>
-</tr>
-<tr class="odd">
-<td>Negative</td>
-<td>20</td>
-<td><code>data("read_neg20_6545")</code></td>
-<td><code>data("metdt_neg20_6545")</code></td>
-</tr>
-<tr class="even">
-<td>Negative</td>
-<td>40</td>
-<td><code>data("read_neg40_6545")</code></td>
-<td><code>data("metdt_neg40_6545")</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section level3">
-<h3 id="second-batch-agilent-qtof-6546">Second Batch (Agilent QTOF 6546)<a class="anchor" aria-label="anchor" href="#second-batch-agilent-qtof-6546"></a>
-</h3>
-<table class="table">
-<colgroup>
-<col width="11%">
-<col width="26%">
-<col width="30%">
-<col width="31%">
-</colgroup>
-<thead><tr class="header">
-<th>Polarity</th>
-<th>Collision Energy (eV)</th>
-<th>
-<code>read_dt</code> table</th>
-<th>metadata table</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>Positive</td>
-<td>20</td>
-<td><code>data("read_pos20_6546")</code></td>
-<td><code>data("metdt_pos20_6546")</code></td>
-</tr>
-<tr class="even">
-<td>Positive</td>
-<td>40</td>
-<td><code>data("read_pos40_6546")</code></td>
-<td><code>data("metdt_pos40_6546")</code></td>
-</tr>
-<tr class="odd">
-<td>Positive</td>
-<td>60</td>
-<td><code>data("read_pos60_6546")</code></td>
-<td><code>data("metdt_pos60_6546")</code></td>
-</tr>
-<tr class="even">
-<td>Positive</td>
-<td>80</td>
-<td><code>data("read_pos80_6546")</code></td>
-<td><code>data("metdt_pos80_6546")</code></td>
-</tr>
-<tr class="odd">
-<td>Negative</td>
-<td>20</td>
-<td><code>data("read_neg20_6546")</code></td>
-<td><code>data("metdt_neg20_6546")</code></td>
-</tr>
-<tr class="even">
-<td>Negative</td>
-<td>40</td>
-<td><code>data("read_neg40_6546")</code></td>
-<td><code>data("metdt_neg40_6546")</code></td>
-</tr>
-<tr class="odd">
-<td>Negative</td>
-<td>60</td>
-<td><code>data("read_neg60_6546")</code></td>
-<td><code>data("metdt_neg60_6546")</code></td>
-</tr>
-<tr class="even">
-<td>Negative</td>
-<td>80</td>
-<td><code>data("read_neg80_6546")</code></td>
-<td><code>data("metdt_neg80_6546")</code></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="list-of-metabolites">List of metabolites<a class="anchor" aria-label="anchor" href="#list-of-metabolites"></a>
@@ -238,459 +93,1010 @@
 <p>In the <code>extdata</code> directory you will find all the <code>.mzML</code> files for all standards, as well as the structure tables to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 <p>In the following table you can see the list of metabolites we are including in this version of the database, as well as in what batch you will find them.</p>
 <blockquote>
-<p>Disclaimer: Metabolites with no reported data file have not MS/MS data</p>
+<p>MS/MS spectra included in this library can be viewed <a href="https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md" class="external-link">here</a></p>
 </blockquote>
 <table class="table">
 <colgroup>
-<col width="44%">
+<col width="32%">
 <col width="16%">
-<col width="27%">
-<col width="11%">
+<col width="16%">
+<col width="16%">
+<col width="18%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">Name</th>
 <th align="left">Formula</th>
-<th align="right">Monoisotopic_mass</th>
-<th align="right">rt (s)</th>
+<th align="left">Ionization_mode</th>
+<th align="right">rt (min)</th>
+<th align="left">Collision Energy</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td align="left">3-Hydroxybenzaldehyde</td>
-<td align="left">C7H6O2</td>
-<td align="right">122.0368</td>
-<td align="right">159</td>
+<td align="left">2,3-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="left">Negative</td>
+<td align="right">2.342</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">4-Hydroxybenzaldehyde</td>
-<td align="left">C7H6O2</td>
-<td align="right">122.0368</td>
-<td align="right">154</td>
-</tr>
-<tr class="odd">
-<td align="left">Malic acid</td>
-<td align="left">C4H6O5</td>
-<td align="right">134.0215</td>
-<td align="right">29</td>
-</tr>
-<tr class="even">
-<td align="left">Salicylic acid</td>
-<td align="left">C7H6O3</td>
-<td align="right">138.0317</td>
-<td align="right">190</td>
-</tr>
-<tr class="odd">
-<td align="left">D-(-)-Citramalic acid</td>
-<td align="left">C5H8O5</td>
-<td align="right">148.0372</td>
-<td align="right">52</td>
-</tr>
-<tr class="even">
-<td align="left">(E)-Cinnamic acid</td>
-<td align="left">C9H8O2</td>
-<td align="right">148.0524</td>
-<td align="right">221</td>
+<td align="left">2,3-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="left">Positive</td>
+<td align="right">2.342</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">2,4,6-Trihydroxybenzaldehyde</td>
 <td align="left">C7H6O4</td>
-<td align="right">154.0266</td>
-<td align="right">158</td>
+<td align="left">Negative</td>
+<td align="right">2.625</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">2-3-Dihydroxybenzoic acid</td>
+<td align="left">2,4,6-Trihydroxybenzaldehyde</td>
 <td align="left">C7H6O4</td>
-<td align="right">154.0266</td>
-<td align="right">140</td>
+<td align="left">Positive</td>
+<td align="right">2.625</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">2-5-Dihydroxybenzoic acid</td>
+<td align="left">2,5-Dihydroxybenzoic acid</td>
 <td align="left">C7H6O4</td>
-<td align="right">154.0266</td>
-<td align="right">130</td>
+<td align="left">Negative</td>
+<td align="right">2.167</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">2-6-Dihydroxybenzoic acid</td>
+<td align="left">2,5-Dihydroxybenzoic acid</td>
 <td align="left">C7H6O4</td>
-<td align="right">154.0266</td>
-<td align="right">135</td>
+<td align="left">Positive</td>
+<td align="right">2.167</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">3-4-Dihydroxybenzoic acid</td>
+<td align="left">2,6-Dihydroxybenzoic acid</td>
 <td align="left">C7H6O4</td>
-<td align="right">154.0266</td>
-<td align="right">105</td>
+<td align="left">Negative</td>
+<td align="right">2.250</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Vanillyl alcohol</td>
-<td align="left">C8H10O3</td>
-<td align="right">154.0630</td>
-<td align="right">120</td>
+<td align="left">2,6-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="left">Positive</td>
+<td align="right">2.250</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">p-Coumaric acid</td>
-<td align="left">C9H8O3</td>
-<td align="right">164.0473</td>
-<td align="right">163</td>
+<td align="left">3,4-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="left">Negative</td>
+<td align="right">1.750</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Vanillic acid</td>
-<td align="left">C8H8O4</td>
-<td align="right">168.0423</td>
-<td align="right">140</td>
+<td align="left">3,4-Dihydroxybenzoic acid</td>
+<td align="left">C7H6O4</td>
+<td align="left">Positive</td>
+<td align="right">1.750</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Gallic acid</td>
-<td align="left">C7H6O5</td>
-<td align="right">170.0215</td>
-<td align="right">70</td>
+<td align="left">3-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="left">Negative</td>
+<td align="right">2.650</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Ascorbic acid</td>
-<td align="left">C6H8O6</td>
-<td align="right">176.0321</td>
-<td align="right">20</td>
+<td align="left">3-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="left">Positive</td>
+<td align="right">2.650</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Esculetin</td>
-<td align="left">C9H6O4</td>
-<td align="right">178.0266</td>
-<td align="right">142</td>
+<td align="left">3-O-Caffeoylquinic acid (IUPAC)</td>
+<td align="left">C16H18O9</td>
+<td align="left">Negative</td>
+<td align="right">2.000</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Caffeic acid</td>
-<td align="left">C9H8O4</td>
-<td align="right">180.0423</td>
-<td align="right">141</td>
+<td align="left">3-O-Caffeoylquinic acid (IUPAC)</td>
+<td align="left">C16H18O9</td>
+<td align="left">Positive</td>
+<td align="right">2.000</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Glucose</td>
-<td align="left">C6H12O6</td>
-<td align="right">180.0634</td>
-<td align="right">21</td>
+<td align="left">3-O-Methyl quercetin</td>
+<td align="left">C16H12O7</td>
+<td align="left">Negative</td>
+<td align="right">4.100</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">D-Sorbitol</td>
-<td align="left">C6H14O6</td>
-<td align="right">182.0790</td>
-<td align="right">21</td>
-</tr>
-<tr class="odd">
-<td align="left">Isoscopoletin</td>
-<td align="left">C10H8O4</td>
-<td align="right">192.0423</td>
-<td align="right">168</td>
-</tr>
-<tr class="even">
-<td align="left">Scopoletin</td>
-<td align="left">C10H8O4</td>
-<td align="right">192.0423</td>
-<td align="right">173</td>
-</tr>
-<tr class="odd">
-<td align="left">Quinic acid</td>
-<td align="left">C7H12O6</td>
-<td align="right">192.0634</td>
-<td align="right">22</td>
-</tr>
-<tr class="even">
-<td align="left">Ferrulic acid</td>
-<td align="left">C10H10O4</td>
-<td align="right">194.0579</td>
-<td align="right">172</td>
-</tr>
-<tr class="odd">
-<td align="left">Sinapic acid</td>
-<td align="left">C11H12O5</td>
-<td align="right">224.0685</td>
-<td align="right">174</td>
-</tr>
-<tr class="even">
-<td align="left">Apigenin</td>
-<td align="left">C15H10O5</td>
-<td align="right">270.0528</td>
-<td align="right">236</td>
-</tr>
-<tr class="odd">
-<td align="left">Naringenin</td>
-<td align="left">C15H12O5</td>
-<td align="right">272.0685</td>
-<td align="right">183</td>
-</tr>
-<tr class="even">
-<td align="left">Phloretin</td>
-<td align="left">C15H14O5</td>
-<td align="right">274.0841</td>
-<td align="right">236</td>
-</tr>
-<tr class="odd">
-<td align="left">Fisetin</td>
-<td align="left">C15H10O6</td>
-<td align="right">286.0477</td>
-<td align="right">197</td>
-</tr>
-<tr class="even">
-<td align="left">Kaempferol</td>
-<td align="left">C15H10O6</td>
-<td align="right">286.0477</td>
-<td align="right">242</td>
-</tr>
-<tr class="odd">
-<td align="left">(-)-Epicatechin</td>
-<td align="left">C15H14O6</td>
-<td align="right">290.0790</td>
-<td align="right">142</td>
-</tr>
-<tr class="even">
-<td align="left">Catechin</td>
-<td align="left">C15H14O6</td>
-<td align="right">290.0790</td>
-<td align="right">132</td>
-</tr>
-<tr class="odd">
-<td align="left">Kaempferide</td>
-<td align="left">C16H12O6</td>
-<td align="right">300.0634</td>
-<td align="right">293</td>
-</tr>
-<tr class="even">
-<td align="left">Ellagic acid</td>
-<td align="left">C14H6O8</td>
-<td align="right">302.0063</td>
-<td align="right">172</td>
-</tr>
-<tr class="odd">
-<td align="left">Herbacetin</td>
-<td align="left">C15H10O7</td>
-<td align="right">302.0427</td>
-<td align="right">212</td>
-</tr>
-<tr class="even">
-<td align="left">Quercetin</td>
-<td align="left">C15H10O7</td>
-<td align="right">302.0427</td>
-<td align="right">220</td>
+<td align="left">3-O-Methyl quercetin</td>
+<td align="left">C16H12O7</td>
+<td align="left">Positive</td>
+<td align="right">4.100</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">3-O-methyl Quercetin</td>
 <td align="left">C16H12O7</td>
-<td align="right">316.0583</td>
-<td align="right">224</td>
+<td align="left">Negative</td>
+<td align="right">3.725</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Isorhamnetin</td>
+<td align="left">3-O-methyl Quercetin</td>
 <td align="left">C16H12O7</td>
-<td align="right">316.0583</td>
-<td align="right">246</td>
+<td align="left">Positive</td>
+<td align="right">3.725</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Tamarixetin</td>
+<td align="left">4-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="left">Negative</td>
+<td align="right">2.558</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">4-Hydroxybenzaldehyde</td>
+<td align="left">C7H6O2</td>
+<td align="left">Positive</td>
+<td align="right">2.558</td>
+<td align="left">20 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">4-O-Caffeoylquinic acid (IUPAC)</td>
+<td align="left">C16H18O9</td>
+<td align="left">Negative</td>
+<td align="right">2.258</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">4-O-Caffeoylquinic acid (IUPAC)</td>
+<td align="left">C16H18O9</td>
+<td align="left">Positive</td>
+<td align="right">2.258</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">4prime-O-Methyl kaempferol</td>
+<td align="left">C16H12O6</td>
+<td align="left">Negative</td>
+<td align="right">4.883</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">4prime-O-Methyl kaempferol</td>
+<td align="left">C16H12O6</td>
+<td align="left">Positive</td>
+<td align="right">4.883</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">4prime-O-Methyl quercetin</td>
 <td align="left">C16H12O7</td>
-<td align="right">316.0583</td>
-<td align="right">245</td>
+<td align="left">Negative</td>
+<td align="right">4.083</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Sucrose</td>
-<td align="left">C12H22O11</td>
-<td align="right">342.1162</td>
-<td align="right">25</td>
+<td align="left">4prime-O-Methyl quercetin</td>
+<td align="left">C16H12O7</td>
+<td align="left">Positive</td>
+<td align="right">4.083</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Chlorogenic acid</td>
+<td align="left">5-O-Caffeoylquinic acid (IUPAC)</td>
 <td align="left">C16H18O9</td>
-<td align="right">354.0951</td>
-<td align="right">135</td>
+<td align="left">Negative</td>
+<td align="right">2.250</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Cryptochlorogenic acid</td>
+<td align="left">5-O-Caffeoylquinic acid (IUPAC)</td>
 <td align="left">C16H18O9</td>
-<td align="right">354.0951</td>
-<td align="right">136</td>
+<td align="left">Positive</td>
+<td align="right">2.250</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Neochlorogenic acid</td>
-<td align="left">C16H18O9</td>
-<td align="right">354.0951</td>
-<td align="right">120</td>
+<td align="left">6,7-Dihydroxycoumarin</td>
+<td align="left">C9H6O4</td>
+<td align="left">Negative</td>
+<td align="right">2.375</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Avicularin</td>
-<td align="left">C20H18O11</td>
-<td align="right">434.0849</td>
-<td align="right">178</td>
+<td align="left">6,7-Dihydroxycoumarin</td>
+<td align="left">C9H6O4</td>
+<td align="left">Positive</td>
+<td align="right">2.375</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Guaijaverin</td>
-<td align="left">C20H18O11</td>
-<td align="right">434.0849</td>
-<td align="right">179</td>
+<td align="left">6-Hydroxy-7-methoxycoumarin</td>
+<td align="left">C10H8O4</td>
+<td align="left">Negative</td>
+<td align="right">2.792</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Phloridzin</td>
-<td align="left">C21H24O10</td>
-<td align="right">436.1369</td>
-<td align="right">191</td>
+<td align="left">6-Hydroxy-7-methoxycoumarin</td>
+<td align="left">C10H8O4</td>
+<td align="left">Positive</td>
+<td align="right">2.792</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Trilobatin</td>
-<td align="left">C21H24O10</td>
-<td align="right">436.1369</td>
-<td align="right">201</td>
+<td align="left">Apigenin</td>
+<td align="left">C15H10O5</td>
+<td align="left">Negative</td>
+<td align="right">3.942</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Astragalin</td>
-<td align="left">C21H20O11</td>
-<td align="right">448.1006</td>
-<td align="right">182</td>
+<td align="left">Apigenin</td>
+<td align="left">C15H10O5</td>
+<td align="left">Positive</td>
+<td align="right">3.942</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Quercitrin</td>
-<td align="left">C21H20O11</td>
-<td align="right">448.1006</td>
-<td align="right">182</td>
+<td align="left">Ascorbic acid</td>
+<td align="left">C6H8O6</td>
+<td align="left">Negative</td>
+<td align="right">0.333</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Cyanidin 3-Galactoside</td>
-<td align="left">C21H21O11</td>
-<td align="right">449.1084</td>
-<td align="right">128</td>
+<td align="left">Ascorbic acid</td>
+<td align="left">C6H8O6</td>
+<td align="left">Positive</td>
+<td align="right">0.333</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Eriodictyol 7-O-glucoside</td>
-<td align="left">C21H22O11</td>
-<td align="right">450.1162</td>
-<td align="right">169</td>
+<td align="left">Caffeic acid</td>
+<td align="left">C9H8O4</td>
+<td align="left">Negative</td>
+<td align="right">2.350</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Ursolic acid</td>
-<td align="left">C30H48O3</td>
-<td align="right">456.3603</td>
-<td align="right">434</td>
+<td align="left">Caffeic acid</td>
+<td align="left">C9H8O4</td>
+<td align="left">Positive</td>
+<td align="right">2.350</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Isoquercitrin</td>
-<td align="left">C21H20O12</td>
-<td align="right">464.0955</td>
-<td align="right">174</td>
+<td align="left">Catechin</td>
+<td align="left">C15H14O6</td>
+<td align="left">Negative</td>
+<td align="right">2.208</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Isoquercitroside</td>
-<td align="left">C21H20O12</td>
-<td align="right">464.0955</td>
-<td align="right">170</td>
+<td align="left">Catechin</td>
+<td align="left">C15H14O6</td>
+<td align="left">Positive</td>
+<td align="right">2.208</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Quercetin-3-galactoside</td>
-<td align="left">C21H20O12</td>
-<td align="right">464.0955</td>
-<td align="right">174</td>
+<td align="left">Cinnamic acid</td>
+<td align="left">C9H8O2</td>
+<td align="left">Negative</td>
+<td align="right">3.683</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Quercetin-3-glucoside</td>
-<td align="left">C21H20O12</td>
-<td align="right">464.0955</td>
-<td align="right">174</td>
+<td align="left">Cinnamic acid</td>
+<td align="left">C9H8O2</td>
+<td align="left">Positive</td>
+<td align="right">3.683</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Citramalic acid</td>
+<td align="left">C5H8O5</td>
+<td align="left">Negative</td>
+<td align="right">0.875</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Corosolic acid</td>
+<td align="left">C30H48O4</td>
+<td align="left">Negative</td>
+<td align="right">6.183</td>
+<td align="left">20 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">Corosolic acid</td>
 <td align="left">C30H48O4</td>
-<td align="right">472.3553</td>
-<td align="right">371</td>
+<td align="left">Positive</td>
+<td align="right">6.183</td>
+<td align="left">20 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Quercetin-3-O-glucuronide</td>
-<td align="left">C21H18O13</td>
-<td align="right">478.0747</td>
-<td align="right">172</td>
+<td align="left">Cyanidin 3-O-galactoside</td>
+<td align="left">C21H21O11</td>
+<td align="left">Negative</td>
+<td align="right">2.125</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Ellagic acid</td>
+<td align="left">C14H6O8</td>
+<td align="left">Negative</td>
+<td align="right">2.875</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Ellagic acid</td>
+<td align="left">C14H6O8</td>
+<td align="left">Positive</td>
+<td align="right">2.875</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Epicatechin</td>
+<td align="left">C15H14O6</td>
+<td align="left">Negative</td>
+<td align="right">2.375</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Epicatechin</td>
+<td align="left">C15H14O6</td>
+<td align="left">Positive</td>
+<td align="right">2.375</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Eriodictyol 7-O-glucoside</td>
+<td align="left">C21H22O11</td>
+<td align="left">Negative</td>
+<td align="right">2.817</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Eriodictyol 7-O-glucoside</td>
+<td align="left">C21H22O11</td>
+<td align="left">Positive</td>
+<td align="right">2.817</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Eriodictyol 7-O-neohesperidoside</td>
+<td align="left">C27H32O15</td>
+<td align="left">Negative</td>
+<td align="right">2.808</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Eriodictyol 7-O-neohesperidoside</td>
+<td align="left">C27H32O15</td>
+<td align="left">Positive</td>
+<td align="right">2.808</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Eriodictyol 7-O-rutinoside</td>
+<td align="left">C27H32O15</td>
+<td align="left">Negative</td>
+<td align="right">2.767</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Eriodictyol 7-O-rutinoside</td>
+<td align="left">C27H32O15</td>
+<td align="left">Positive</td>
+<td align="right">2.767</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Ferulic acid</td>
+<td align="left">C10H10O4</td>
+<td align="left">Negative</td>
+<td align="right">2.867</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Ferulic acid</td>
+<td align="left">C10H10O4</td>
+<td align="left">Positive</td>
+<td align="right">2.867</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Fisetin</td>
+<td align="left">C15H10O6</td>
+<td align="left">Negative</td>
+<td align="right">3.283</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Fisetin</td>
+<td align="left">C15H10O6</td>
+<td align="left">Positive</td>
+<td align="right">3.283</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Gallic acid</td>
+<td align="left">C7H6O5</td>
+<td align="left">Negative</td>
+<td align="right">1.167</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Gallic acid</td>
+<td align="left">C7H6O5</td>
+<td align="left">Positive</td>
+<td align="right">1.167</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Glucose</td>
+<td align="left">C6H12O6</td>
+<td align="left">Negative</td>
+<td align="right">0.350</td>
+<td align="left">20 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Herbacetin</td>
+<td align="left">C15H10O7</td>
+<td align="left">Negative</td>
+<td align="right">3.525</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Herbacetin</td>
+<td align="left">C15H10O7</td>
+<td align="left">Positive</td>
+<td align="right">3.525</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Isoquercitroside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Negative</td>
+<td align="right">2.833</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Isoquercitroside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Positive</td>
+<td align="right">2.833</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Isorhamnetin 3-O-rutinoside</td>
+<td align="left">C28H32O16</td>
+<td align="left">Negative</td>
+<td align="right">3.000</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Isorhamnetin 3-O-rutinoside</td>
+<td align="left">C28H32O16</td>
+<td align="left">Positive</td>
+<td align="right">3.000</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Kaempferol</td>
+<td align="left">C15H10O6</td>
+<td align="left">Negative</td>
+<td align="right">4.042</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Kaempferol</td>
+<td align="left">C15H10O6</td>
+<td align="left">Positive</td>
+<td align="right">4.042</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Kaempferol 3-O-glucoside</td>
+<td align="left">C21H20O11</td>
+<td align="left">Negative</td>
+<td align="right">3.025</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Kaempferol 3-O-glucoside</td>
+<td align="left">C21H20O11</td>
+<td align="left">Positive</td>
+<td align="right">3.025</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Kaempferol 3-O-rutinoside</td>
+<td align="left">C27H30O15</td>
+<td align="left">Negative</td>
+<td align="right">2.958</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Kaempferol 3-O-rutinoside</td>
+<td align="left">C27H30O15</td>
+<td align="left">Positive</td>
+<td align="right">2.958</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Malic acid</td>
+<td align="left">C4H6O5</td>
+<td align="left">Negative</td>
+<td align="right">0.483</td>
+<td align="left">20 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">Melezitose</td>
 <td align="left">C18H32O16</td>
-<td align="right">504.1690</td>
-<td align="right">24</td>
+<td align="left">Negative</td>
+<td align="right">0.400</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Procyanidin A2</td>
-<td align="left">C30H24O12</td>
-<td align="right">576.1268</td>
-<td align="right">172</td>
+<td align="left">Melezitose</td>
+<td align="left">C18H32O16</td>
+<td align="left">Positive</td>
+<td align="right">0.400</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Procyanidin B1</td>
-<td align="left">C30H26O12</td>
-<td align="right">578.1424</td>
-<td align="right">118</td>
+<td align="left">Naringenin</td>
+<td align="left">C15H12O5</td>
+<td align="left">Negative</td>
+<td align="right">3.050</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Procyanidin B2</td>
-<td align="left">C30H26O12</td>
-<td align="right">578.1424</td>
-<td align="right">139</td>
+<td align="left">Naringenin</td>
+<td align="left">C15H12O5</td>
+<td align="left">Positive</td>
+<td align="right">3.050</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Procyanidin B3</td>
-<td align="left">C30H26O12</td>
-<td align="right">578.1424</td>
-<td align="right">124</td>
+<td align="left">Naringin</td>
+<td align="left">C27H32O14</td>
+<td align="left">Negative</td>
+<td align="right">3.042</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
 <td align="left">Naringin</td>
 <td align="left">C27H32O14</td>
-<td align="right">580.1792</td>
-<td align="right">182</td>
+<td align="left">Positive</td>
+<td align="right">3.042</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Phloretin</td>
+<td align="left">C15H14O5</td>
+<td align="left">Negative</td>
+<td align="right">3.933</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Phloretin</td>
+<td align="left">C15H14O5</td>
+<td align="left">Positive</td>
+<td align="right">3.933</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Phloridzin</td>
+<td align="left">C21H24O10</td>
+<td align="left">Negative</td>
+<td align="right">3.183</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Phloridzin</td>
+<td align="left">C21H24O10</td>
+<td align="left">Positive</td>
+<td align="right">3.183</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">Procyanidin</td>
 <td align="left">C30H26O13</td>
-<td align="right">594.1373</td>
-<td align="right">160</td>
+<td align="left">Negative</td>
+<td align="right">2.667</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Nictoflorin</td>
-<td align="left">C27H30O15</td>
-<td align="right">594.1585</td>
-<td align="right">178</td>
+<td align="left">Procyanidin</td>
+<td align="left">C30H26O13</td>
+<td align="left">Positive</td>
+<td align="right">2.667</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Saponarin</td>
-<td align="left">C27H30O15</td>
-<td align="right">594.1585</td>
-<td align="right">151</td>
+<td align="left">Procyanidin A2</td>
+<td align="left">C30H24O12</td>
+<td align="left">Negative</td>
+<td align="right">2.858</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Eriocitrin</td>
-<td align="left">C27H32O15</td>
-<td align="right">596.1741</td>
-<td align="right">166</td>
+<td align="left">Procyanidin A2</td>
+<td align="left">C30H24O12</td>
+<td align="left">Positive</td>
+<td align="right">2.858</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Neoeriocitrin</td>
-<td align="left">C27H32O15</td>
-<td align="right">596.1741</td>
-<td align="right">168</td>
+<td align="left">Procyanidin B1</td>
+<td align="left">C30H26O12</td>
+<td align="left">Negative</td>
+<td align="right">1.958</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Rutin</td>
-<td align="left">C27H30O16</td>
-<td align="right">610.1534</td>
-<td align="right">166</td>
+<td align="left">Procyanidin B1</td>
+<td align="left">C30H26O12</td>
+<td align="left">Positive</td>
+<td align="right">1.958</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
-<td align="left">Narcissin</td>
-<td align="left">C28H32O16</td>
-<td align="right">624.1690</td>
-<td align="right">180</td>
+<td align="left">Procyanidin B2</td>
+<td align="left">C30H26O12</td>
+<td align="left">Negative</td>
+<td align="right">2.317</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="even">
-<td align="left">Quercetin 3-O-sophoroside</td>
-<td align="left">C27H30O17</td>
-<td align="right">626.1483</td>
-<td align="right">154</td>
+<td align="left">Procyanidin B2</td>
+<td align="left">C30H26O12</td>
+<td align="left">Positive</td>
+<td align="right">2.317</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Procyanidin B3</td>
+<td align="left">C30H26O12</td>
+<td align="left">Negative</td>
+<td align="right">2.075</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Procyanidin B3</td>
+<td align="left">C30H26O12</td>
+<td align="left">Positive</td>
+<td align="right">2.075</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 <tr class="odd">
 <td align="left">Procyanidin C1</td>
 <td align="left">C45H38O18</td>
-<td align="right">866.2058</td>
-<td align="right">146</td>
+<td align="left">Negative</td>
+<td align="right">2.433</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Procyanidin C1</td>
+<td align="left">C45H38O18</td>
+<td align="left">Positive</td>
+<td align="right">2.433</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin</td>
+<td align="left">C15H10O7</td>
+<td align="left">Negative</td>
+<td align="right">3.658</td>
+<td align="left">40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin</td>
+<td align="left">C15H10O7</td>
+<td align="left">Positive</td>
+<td align="right">3.658</td>
+<td align="left">40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-arabinofuranoside</td>
+<td align="left">C20H18O11</td>
+<td align="left">Negative</td>
+<td align="right">2.975</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-arabinofuranoside</td>
+<td align="left">C20H18O11</td>
+<td align="left">Positive</td>
+<td align="right">2.975</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-arabinopyranoside</td>
+<td align="left">C20H18O11</td>
+<td align="left">Negative</td>
+<td align="right">2.983</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-arabinopyranoside</td>
+<td align="left">C20H18O11</td>
+<td align="left">Positive</td>
+<td align="right">2.983</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-galactoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Negative</td>
+<td align="right">2.892</td>
+<td align="left">40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-galactoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Positive</td>
+<td align="right">2.892</td>
+<td align="left">40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-glucofuranoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Negative</td>
+<td align="right">2.892</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-glucofuranoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Positive</td>
+<td align="right">2.892</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-glucoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Negative</td>
+<td align="right">2.892</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-glucoside</td>
+<td align="left">C21H20O12</td>
+<td align="left">Positive</td>
+<td align="right">2.892</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-glucuronide</td>
+<td align="left">C21H18O13</td>
+<td align="left">Negative</td>
+<td align="right">2.875</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-glucuronide</td>
+<td align="left">C21H18O13</td>
+<td align="left">Positive</td>
+<td align="right">2.875</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-rhamnoside</td>
+<td align="left">C21H20O11</td>
+<td align="left">Negative</td>
+<td align="right">3.042</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-rhamnoside</td>
+<td align="left">C21H20O11</td>
+<td align="left">Positive</td>
+<td align="right">3.042</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-rutinoside</td>
+<td align="left">C27H30O16</td>
+<td align="left">Negative</td>
+<td align="right">2.775</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-rutinoside</td>
+<td align="left">C27H30O16</td>
+<td align="left">Positive</td>
+<td align="right">2.775</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quercetin 3-O-sophoroside</td>
+<td align="left">C27H30O17</td>
+<td align="left">Negative</td>
+<td align="right">2.575</td>
+<td align="left">40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quercetin 3-O-sophoroside</td>
+<td align="left">C27H30O17</td>
+<td align="left">Positive</td>
+<td align="right">2.575</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Quinic acid</td>
+<td align="left">C7H12O6</td>
+<td align="left">Negative</td>
+<td align="right">0.358</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Quinic acid</td>
+<td align="left">C7H12O6</td>
+<td align="left">Positive</td>
+<td align="right">0.358</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Salicylic acid</td>
+<td align="left">C7H6O3</td>
+<td align="left">Negative</td>
+<td align="right">3.167</td>
+<td align="left">20 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Salicylic acid</td>
+<td align="left">C7H6O3</td>
+<td align="left">Positive</td>
+<td align="right">3.167</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Saponaretin 7-O-glucoside</td>
+<td align="left">C27H30O15</td>
+<td align="left">Negative</td>
+<td align="right">2.517</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Saponaretin 7-O-glucoside</td>
+<td align="left">C27H30O15</td>
+<td align="left">Positive</td>
+<td align="right">2.517</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Scopoletin</td>
+<td align="left">C10H8O4</td>
+<td align="left">Negative</td>
+<td align="right">2.883</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Scopoletin</td>
+<td align="left">C10H8O4</td>
+<td align="left">Positive</td>
+<td align="right">2.883</td>
+<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Sinapic acid</td>
+<td align="left">C11H12O5</td>
+<td align="left">Negative</td>
+<td align="right">2.908</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Sinapic acid</td>
+<td align="left">C11H12O5</td>
+<td align="left">Positive</td>
+<td align="right">2.908</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Sorbitol</td>
+<td align="left">C6H14O6</td>
+<td align="left">Negative</td>
+<td align="right">0.350</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Sorbitol</td>
+<td align="left">C6H14O6</td>
+<td align="left">Positive</td>
+<td align="right">0.350</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Sucrose</td>
+<td align="left">C12H22O11</td>
+<td align="left">Negative</td>
+<td align="right">0.417</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Sucrose</td>
+<td align="left">C12H22O11</td>
+<td align="left">Positive</td>
+<td align="right">0.417</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Trilobatin</td>
+<td align="left">C21H24O10</td>
+<td align="left">Negative</td>
+<td align="right">3.350</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Trilobatin</td>
+<td align="left">C21H24O10</td>
+<td align="left">Positive</td>
+<td align="right">3.350</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Ursolic acid</td>
+<td align="left">C30H48O3</td>
+<td align="left">Negative</td>
+<td align="right">7.233</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Vanillic acid</td>
+<td align="left">C8H8O4</td>
+<td align="left">Negative</td>
+<td align="right">2.342</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Vanillic acid</td>
+<td align="left">C8H8O4</td>
+<td align="left">Positive</td>
+<td align="right">2.342</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">Vanillyl alcohol</td>
+<td align="left">C8H10O3</td>
+<td align="left">Negative</td>
+<td align="right">2.000</td>
+<td align="left">20 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">Vanillyl alcohol</td>
+<td align="left">C8H10O3</td>
+<td align="left">Positive</td>
+<td align="right">2.000</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="even">
+<td align="left">p-Coumaric acid</td>
+<td align="left">C9H8O3</td>
+<td align="left">Negative</td>
+<td align="right">2.717</td>
+<td align="left">20 eV, 40 eV</td>
+</tr>
+<tr class="odd">
+<td align="left">p-Coumaric acid</td>
+<td align="left">C9H8O3</td>
+<td align="left">Positive</td>
+<td align="right">2.717</td>
+<td align="left">20 eV, 40 eV</td>
 </tr>
 </tbody>
 </table>
@@ -701,7 +1107,7 @@
 <a class="anchor" aria-label="anchor" href="#citing-phenolicsdb"></a>
 </h1>
 <p>To cite <code>PhenolicsDB</code> in your publications, please use:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Citation info</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"PhenolicsDB"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite PhenolicsDB in publications use:</span></span>
