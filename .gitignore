@@ -346,3 +346,4 @@ inst/extdata/QTOF_6546/Pos/6080/Scopoletin_6080pos_5.mzML
 inst/extdata/Rdata/all_data.RDataTmp
 inst/extdata/Rdata/all_data.RData
 spectra_visualizer.Rmd
+vignettes/spectra_visualizer_ignore.Rmd
