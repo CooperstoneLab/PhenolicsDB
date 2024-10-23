@@ -51,6 +51,7 @@ neg_metadata_msp <- metadata_msp_clean |>
   filter(IONMODE == "Negative") |>
   mutate(PRECURSORTYPE = "[M-H]-")
 
+#usethis::use_data(neg_batch_mass_detected, overwrite = T)
 
 # Export MSP file
 write_msp(neg_batch_mass_detected, neg_metadata_msp,
@@ -76,6 +77,7 @@ pos_metadata_msp <- metadata_msp_clean |>
   filter(IONMODE == "Positive") |>
   mutate(PRECURSORTYPE = "[M+H]+")
 
+#usethis::use_data(pos_batch_mass_detected, overwrite = T)
 
 # Export MSP file
 write_msp(pos_batch_mass_detected, pos_metadata_msp,

@@ -25,7 +25,7 @@ BugReports: https://github.com/CooperstoneLab/PhenolicsDB/issues
 biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: 
     BiocStyle,
     knitr,
@@ -42,6 +42,7 @@ Imports:
     dplyr,
     ggplot2,
     ggsci,
+    MS2extract,
     purrr,
     Rdisop,
     tidyr
