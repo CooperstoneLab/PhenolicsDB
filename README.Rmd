@@ -41,10 +41,15 @@ to a Q-TOF mass analyzer.
 
 You can download PhenolicsDB in these links:
 
-* Negative polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp)
+-   Negative polarity
+    [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp)
 
-* Positive polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp)
+-   Positive polarity
+    [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp)
 
+> You can also access the .mzML files used for this library in the
+> following
+> [link](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/mzML)
 
 ## Database description
 
@@ -80,7 +85,8 @@ In the following table you can see the list of metabolites we are
 including in this version of the database, as well as in what batch you
 will find them.
 
-> MS/MS spectra included in this library can be viewed [here](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md)
+> MS/MS spectra included in this library can be viewed
+> [here](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md)
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
 library(PhenolicsDB)
@@ -101,7 +107,6 @@ compound_summary <- binded_dt |>
 
 knitr::kable(compound_summary)
 ```
-
 
 # Citing `PhenolicsDB`
 
