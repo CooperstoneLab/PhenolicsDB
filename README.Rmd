@@ -102,7 +102,9 @@ compound_summary <- binded_dt |>
   dplyr::summarise(`Collision Energy` = paste0(COLLISIONENERGY, collapse = ", "),
                    Formula = Formula,`rt (min)`= `rt (min)`) |> 
   dplyr::select(Name, Formula, Ionization_mode, `rt (min)`, `Collision Energy`) |> 
-  dplyr::ungroup() |> 
+  dplyr::ungroup() |> dplyr::mutate(Monoisotopic_mass = 
+                  purrr::map_dbl(Formula,
+                                 \(x) Rdisop::getMolecule(x)$exactmass  ) ) |> 
   dplyr::distinct(Name, Ionization_mode, .keep_all = TRUE)
 
 knitr::kable(compound_summary)

@@ -20,6 +20,8 @@ binded_dt <- left_join(all_read_dt, updated_names) |> # Updating names
   group_by(Name, Ionization_mode, COLLISIONENERGY) |> # Remove duplicates
   unique() |> ungroup()
 
+usethis::use_data(binded_dt, overwrite = T)
+
 # Metadata impor and clean
 metadata_msp <- read_csv("../csv/batch_msp_metadata.csv")  |>
   left_join(updated_names) |>
@@ -39,7 +41,7 @@ neg_read_data <- binded_dt |>
 # Import neg data
 neg_batch_compounds <- batch_import_mzxml(neg_read_data)
 
-# Batch extracting data
+ # Batch extracting data
 neg_batch_extracted <- batch_extract_MS2(neg_batch_compounds,
                                          verbose = FALSE, out_list = FALSE)
 
