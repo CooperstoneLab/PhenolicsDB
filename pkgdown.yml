@@ -1,10 +1,10 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   APhenolicsDB_intro: APhenolicsDB_intro.html
   Content: Content.html
-last_built: 2025-02-20T18:54Z
+last_built: 2025-08-14T02:52Z
 urls:
   reference: https://cooperstonelab.github.io/MS2extractDB/reference
   article: https://cooperstonelab.github.io/MS2extractDB/articles
