@@ -88,7 +88,7 @@
 </h2>
 <p>This package is intended to archive the raw <code>.mzML</code> files of authentic analytical standards, as well as structured data frames aimed to be used jointly with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>, to automate the process of creating in-house MS/MS libraries.</p>
 <p>This database contains majorly phenolics compounds, aimed to decipher and annotate the <em>Rosacea</em> metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiple scenarios.</p>
-<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
+<p>We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF <em>6545</em>, and for the second batch, we used an Agilent QTOF <em>6546</em>. In both batches, we collected targeted MS/MS using the chromatographic method reported in <a href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693" class="external-link">Bilbrey at al. (2022)</a>. We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with <a href="https://cooperstonelab.github.io/MS2extract/" class="external-link">MS2extract</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="list-of-metabolites">List of metabolites<a class="anchor" aria-label="anchor" href="#list-of-metabolites"></a>
@@ -185,7 +185,7 @@
 <td align="left">C16H12O7</td>
 <td align="left">Negative</td>
 <td align="right">4.100</td>
-<td align="left">20 eV, 40 eV</td>
+<td align="left">20 eV, 20 eV, 40 eV, 40 eV, 60 eV, 80 eV</td>
 <td align="right">316.0583</td>
 </tr>
 <tr class="even">
@@ -193,7 +193,7 @@
 <td align="left">C16H12O7</td>
 <td align="left">Positive</td>
 <td align="right">4.100</td>
-<td align="left">20 eV, 40 eV</td>
+<td align="left">20 eV, 20 eV, 40 eV, 40 eV, 60 eV, 80 eV</td>
 <td align="right">316.0583</td>
 </tr>
 <tr class="odd">
@@ -245,20 +245,20 @@
 <td align="right">354.0951</td>
 </tr>
 <tr class="odd">
-<td align="left">3-O-methyl Quercetin</td>
-<td align="left">C16H12O7</td>
+<td align="left">4’-O-Methyl kaempferol</td>
+<td align="left">C16H12O6</td>
 <td align="left">Negative</td>
-<td align="right">3.725</td>
-<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
-<td align="right">316.0583</td>
+<td align="right">4.883</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">300.0634</td>
 </tr>
 <tr class="even">
-<td align="left">3-O-methyl Quercetin</td>
-<td align="left">C16H12O7</td>
+<td align="left">4’-O-Methyl kaempferol</td>
+<td align="left">C16H12O6</td>
 <td align="left">Positive</td>
-<td align="right">3.725</td>
-<td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
-<td align="right">316.0583</td>
+<td align="right">4.883</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">300.0634</td>
 </tr>
 <tr class="odd">
 <td align="left">4’-O-Methyl quercetin</td>
@@ -309,22 +309,6 @@
 <td align="right">354.0951</td>
 </tr>
 <tr class="odd">
-<td align="left">4prime-O-Methyl kaempferol</td>
-<td align="left">C16H12O6</td>
-<td align="left">Negative</td>
-<td align="right">4.883</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">300.0634</td>
-</tr>
-<tr class="even">
-<td align="left">4prime-O-Methyl kaempferol</td>
-<td align="left">C16H12O6</td>
-<td align="left">Positive</td>
-<td align="right">4.883</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">300.0634</td>
-</tr>
-<tr class="odd">
 <td align="left">5-O-Caffeoylquinic acid (IUPAC)</td>
 <td align="left">C16H18O9</td>
 <td align="left">Negative</td>
@@ -371,6 +355,22 @@
 <td align="right">2.792</td>
 <td align="left">20 eV, 40 eV, 60 eV, 80 eV</td>
 <td align="right">192.0423</td>
+</tr>
+<tr class="odd">
+<td align="left">8-Hydroxykaempferol</td>
+<td align="left">C15H10O7</td>
+<td align="left">Negative</td>
+<td align="right">3.525</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">302.0427</td>
+</tr>
+<tr class="even">
+<td align="left">8-Hydroxykaempferol</td>
+<td align="left">C15H10O7</td>
+<td align="left">Positive</td>
+<td align="right">3.525</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">302.0427</td>
 </tr>
 <tr class="odd">
 <td align="left">Apigenin</td>
@@ -621,38 +621,6 @@
 <td align="right">180.0634</td>
 </tr>
 <tr class="even">
-<td align="left">Herbacetin</td>
-<td align="left">C15H10O7</td>
-<td align="left">Negative</td>
-<td align="right">3.525</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">302.0427</td>
-</tr>
-<tr class="odd">
-<td align="left">Herbacetin</td>
-<td align="left">C15H10O7</td>
-<td align="left">Positive</td>
-<td align="right">3.525</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">302.0427</td>
-</tr>
-<tr class="even">
-<td align="left">Isoquercitroside</td>
-<td align="left">C21H20O12</td>
-<td align="left">Negative</td>
-<td align="right">2.833</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">464.0955</td>
-</tr>
-<tr class="odd">
-<td align="left">Isoquercitroside</td>
-<td align="left">C21H20O12</td>
-<td align="left">Positive</td>
-<td align="right">2.833</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">464.0955</td>
-</tr>
-<tr class="even">
 <td align="left">Isorhamnetin 3-O-rutinoside</td>
 <td align="left">C28H32O16</td>
 <td align="left">Negative</td>
@@ -787,22 +755,6 @@
 <td align="right">3.933</td>
 <td align="left">20 eV, 40 eV</td>
 <td align="right">274.0841</td>
-</tr>
-<tr class="odd">
-<td align="left">Phloridzin</td>
-<td align="left">C21H24O10</td>
-<td align="left">Negative</td>
-<td align="right">3.183</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">436.1369</td>
-</tr>
-<tr class="even">
-<td align="left">Phloridzin</td>
-<td align="left">C21H24O10</td>
-<td align="left">Positive</td>
-<td align="right">3.183</td>
-<td align="left">20 eV, 40 eV</td>
-<td align="right">436.1369</td>
 </tr>
 <tr class="odd">
 <td align="left">Procyanidin</td>
@@ -1227,6 +1179,22 @@
 <td align="right">2.717</td>
 <td align="left">20 eV, 40 eV</td>
 <td align="right">164.0473</td>
+</tr>
+<tr class="even">
+<td align="left">phloretin 2’-O-glucoside</td>
+<td align="left">C21H24O10</td>
+<td align="left">Negative</td>
+<td align="right">3.183</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">436.1369</td>
+</tr>
+<tr class="odd">
+<td align="left">phloretin 2’-O-glucoside</td>
+<td align="left">C21H24O10</td>
+<td align="left">Positive</td>
+<td align="right">3.183</td>
+<td align="left">20 eV, 40 eV</td>
+<td align="right">436.1369</td>
 </tr>
 <tr class="even">
 <td align="left">phloretin 4’-O-glucoside</td>
