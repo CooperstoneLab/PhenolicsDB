@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <img src="man/figures/PhenolicsDB.png" align="right" height="250" style="float:right; height:250px;"/>
@@ -18,68 +12,36 @@ editor_options:
 
 <!-- badges: end -->
 
-`PhenolicsDB` is a data package that contains raw MS/MS data of
-authentic analytical standards. `PhenolicsDB` raw data files and data
-frames are aimed to exemplify the use of
-[MS2extract](https://cooperstonelab.github.io/MS2extract/) to create
-in-house metabolite MS/MS libraries. Between the list of metabolites we
-include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and
-others. Tandem mass spectrometry data was collected using a LC coupled
-to a Q-TOF mass analyzer.
+`PhenolicsDB` is a data package that contains raw MS/MS data of authentic analytical standards. `PhenolicsDB` raw data files and data frames are aimed to exemplify the use of [MS2extract](https://cooperstonelab.github.io/MS2extract/) to create in-house metabolite MS/MS libraries. Between the list of metabolites we include phenolic acids, flavonoids, dihydrochalcones, carbohydrates, and others. Tandem mass spectrometry data was collected using a LC coupled to a Q-TOF mass analyzer.
 
 ## Download PhenolicsDB
 
 You can download PhenolicsDB in these links:
 
--   Negative polarity
-    [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp)
+-   Negative polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_neg.msp)
 
--   Positive polarity
-    [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp)
+-   Positive polarity [(link)](https://github.com/CooperstoneLab/PhenolicsDB/blob/main/inst/extdata/PhenolicsDB/msp/PhenolicsDB_pos.msp)
 
-> You can also access the .mzML files used for this library in the
-> following
-> [link](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/mzML)
+> You can also access the .mzML files used for this library in the following [link](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/mzML)
 
 ## Database description
 
-This package is intended to archive the raw `.mzML` files of authentic
-analytical standards, as well as structured data frames aimed to be used
-jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/),
-to automate the process of creating in-house MS/MS libraries.
+This package is intended to archive the raw `.mzML` files of authentic analytical standards, as well as structured data frames aimed to be used jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/), to automate the process of creating in-house MS/MS libraries.
 
-This database contains majorly phenolics compounds, aimed to decipher
-and annotate the *Rosacea* metabolome. However, as phenolics are
-expressed in a wide range of organisms, this database can be used in
-multiple scenarios.
+This database contains majorly phenolics compounds, aimed to decipher and annotate the *Rosacea* metabolome. However, as phenolics are expressed in a wide range of organisms, this database can be used in multiple scenarios.
 
-We grouped the total database in two batches. The batches are based on
-the instrument we used to acquire the MS/MS data. For the first batch,
-we used an Agilent QTOF *6545*, and for the second batch, we used an
-Agilent QTOF *6546*. In both batches, we collected targeted MS/MS using
-the chromatographic method reported in [Bilbrey at al.
-(2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693).
-We collected data in negative and positive polarity, and we used 20 and
-40 eV (CE) using collision induced dissociation (CID). Additionally, in
-the second batch, we also collected data at 60 and 80 eV (CE). The
-following tables describe the set of data frames that you can load and
-use with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
+We grouped the total database in two batches. The batches are based on the instrument we used to acquire the MS/MS data. For the first batch, we used an Agilent QTOF *6545*, and for the second batch, we used an Agilent QTOF *6546*. In both batches, we collected targeted MS/MS using the chromatographic method reported in [Bilbrey at al. (2022)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.17693). We collected data in negative and positive polarity, and we used 20 and 40 eV (CE) using collision induced dissociation (CID). Additionally, in the second batch, we also collected data at 60 and 80 eV (CE). The following tables describe the set of data frames that you can load and use with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
 ## List of metabolites
 
-In the `extdata` directory you will find all the `.mzML` files for all
-standards, as well as the structure tables to be used jointly with
-[MS2extract](https://cooperstonelab.github.io/MS2extract/).
+In the `extdata` directory you will find all the `.mzML` files for all standards, as well as the structure tables to be used jointly with [MS2extract](https://cooperstonelab.github.io/MS2extract/).
 
-In the following table you can see the list of metabolites we are
-including in this version of the database, as well as in what batch you
-will find them.
+In the following table you can see the list of metabolites we are including in this version of the database, as well as in what batch you will find them.
 
-> MS/MS spectra included in this library can be viewed
-> [here](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md)
+> MS/MS spectra included in this library can be viewed [here](https://github.com/CooperstoneLab/PhenolicsDB/tree/main/inst/extdata/extra_doc/spectra_visualizer_ignore.md)
 
 | Name | Formula | Ionization_mode | rt (min) | Collision Energy | Monoisotopic_mass |
-|:-----------|:-----------|:-----------|-----------:|:-----------|-----------:|
+|:---|:---|:---|---:|:---|---:|
 | 2,3-Dihydroxybenzoic acid | C7H6O4 | Negative | 2.342 | 20 eV, 40 eV | 154.0266 |
 | 2,3-Dihydroxybenzoic acid | C7H6O4 | Positive | 2.342 | 20 eV, 40 eV | 154.0266 |
 | 2,4,6-Trihydroxybenzaldehyde | C7H6O4 | Negative | 2.625 | 20 eV, 40 eV | 154.0266 |
@@ -88,30 +50,30 @@ will find them.
 | 2,5-Dihydroxybenzoic acid | C7H6O4 | Positive | 2.167 | 20 eV, 40 eV | 154.0266 |
 | 2,6-Dihydroxybenzoic acid | C7H6O4 | Negative | 2.250 | 20 eV, 40 eV | 154.0266 |
 | 2,6-Dihydroxybenzoic acid | C7H6O4 | Positive | 2.250 | 20 eV, 40 eV | 154.0266 |
-| 3’-O-Methyl quercetin | C16H12O7 | Negative | 4.100 | 20 eV, 40 eV | 316.0583 |
-| 3’-O-Methyl quercetin | C16H12O7 | Positive | 4.100 | 20 eV, 40 eV | 316.0583 |
+| 3’-O-Methyl quercetin | C16H12O7 | Negative | 4.100 | 20 eV, 20 eV, 40 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
+| 3’-O-Methyl quercetin | C16H12O7 | Positive | 4.100 | 20 eV, 20 eV, 40 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
 | 3,4-Dihydroxybenzoic acid | C7H6O4 | Negative | 1.750 | 20 eV, 40 eV | 154.0266 |
 | 3,4-Dihydroxybenzoic acid | C7H6O4 | Positive | 1.750 | 20 eV, 40 eV | 154.0266 |
 | 3-Hydroxybenzaldehyde | C7H6O2 | Negative | 2.650 | 20 eV, 40 eV | 122.0368 |
 | 3-Hydroxybenzaldehyde | C7H6O2 | Positive | 2.650 | 20 eV, 40 eV | 122.0368 |
 | 3-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Negative | 2.000 | 20 eV, 40 eV, 60 eV, 80 eV | 354.0951 |
 | 3-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Positive | 2.000 | 20 eV, 40 eV | 354.0951 |
-| 3-O-methyl Quercetin | C16H12O7 | Negative | 3.725 | 20 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
-| 3-O-methyl Quercetin | C16H12O7 | Positive | 3.725 | 20 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
+| 4’-O-Methyl kaempferol | C16H12O6 | Negative | 4.883 | 20 eV, 40 eV | 300.0634 |
+| 4’-O-Methyl kaempferol | C16H12O6 | Positive | 4.883 | 20 eV, 40 eV | 300.0634 |
 | 4’-O-Methyl quercetin | C16H12O7 | Negative | 4.083 | 20 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
 | 4’-O-Methyl quercetin | C16H12O7 | Positive | 4.083 | 20 eV, 40 eV, 60 eV, 80 eV | 316.0583 |
 | 4-Hydroxybenzaldehyde | C7H6O2 | Negative | 2.558 | 20 eV, 40 eV | 122.0368 |
 | 4-Hydroxybenzaldehyde | C7H6O2 | Positive | 2.558 | 20 eV | 122.0368 |
 | 4-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Negative | 2.258 | 20 eV, 40 eV, 60 eV, 80 eV | 354.0951 |
 | 4-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Positive | 2.258 | 20 eV, 40 eV | 354.0951 |
-| 4prime-O-Methyl kaempferol | C16H12O6 | Negative | 4.883 | 20 eV, 40 eV | 300.0634 |
-| 4prime-O-Methyl kaempferol | C16H12O6 | Positive | 4.883 | 20 eV, 40 eV | 300.0634 |
 | 5-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Negative | 2.250 | 20 eV, 40 eV, 60 eV, 80 eV | 354.0951 |
 | 5-O-Caffeoylquinic acid (IUPAC) | C16H18O9 | Positive | 2.250 | 20 eV, 40 eV | 354.0951 |
 | 6,7-Dihydroxycoumarin | C9H6O4 | Negative | 2.375 | 20 eV, 40 eV, 60 eV, 80 eV | 178.0266 |
 | 6,7-Dihydroxycoumarin | C9H6O4 | Positive | 2.375 | 20 eV, 40 eV, 60 eV, 80 eV | 178.0266 |
 | 6-Hydroxy-7-methoxycoumarin | C10H8O4 | Negative | 2.792 | 20 eV, 40 eV, 60 eV, 80 eV | 192.0423 |
 | 6-Hydroxy-7-methoxycoumarin | C10H8O4 | Positive | 2.792 | 20 eV, 40 eV, 60 eV, 80 eV | 192.0423 |
+| 8-Hydroxykaempferol | C15H10O7 | Negative | 3.525 | 20 eV, 40 eV | 302.0427 |
+| 8-Hydroxykaempferol | C15H10O7 | Positive | 3.525 | 20 eV, 40 eV | 302.0427 |
 | Apigenin | C15H10O5 | Negative | 3.942 | 20 eV, 40 eV, 60 eV, 80 eV | 270.0528 |
 | Apigenin | C15H10O5 | Positive | 3.942 | 20 eV, 40 eV, 60 eV, 80 eV | 270.0528 |
 | Ascorbic acid | C6H8O6 | Negative | 0.333 | 20 eV, 40 eV | 176.0321 |
@@ -143,10 +105,6 @@ will find them.
 | Gallic acid | C7H6O5 | Negative | 1.167 | 20 eV, 40 eV | 170.0215 |
 | Gallic acid | C7H6O5 | Positive | 1.167 | 20 eV, 40 eV | 170.0215 |
 | Glucose | C6H12O6 | Negative | 0.350 | 20 eV | 180.0634 |
-| Herbacetin | C15H10O7 | Negative | 3.525 | 20 eV, 40 eV | 302.0427 |
-| Herbacetin | C15H10O7 | Positive | 3.525 | 20 eV, 40 eV | 302.0427 |
-| Isoquercitroside | C21H20O12 | Negative | 2.833 | 20 eV, 40 eV | 464.0955 |
-| Isoquercitroside | C21H20O12 | Positive | 2.833 | 20 eV, 40 eV | 464.0955 |
 | Isorhamnetin 3-O-rutinoside | C28H32O16 | Negative | 3.000 | 20 eV, 40 eV | 624.1690 |
 | Isorhamnetin 3-O-rutinoside | C28H32O16 | Positive | 3.000 | 20 eV, 40 eV | 624.1690 |
 | Kaempferol | C15H10O6 | Negative | 4.042 | 20 eV, 40 eV | 286.0477 |
@@ -164,8 +122,6 @@ will find them.
 | Naringin | C27H32O14 | Positive | 3.042 | 20 eV, 40 eV | 580.1792 |
 | Phloretin | C15H14O5 | Negative | 3.933 | 20 eV, 40 eV | 274.0841 |
 | Phloretin | C15H14O5 | Positive | 3.933 | 20 eV, 40 eV | 274.0841 |
-| Phloridzin | C21H24O10 | Negative | 3.183 | 20 eV, 40 eV | 436.1369 |
-| Phloridzin | C21H24O10 | Positive | 3.183 | 20 eV, 40 eV | 436.1369 |
 | Procyanidin | C30H26O13 | Negative | 2.667 | 20 eV, 40 eV | 594.1373 |
 | Procyanidin | C30H26O13 | Positive | 2.667 | 20 eV, 40 eV | 594.1373 |
 | Procyanidin A2 | C30H24O12 | Negative | 2.858 | 20 eV, 40 eV | 576.1268 |
@@ -219,6 +175,8 @@ will find them.
 | Vanillyl alcohol | C8H10O3 | Positive | 2.000 | 20 eV, 40 eV | 154.0630 |
 | p-Coumaric acid | C9H8O3 | Negative | 2.717 | 20 eV, 40 eV | 164.0473 |
 | p-Coumaric acid | C9H8O3 | Positive | 2.717 | 20 eV, 40 eV | 164.0473 |
+| phloretin 2’-O-glucoside | C21H24O10 | Negative | 3.183 | 20 eV, 40 eV | 436.1369 |
+| phloretin 2’-O-glucoside | C21H24O10 | Positive | 3.183 | 20 eV, 40 eV | 436.1369 |
 | phloretin 4’-O-glucoside | C21H24O10 | Negative | 3.350 | 20 eV, 40 eV | 436.1369 |
 | phloretin 4’-O-glucoside | C21H24O10 | Positive | 3.350 | 20 eV, 40 eV | 436.1369 |
 

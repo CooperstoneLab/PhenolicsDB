@@ -3,7 +3,7 @@ library(tidyverse) # data handlers
 library(MS2extract) # MS2extract library
 
 # Import updated names
-updated_names <- read_csv("inst/extdata/csv/updated_names.csv") |>
+updated_names <- read_csv("../csv/updated_names.csv") |>
   select(Name = Old_name, New_name)
 
 
@@ -12,18 +12,20 @@ all_read_dt <- bind_rows(read_neg20_6545, read_neg20_6546, read_neg40_6545,
                          read_neg40_6546,  read_neg60_6546, read_neg80_6546,
                          read_pos20_6545,  read_pos20_6546, read_pos40_6545,
                          read_pos40_6546, read_pos60_6546, read_pos6080_6546,
-                         read_pos80_6546)
+                         read_pos80_6546) |>
+  filter( !(Name %in% c("Isorhamnetin") ) )
 # Clean data
 binded_dt <- left_join(all_read_dt, updated_names) |> # Updating names
   mutate(Name = ifelse(is.na(New_name), Name, New_name) ) |>
   select(-New_name) |> # Remove new names
   group_by(Name, Ionization_mode, COLLISIONENERGY) |> # Remove duplicates
-  unique() |> ungroup()
+  unique() |> ungroup() |>
+  filter( !(Name %in% "Isoquercitroside") ) # Duplicated standdard
 
 usethis::use_data(binded_dt, overwrite = T)
 
-# Metadata impor and clean
-metadata_msp <- read_csv("../csv/batch_msp_metadata.csv")  |>
+# Metadata import and clean
+metadata_msp <- read_csv("../batch_msp_metadata.csv")  |>
   left_join(updated_names) |>
   mutate(Name = ifelse(is.na(New_name), Name, New_name) ) |>
   select(-New_name) |> distinct(Name,.keep_all = TRUE)
